@@ -8,7 +8,6 @@
     <link rel="stylesheet" href=":style.css">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.min.js"></script>
     <body style ="background-color: #f3f6f4;"
-    
 </head>
 
 <style>
@@ -16,16 +15,26 @@
             display: grid;
             grid-template-columns: 400px 300px auto 100px;
             margin: 20px;
-            font-family: 'Marlik';
+            font-family: 'Charm';
             font-size: 12px;
             font-weight:400;
             line-height: 160%;
             text-decoration: underline;
+
+            height: auto;
+            min-height: 100%;
+            padding-bottom: (footer높이);
         }
-</style>
-<style>
-    .Seoulimage {display:none;}
-    .Seoul:hover.Seoulimage {display:contents}
+    
+    .footer {height: (footer높이);
+            position : absolute;
+            bottom: 0;
+            margin: 20px;
+            font-family: 'Charm';
+            font-size: 12px;
+            font-weight:400;
+            line-height: 160%;
+        }
 </style>
 
 <style type="text/css">
@@ -38,9 +47,9 @@
     <div class="header">
         <div class="h1">
             YOO JIYE
-            <br> Archive ,
             <br> works in <a href="https://www.google.com/maps/place/korea/data=!4m2!3m1!1s0x356455ebcb11ba9b:0x91249b00ba88db4b?sa=X&ved=1t:242&ictx=111"
                 target="_blank" rel="noreferrer noopener" onclick="window.open(this.href, '_blank', 'width=400, height=400,top=100,left=200'); return false;">Korea</a> 
+
             <!--<br> S H E 
             <br> majored in <a href="https://en.wikipedia.org/wiki/Communication_design"
             target="_blank" rel="noreferrer noopener" onclick="window.open(this.href, '_blank', 'width=400, height=400,top=100,left=200'); return false;">visual design </a>
@@ -64,21 +73,23 @@
         <div class ="h2">
             <a href="mailto:dbwldpdbwldp@gmail.com">Contact</a>
         </div>
-
-                    
         <div class ="h3">
             db.wl.dp
         </div>
     </div>
-    <!--
-    <div class="h4">
-        <img src="newspaper.jpg" width="600" vspace="10" hspace="410">
+
+    <div class='footer'>
+        <div>
+            ⓒ 2024.Yoojiye all rights reserved.
+        </div>
     </div>
+    <div class="h4">
+    </div>
+        <!--
     <div class="h5">
         <img src="newspaper_2.jpg" width="600" vspace="10" hspace="410">
     </div>
 
-    -->
     <div class="h6">
         <img src="newspaper.jpg" width="500" vspace="50" hspace="470" filter: grayscale(100%)>
         <img src="newspaper_2.jpg" width="500" vspace="50" hspace="470" filter: grayscale(100%)>
@@ -103,5 +114,5 @@
     </div>
 
     <div class="h6"></div> {    filter: grayscale(0);} 
+        -->
 </body>
-
