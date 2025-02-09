@@ -60,7 +60,7 @@
 @media all and (max-width:767px){
     #header {
                 display: grid;
-                grid-template-columns: 200px auto 50px;
+                grid-template-columns: 160px auto 50px;
                 margin: 20px;
                 font-family:'Courier';
                 font-size: 13px;
