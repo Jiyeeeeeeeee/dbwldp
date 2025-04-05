@@ -20,7 +20,7 @@ a:hover {
     left: 0;
     right: 0;
     display: grid;
-    grid-template-columns: 680px auto 50px;
+    grid-template-columns: 50% auto 50px;
     margin: 30px;
     font-size: 12px;
     line-height: 140%;
@@ -71,7 +71,7 @@ a:hover {
 /* 태블릿 (768px ~ 1023px) */
 @media all and (min-width: 768px) and (max-width: 1023px) {
     #header {
-        grid-template-columns: 480px auto 50px;
+        grid-template-columns: 50% auto 50px;
         margin: 20px;
         font-size: 12px;
     }
@@ -108,7 +108,7 @@ a:hover {
 /* 모바일 (최대 767px) */
 @media all and (max-width: 767px) {
     #header {
-        grid-template-columns: 220px auto 50px;
+        grid-template-columns: 46% auto 50px;
         margin: 20px;
         font-size: 12px;
     }
