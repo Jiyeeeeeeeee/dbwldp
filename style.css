@@ -125,7 +125,7 @@ a:hover {
     .works3 a {
     display: inline-block;
     text-align: left;
-    padding-left: 30px; /* ← 이 값으로 위치 조절 */
+    padding-left: 35px; /* ← 이 값으로 위치 조절 */
 }
 
     .works1 img,
@@ -137,7 +137,7 @@ a:hover {
         }
     }
     .works3 img {
-        max-width: 95%;
+        width: 100%;
     }
 
 
