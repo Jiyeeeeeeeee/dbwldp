@@ -1,0 +1,143 @@
+/* 공통 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quando', serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    display: block; /* 텍스트 중앙 정렬 */
+}
+a:hover {
+    color: rgb(192, 192, 192);
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 680px auto 50px;
+    margin: 30px;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    /* background: white; ← 삭제됨 */
+}
+
+#contents {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 콘텐츠 중앙 정렬 */
+    gap: 10px;
+}
+
+.works1, .works2, .works3 {
+    text-align: center;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+
+.works1 a,
+.works2 a,
+.works3 a {
+    display: inline-block;
+    text-align: left;
+    padding-left: 50px; /* ← 이 값으로 위치 조절 */
+}
+
+.works1 img,
+.works2 img{
+    width: 70%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.works3 img {
+    width: 80%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 태블릿 (768px ~ 1023px) */
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #header {
+        grid-template-columns: 480px auto 50px;
+        margin: 20px;
+        font-size: 12px;
+    }
+
+    .works1, .works2, .works3 {
+        text-align: center;
+        font-size: 9px;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+    }
+
+    .works1 a,
+    .works2 a,
+    .works3 a {
+    display: inline-block;
+    text-align: left;
+    padding-left: 90px; /* ← 이 값으로 위치 조절 */
+}
+
+
+    .works1 img,
+    .works2 img {
+        width: 50%;
+        max-width: 700px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .works3 img {
+        max-width: 90%;
+    }
+}
+
+/* 모바일 (최대 767px) */
+@media all and (max-width: 767px) {
+    #header {
+        grid-template-columns: 220px auto 50px;
+        margin: 20px;
+        font-size: 12px;
+    }
+    
+    .works1, .works2, .works3 {
+        text-align: center;
+        font-size: 9px;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+    }
+
+    .works1 a,
+    .works2 a,
+    .works3 a {
+    display: inline-block;
+    text-align: left;
+    padding-left: 30px; /* ← 이 값으로 위치 조절 */
+}
+
+    .works1 img,
+    .works2 img {
+            width: 45%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .works3 img {
+        max-width: 95%;
+    }
+
+
