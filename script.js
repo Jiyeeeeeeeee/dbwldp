@@ -1,4 +1,4 @@
-const colors = ["#ffffff", "#f0f0f0", "#b4b4b4", "#929292"];
+const colors = ["#f1f1f1"];
 
 function changeBackground() {
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
