@@ -44,11 +44,16 @@ a:hover {
 }
 
 .works1 a,
-.works2 a,
+.works2 a {
+    display: inline-block;
+    text-align: left;
+    padding-left: 15%; /* ← 이 값으로 위치 조절 */
+    }
+
 .works3 a {
     display: inline-block;
     text-align: left;
-    padding-left: 50px; /* ← 이 값으로 위치 조절 */
+    padding-left: 18%; /* ← 이 값으로 위치 조절 */
 }
 
 .works1 img,
@@ -71,7 +76,7 @@ a:hover {
 /* 태블릿 (768px ~ 1023px) */
 @media all and (min-width: 768px) and (max-width: 1023px) {
     #header {
-        grid-template-columns: 50% auto 50px;
+        grid-template-columns: 50%x auto 50px;
         margin: 20px;
         font-size: 12px;
     }
@@ -115,17 +120,22 @@ a:hover {
     
     .works1, .works2, .works3 {
         text-align: center;
-        font-size: 9px;
+        font-size: 8px;
         line-height: 140%;
         letter-spacing: -0.5px;
     }
 
     .works1 a,
-    .works2 a,
+    .works2 a {
+        display: inline-block;
+        text-align: left;
+        padding-left: 42px; /* ← 이 값으로 위치 조절 */
+    }
+    
     .works3 a {
     display: inline-block;
     text-align: left;
-    padding-left: 40px; /* ← 이 값으로 위치 조절 */
+    padding-left: 72px; /* ← 이 값으로 위치 조절 */
 }
 
     .works1 img,
@@ -137,7 +147,9 @@ a:hover {
         }
     }
     .works3 img {
-        width: 120%;
+        width: 100%;
     }
+
+
 
 
