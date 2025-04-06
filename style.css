@@ -1,154 +1,166 @@
-/* 공통 스타일 */
-body {
+
+ body {
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Quando', serif;
-}
+    
+    overflow: hidden; /* 전체 스크롤 비활성화 */
+  }
 
-a {
+  a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(194, 194, 194);
+  }
+  a {
     text-decoration: none;
     color: rgb(119, 119, 119);
-    display: block; /* 텍스트 중앙 정렬 */
-}
-a:hover {
-    color: rgb(192, 192, 192);
-}
+    display: inline-block;
+    padding: 0px 2px;
+  }
 
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: grid;
-    grid-template-columns: 50% auto 50px;
-    margin: 30px;
+  
+  .layout {
+    display: flex;
+    height: 100vh; /* 전체 화면 높이 */
+    word-break: keep-all;
+  }
+  
+  #sidebar {
+    width: 50%;
+    padding: 30px;
     font-size: 12px;
     line-height: 140%;
     letter-spacing: -0.5px;
-    /* background: white; ← 삭제됨 */
-}
-
-#contents {
-    padding-top: 70px;
+    border-right: 1.5px dotted rgb(119, 119, 119); /* ← 올바른 문법 */
+    box-sizing: border-box;
+    position: sticky; /* ← 원하는 고정 효과 */
+    top: 0;
+    height: 100vh;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  
+  
+  #sidebar .contact-middle {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+  
+     #sidebar .korean-text {
+        font-size: 13px;
+        color: rgb(119, 119, 119);
+      } 
+  
+  #contents {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto; /* 콘텐츠만 세로 스크롤 */
+    padding: 30px 30px 30px 0px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 콘텐츠 중앙 정렬 */
-    gap: 10px;
-}
+    gap: 30px;
+    align-items: flex-start;
+  }
 
-.works1, .works2, .works3 {
-    text-align: center;
+  .works1, .works2 {
     font-size: 10px;
     line-height: 140%;
     letter-spacing: -0.5px;
-}
-
-.works1 a,
-.works2 a {
-    display: inline-block;
     text-align: left;
-    padding-left: 15%; /* ← 이 값으로 위치 조절 */
-    }
+  }
 
-.works3 a {
-    display: inline-block;
-    text-align: left;
-    padding-left: 18%; /* ← 이 값으로 위치 조절 */
-}
-
-.works1 img,
-.works2 img{
-    width: 70%;
-    max-width: 700px;
+  .works1 img{
+    width: 50%;
     height: auto;
     display: block;
-    margin: 0 auto;
-}
+    margin-right: auto;
+  }
+  
+  .works1 img:first-of-type {
+    margin-bottom: 12px;
+  }
 
-.works3 img {
-    width: 80%;
-    max-width: 700px;
+  .works2 img {
+    width: 90%;
+    max-width: 800px;
     height: auto;
     display: block;
-    margin: 0 auto;
-}
+    margin-right: auto;
+  }
 
-/* 태블릿 (768px ~ 1023px) */
-@media all and (min-width: 768px) and (max-width: 1023px) {
-    #header {
-        grid-template-columns: 50%x auto 50px;
-        margin: 20px;
-        font-size: 12px;
-    }
-
-    .works1, .works2, .works3 {
-        text-align: center;
-        font-size: 9px;
-        line-height: 140%;
-        letter-spacing: -0.5px;
-    }
-
-    .works1 a,
-    .works2 a,
-    .works3 a {
-    display: inline-block;
-    text-align: left;
-    padding-left: 90px; /* ← 이 값으로 위치 조절 */
-}
-
-
-    .works1 img,
-    .works2 img {
-        width: 50%;
-        max-width: 700px;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    .works3 img {
-        max-width: 90%;
-    }
-}
 
 /* 모바일 (최대 767px) */
-@media all and (max-width: 767px) {
-    #header {
-        grid-template-columns: 46% auto 50px;
-        margin: 20px;
-        font-size: 12px;
-    }
-    
-    .works1, .works2, .works3 {
-        text-align: center;
-        font-size: 8px;
-        line-height: 140%;
-        letter-spacing: -0.5px;
-    }
-
-    .works1 a,
-    .works2 a {
-        display: inline-block;
-        text-align: left;
-        padding-left: 42px; /* ← 이 값으로 위치 조절 */
-    }
-    
-    .works3 a {
-    display: inline-block;
-    text-align: left;
-    padding-left: 72px; /* ← 이 값으로 위치 조절 */
-}
-
-    .works1 img,
-    .works2 img {
-            width: 45%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        .layout {
+          flex-direction: column; /* 수직 → 수평 구조 변경 */
+          height: 100vh;
+          overflow: hidden;
         }
-    }
-    .works3 img {
-        width: 100%;
-    }
+      
+        #sidebar {
+          width: 100%;
+          height: 40px; /* 모바일 header 높이 */
+          padding: 10px 20px;
+          box-sizing: border-box;
+          border-right: none;
+          border-bottom: 1.5px dotted rgb(119, 119, 119);
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          justify-content: space-between;
+          overflow: visible;
+          background: #f1f1f1;
+        }
+      
+        #sidebar .contact-middle {
+          position: static;
+          transform: none;
+        }
+      
+        #contents {
+          height: 100%;
+          overflow-y: auto;
+          padding: 50px 20px 30px 20px; /* 아래쪽 header 영역 피하기 위해 패딩 추가 */
+          box-sizing: border-box;
+          display: flex;               /* ✅ 추가! */
+          flex-direction: column;      /* ✅ 추가! */
+          align-items: center;    
+        }
+
+        .works1, .works2 {
+            font-size: 9px;
+            line-height: 140%;
+            letter-spacing: -0.5px;
+            text-align: center;
+          }
+        
+  .works1 img{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .works1 img:first-of-type {
+    margin-bottom: 5px;
+  }
+
+  .works2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+      
+        /* 스크롤 시 불투명해질 요소들 */
+        #contents.dimmed {
+          opacity: 10;
+          transition: opacity 0.3s ease;
+        }
+      }
 
 
 
