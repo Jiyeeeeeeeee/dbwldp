@@ -104,7 +104,7 @@
     font-size: 11px;
     line-height: 140%;
     letter-spacing: -0.5px;
-    border-right: 1.5px dotted rgb(119, 119, 119); /* ← 올바른 문법 */
+    border-right: 1px dotted rgb(119, 119, 119); /* ← 올바른 문법 */
     box-sizing: border-box;
     position: sticky; /* ← 원하는 고정 효과 */
     top: 0;
@@ -130,7 +130,7 @@
     flex: 1;
     height: 100vh;
     overflow-y: auto; /* 콘텐츠만 세로 스크롤 */
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 2px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -156,4 +156,3 @@
     margin-right: auto;
   }
 }
-
