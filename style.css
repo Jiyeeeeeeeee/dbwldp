@@ -1,4 +1,5 @@
-body {
+
+ body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -47,7 +48,7 @@ body {
         transform: translateY(-50%);
       }
   
-     #sidebar .korean-text {
+  #sidebar .korean-text {
         font-size: 11px;
         color: rgb(119, 119, 119);
       } 
@@ -91,75 +92,41 @@ body {
 
 
 /* 모바일 (최대 767px) */
-    @media screen and (max-width: 768px) {
-        html, body { height: 100%; }
-        
-        .layout {
-          flex-direction: row;
-            height: 100dvh;
-          overflow: hidden;
-        }
-      
-        #sidebar {
-          width: 50%;
-          height: 100vh; 
-          padding: 10px 10px;
-          box-sizing: border-box;
-          border-right:  1.5px dotted rgb(119, 119, 119);
-          position: relative; /* ✅ 수정: sticky → relative */
-          left: 0;
-          font-size: 10px;
-          display: block;
-          justify-content: space-between;
-          overflow: hidden; /* 필요 시 hidden 유지 */
-          background: #f1f1f1;
-
-        }
-      
-        #sidebar .contact-middle {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-        }
-      
-        #contents {
-          height: 100%;
-          overflow-y: auto;
-          padding: 10px 0px 20px 0px; /* 아래쪽 header 영역 피하기 위해 패딩 추가 */
-          box-sizing: border-box;
-          display: flex;               /* ✅ 추가! */
-          flex-direction: column;      /* ✅ 추가! */
-          align-items: center;    
-        }
-
-        .works1, .works2 {
-            font-size: 10px;
-            line-height: 140%;
-            letter-spacing: -0.5px;
-            text-align: left;
-          }
-        
-  .works1 img{
-    width: 70%;
-    height: auto;
-    display: block;
-    margin-right: auto;
-  }
-  
-  .works1 img:first-of-type {
-    margin-bottom: 5px;
+@media screen and (max-width: 768px) {
+  html, body {
+    height: 100%;
   }
 
-  .works2 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-right: auto;
+  .layout {
+    flex-direction: row;
+    height: 100dvh; /* ← 핵심 */
+    overflow: hidden;
   }
-      
-        /* 스크롤 시 불투명해질 요소들 */
-        #contents.dimmed {
-          opacity: 10;
-          transition: opacity 0.3s ease;
-        }
-      }
+
+  #sidebar {
+    width: 50%;
+    height: 100dvh; /* ← 핵심 */
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1.5px dotted rgb(119, 119, 119);
+    position: relative;
+    font-size: 10px;
+    background: #f1f1f1;
+  }
+
+  #sidebar .contact-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  #contents {
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px 0px 20px 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
