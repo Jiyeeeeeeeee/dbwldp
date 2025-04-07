@@ -94,7 +94,7 @@ body {
     @media screen and (max-width: 768px) {
         .layout {
           flex-direction: row;
-          height: 100vh;
+            height: 100dvh;
           overflow: hidden;
         }
       
