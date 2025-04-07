@@ -92,6 +92,8 @@ body {
 
 /* 모바일 (최대 767px) */
     @media screen and (max-width: 768px) {
+        html, body { height: 100%; }
+        
         .layout {
           flex-direction: row;
             height: 100dvh;
