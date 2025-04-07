@@ -101,6 +101,7 @@
       
         #sidebar {
           width: 50%;
+          height: 100vh; 
           padding: 10px 10px;
           box-sizing: border-box;
           border-right:  1.5px dotted rgb(119, 119, 119);
