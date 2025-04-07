@@ -109,7 +109,8 @@
     padding: 10px;
     box-sizing: border-box;
     border-right: 1.5px dotted rgb(119, 119, 119);
-    position: relative;
+    position: sticky; /* ← 원하는 고정 효과 */
+    top: 0;
     font-size: 10px;
     background: #f1f1f1;
   }
@@ -123,7 +124,7 @@
   #contents {
     height: 100%;
     overflow-y: auto;
-    padding: 10px 10px 20px 2px;
+    padding: 10px 0px 20px 1px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
