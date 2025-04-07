@@ -130,10 +130,30 @@
     flex: 1;
     height: 100vh;
     overflow-y: auto; /* 콘텐츠만 세로 스크롤 */
-    padding: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
   }
+
+  .works1 img{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+  }
+  
+  .works1 img:first-of-type {
+    margin-bottom: 12px;
+  }
+
+  .works2 img {
+    width: 103%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin-right: auto;
+  }
 }
+
