@@ -104,7 +104,6 @@
           padding: 10px 10px;
           box-sizing: border-box;
           border-right:  1.5px dotted rgb(119, 119, 119);
-          border-bottom: none;
           position: relative; /* ✅ 수정: sticky → relative */
           left: 0;
           font-size: 10px;
