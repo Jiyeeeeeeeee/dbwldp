@@ -69,7 +69,7 @@ body {
     width: 70%;
     height: auto;
     display: block;
-    margin-right: auto;
+    margin: 0;
   }
   
   .works1 img:first-of-type {
