@@ -70,6 +70,7 @@ body {
     height: auto;
     display: block;
     margin: 0;
+    box-sizing: border-box;
   }
   
   .works1 img:first-of-type {
