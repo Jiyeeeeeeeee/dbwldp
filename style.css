@@ -137,10 +137,10 @@ body {
   }
 
   .works1 img{
-    width: 110%;
+    width: 90%;
     height: auto;
     display: block;
-    margin-right: 0;
+    margin: 0;
     box-sizing: border-box;
   }
   
