@@ -58,7 +58,7 @@ body {
     align-items: flex-start;
   }
 
-  .works1, .works2 {
+  .works1, .works2, .works3 {
     font-size: 11px;
     line-height: 140%;
     letter-spacing: -0.5px;
@@ -134,6 +134,13 @@ body {
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
+  }
+
+      .works1, .works2, .works3 {
+    font-size: 11px;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+    text-align: left;
   }
 
   .works1 img{
