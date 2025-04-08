@@ -89,6 +89,7 @@ body {
 @media screen and (max-width: 768px) {
   html, body {
     height: 100%;
+    overflow: visible;
   }
 
   .layout {
@@ -109,7 +110,6 @@ body {
     top: 0;
     height: 100vh;
     flex-shrink: 0;
-    overflow: hidden;
   }
   
   
