@@ -129,7 +129,7 @@ body {
     flex: 1;
     height: 100vh;
     overflow-y: auto; /* 콘텐츠만 세로 스크롤 */
-    padding: 10px 0px 0px 0px;
+    padding: 10px 0px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -137,10 +137,10 @@ body {
   }
 
   .works1 img{
-    width: 100%;
+    width: 110%;
     height: auto;
     display: block;
-    margin: 0;
+    margin-right: 0;
     box-sizing: border-box;
   }
   
