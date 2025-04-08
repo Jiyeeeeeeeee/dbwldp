@@ -51,7 +51,7 @@ body {
     flex: 1;
     height: 100vh;
     overflow-y: auto; /* 콘텐츠만 세로 스크롤 */
-    padding: 30px 0px
+    padding: 30px 0px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -66,7 +66,7 @@ body {
   }
 
   .works1 img{
-    width: 80%;
+    width: 100%;
     height: auto;
     display: block;
     margin: 0;
@@ -136,10 +136,10 @@ body {
   }
 
   .works1 img{
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
-    margin-right: auto;
+    margin-right: 0;
   }
   
   .works1 img:first-of-type {
@@ -150,6 +150,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    margin-right: auto;
+    margin-right: 0;
   }
 }
