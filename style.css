@@ -112,23 +112,17 @@ html, body {
   border-right: 1px dotted rgb(119, 119, 119); /* ← 올바른 문법 */
   box-sizing: border-box;
   position: sticky; /* ← 원하는 고정 효과 */
+  overflow: hidden;
   top: 0;
   height: 100vh;
   flex-shrink: 0;
 }
-
 
 #sidebar .contact-middle {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
     }
-
-#sidebar .contact-middle {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 #contents {
   flex: 1;
