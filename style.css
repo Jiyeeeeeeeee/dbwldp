@@ -93,13 +93,12 @@ p {  text-decoration: none;
 /* 모바일 (최대 767px) */
 @media screen and (max-width: 768px) {
 html, body {
-  height: 100%;
-  overflow: visible;
+    height: auto;     /* 100% 말고 auto */
+    overflow: auto;   /* 기본값 유지 */
 }
 
 .layout {
   display: flex;
-  height: 100vh; /* 전체 화면 높이 */
   word-break: keep-all;
 }
 
