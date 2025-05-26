@@ -6,9 +6,10 @@
 
 body {
   height: auto;
-  font-family: 'Quando', serif;
+  font-family: "aktiv-grotesk", sans-serif;
+font-weight: 400;
+font-style: normal;
   overflow: visible; /* 전체 스크롤 비활성화 */
-  font-weight: 800;
   letter-spacing: -0.01rem; 
 }
 
@@ -17,43 +18,79 @@ body {
   flex-direction: column;
   word-break: keep-all;
   overflow: visible;
-  padding: 20px;
-  background-color: rgb(232, 232, 232);
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  gap:10px;
 }
 
 .topbar {
-  width: 100%;
+  flex: 0 0 30%; 
+  display: inline-flex;
+  flex-direction: row;
   font-size: 0.7rem;
-
+  height: fit-content;
   position: sticky;
   top: 0;
+  padding:10px;
   z-index: 10;
+  gap:20px;
+  text-align: left;
+  
+}
+
+.topbar .top-left {
+  flex: 0 0 30%;          /* 💡 좌측 30% */
+  display: flex;
+  flex-direction: row;
   padding: 5px;
-  background-color:  rgba(232, 232, 232, 0.85); 
-  border-bottom: 1.5px dotted rgb(176, 176, 176);
-
+  border-bottom: 1px solid  rgb(0, 0, 0);
+  border-left: 1px solid  rgb(0, 0, 0);
 }
 
-.topbar .contact {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: inline-block;
+.topbar .top-left a {
+  flex: 0 0 50%; 
+  text-align: left;
 }
 
+.topbar .top-right {
+  color: rgb(0, 0, 0);
+  flex: 0 0 70%;         /* 💡 우측 70% */
+  text-align: left;
+  padding:5px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+  gap: 20px; 
+}
+
+.profile {
+  flex: 0 0 30%;       /* 💡 전체 가로 중 30% 차지 */
+  font-size: 0.7rem;
+  line-height: 1rem;
+  text-align: left;
+  position: sticky;   /* ✅ 스크롤 시 고정 */
+  top: 60px;           /* 💡 상단에서 20px 떨어져서 고정됨 */
+  padding-left:5px;
+  align-self: flex-start; /* ✅ flex 컨테이너 내부에서 sticky가 잘 작동하도록 */
+}
 
 .work {  
-  text-align: center;
-  padding-top: 20px;
-  font-size: 11.3px;
-  color: rgb(119, 119, 119);
+  flex: 0 0 70%;  
+  text-align: left;
+  font-size: 0.7rem;
+  color: rgb(156, 156, 156);
   position: relative;
   gap: 0px;
 }
 
 .work4{
   display: block;
-  margin: 0 auto;
+  margin: 0 ;
   max-width: 50%;
   height: auto;
   gap: 0;
@@ -62,8 +99,8 @@ body {
 
 .work5{
   display: block;
-  margin: 0 auto;
-  max-width: 60%;
+  margin: 0 ;
+  max-width: 70%;
   height: auto;
   gap: 0;
 }
@@ -71,7 +108,7 @@ body {
 
 .work img {
   display: block;
-  margin: 0 auto;
+  margin: 0;
   max-width: 45%;
   height: auto;
   gap: 0;
@@ -79,26 +116,25 @@ body {
 }
 
 .caption {
-  display: block;
+  display: inline-block;
   margin: 0 auto;
   width:fit-content;
   background-color: #fff;
-  line-height: 1rem;
-  text-align: center;
+  line-height: 0.8rem;
+  text-align: left;
 }
 
 
 a {
   text-decoration: none;
-  color: rgb(108, 108, 108);
+  color: rgb(0, 0, 0);
   display: inline-block; /* 인라인 */
   line-height: 1.1rem;
   padding: 0; /* 패딩 없음 */
 }
 
 a:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(194, 194, 194);
+  color: rgb(167, 167, 167);
 }
 
 
@@ -106,17 +142,45 @@ a:hover {
   html, body {
     height: 100%;
     overflow: visible; 
-    font-family: 'Quando', serif;
-    font-size: 0.9rem;
+    font-family: "aktiv-grotesk", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
     letter-spacing: -0.01rem; 
   }
 
+  .layout{
+    flex-direction: column;    /* ✅ 가로 → 세로 전환 */
+    gap: 2px;                 /* 세로 간 간격 */
+  }
+
+  .topbar {
+    flex-direction: column;    /* ✅ 가로 → 세로 전환 */
+    gap: 10px;                 /* 세로 간 간격 */
+    background-color: #fff;
+  }
+
+  .top-left {
+    flex-direction: column;    /* ✅ 가로 → 세로 전환 */
+    gap: 10px;                 /* 세로 간 간격 */
+
+  }
+
+  .profile {
+    position: sticky;
+    top:100px;
+    z-index: 10;
+    background-color: #fff;
+  }
+  .main {
+    flex-direction: column;    /* ✅ 가로 → 세로 전환 */
+    gap: 10px;    
+    
+  }
   .work img {
     display: block;
-    margin: 0 auto;
-    max-width: 85%;
+    max-width: 100%;
     height: auto;
     gap: 0;
 }
 }
-
