@@ -5,50 +5,86 @@
 }
 
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  height: auto;
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 600;
   font-family: 'Quando', serif;
-  overflow: hidden; /* 전체 스크롤 비활성화 */
+  overflow: visible; /* 전체 스크롤 비활성화 */
+  font-weight: 800;
 }
 
-.layout {
+#layout {
   display: flex;
-  height: 100vh;
+  flex-direction: column;
   word-break: keep-all;
-  overflow: hidden;
+  overflow: visible;
+  padding: 20px;
+  background-color: rgb(232, 232, 232);
 }
 
-#sidebar {
-  width: 50%;
-  background-color: rgb(113, 5, 55);
-  color: rgb(255, 253, 235);
-  padding: 30px;
-  font-size: 11.5px;
-  display: block;
-  flex-direction: column;
-  overflow: hidden;
+.topbar {
+  width: 100%;
+  font-size: 11.3px;
   position: sticky;
   top: 0;
-  height: 100vh;
-  flex-shrink: 0;
+  z-index: 10;
+  padding: 5px;
+  background-color:  rgba(232, 232, 232, 0.85); 
+  border-bottom: 1.5px dotted rgb(176, 176, 176);
+
 }
 
-#sidebar .contact {
+.topbar .contact {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
 }
+
+
+.work {  
+  text-align: center;
+  padding-top: 20px;
+  font-size: 11.3px;
+  color: rgb(119, 119, 119);
+  position: relative;
+  gap: 0px;
+}
+
+.work4{
+  display: block;
+  margin: 0 auto;
+  max-width: 45%;
+  height: auto;
+  gap: 0;
+  width:50%;
+}
+
+.work img {
+  display: block;
+  margin: 0 auto;
+  max-width: 45%;
+  height: auto;
+  gap: 0;
+  
+}
+
+.caption {
+  display: block;
+  margin: 0 auto;
+  width:fit-content;
+  background-color: #fff;
+  line-height: 1rem;
+  text-align: center;
+}
+
 
 a {
   text-decoration: none;
-  color: rgb(255, 253, 235);
+  color: rgb(108, 108, 108);
   display: inline-block; /* 인라인 */
   line-height: 1.1rem;
   padding: 0; /* 패딩 없음 */
-}
-.description {
-  line-height: 1.1rem;
 }
 
 a:hover {
@@ -56,38 +92,19 @@ a:hover {
   background-color: rgb(194, 194, 194);
 }
 
-.profile{
-  margin-top: 40px;
-  color: rgb(183, 140, 153);
-  font-size: 11px;
-  line-height: 1.4rem;
-}
 
 @media screen and (max-width: 768px) {
   html, body {
     height: 100%;
-    overflow: hidden; /* pc처럼 숨김 */
+    overflow: visible; /* pc처럼 숨김 */
   }
 
-  .layout {
-    display: flex;
-    flex-direction: row; /* PC처럼 좌우 유지 */
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  #sidebar {
-    width: 50%;
-    background-color: rgb(113, 5, 55);
-    padding: 20px;
-    font-size: 11.5px;
+  .work img {
     display: block;
-    flex-direction: column;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    flex-shrink: 0;
-  }
+    margin: 0 auto;
+    max-width: 85%;
+    height: auto;
+    gap: 0;
+}
 }
 
