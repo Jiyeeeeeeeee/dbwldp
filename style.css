@@ -6,8 +6,6 @@
 
 body {
   height: auto;
-  font-family: aktiv-grotesk, sans-serif;
-  font-weight: 600;
   font-family: 'Quando', serif;
   overflow: visible; /* 전체 스크롤 비활성화 */
   font-weight: 800;
@@ -24,7 +22,8 @@ body {
 
 .topbar {
   width: 100%;
-  font-size: 11.3px;
+  font-size: 0.7rem;
+
   position: sticky;
   top: 0;
   z-index: 10;
@@ -54,11 +53,20 @@ body {
 .work4{
   display: block;
   margin: 0 auto;
-  max-width: 45%;
+  max-width: 50%;
   height: auto;
   gap: 0;
-  width:50%;
 }
+
+
+.work5{
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+  height: auto;
+  gap: 0;
+}
+
 
 .work img {
   display: block;
@@ -96,7 +104,9 @@ a:hover {
 @media screen and (max-width: 768px) {
   html, body {
     height: 100%;
-    overflow: visible; /* pc처럼 숨김 */
+    overflow: visible; 
+    font-family: 'Quando', serif;
+    font-size: 0.9rem;
   }
 
   .work img {
