@@ -9,6 +9,7 @@ body {
   font-family: 'Quando', serif;
   overflow: visible; /* 전체 스크롤 비활성화 */
   font-weight: 800;
+  letter-spacing: -0.01rem; 
 }
 
 #layout {
@@ -107,6 +108,7 @@ a:hover {
     overflow: visible; 
     font-family: 'Quando', serif;
     font-size: 0.9rem;
+    letter-spacing: -0.01rem; 
   }
 
   .work img {
