@@ -164,11 +164,7 @@ a:hover {
   }
 
   .profile {
-    order: 0; 
-    position: static;  /* ✅ 스크롤 따라 움직이게 */
-    top: auto;
-    z-index: auto;
-    background-color: #fff;
+       display: none; 
   }
 
   .main {
