@@ -46,7 +46,6 @@ font-style: normal;
   flex-direction: row;
   padding: 5px;
   border-bottom: 1px solid  rgb(0, 0, 0);
-  border-left: 1px solid  rgb(0, 0, 0);
 }
 
 .topbar .top-left a {
@@ -61,7 +60,6 @@ font-style: normal;
   padding: 5px;
   padding-right: 10px;
   border-bottom: 1px solid rgb(0, 0, 0);
-  border-left: 1px solid rgb(0, 0, 0);
 }
 
 .main {
