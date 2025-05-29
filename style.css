@@ -6,83 +6,54 @@
 
 body {
   height: auto;
-  font-family: "aktiv-grotesk", sans-serif;
-font-weight: 400;
-font-style: normal;
+  font-style: normal;
   overflow: visible; /* 전체 스크롤 비활성화 */
   letter-spacing: -0.01rem; 
 }
 
 #layout {
-  display: flex;
-  flex-direction: column;
-  word-break: keep-all;
-  overflow: visible;
-  padding: 10px;
-  background-color: rgb(255, 255, 255);
-  gap:10px;
+  margin: 10px;
 }
 
 .topbar {
-  flex: 0 0 30%; 
   display: flex;
-  flex-direction: row;
-  font-size: 0.7rem;
-  height: fit-content;
+  justify-content: space-between; /* 링크들 간의 간격 균등 분배 */
+  align-items: left;
+  width: 50%; /* 전체 화면의 절반 너비 */
+  font-family: "ten-oldstyle", serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: rgb(103, 103, 103);
   position: sticky;
   top: 0;
-  padding:10px;
-  padding-right: 30px;
   z-index: 10;
-  gap:20px;
-  text-align: left;
-  background-color: #fff;
-  
 }
 
-.topbar .top-left {
-  flex: 0 0 30%;          /* 💡 좌측 30% */
+.topbar a {
+  flex: 1;
+  text-align: left;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
   display: flex;
-  flex-direction: row;
-  padding: 5px;
-  border-bottom: 1px solid  rgb(0, 0, 0);
+  justify-content: flex-end; /* 오른쪽으로 정렬 */
 }
 
-.topbar .top-left a {
-  flex: 0 0 50%; 
-  text-align: left;
-}
-
-.topbar .top-right {
-  color: rgb(0, 0, 0);
-  flex: 0 0 70%;         /* 💡 우측 70% */
-  text-align: left;
-  padding: 5px;
-  padding-right: 10px;
-  border-bottom: 1px solid rgb(0, 0, 0);
-}
-
-.main {
+.main {  
   display: flex;
-  flex-direction: row;
-  padding: 0px 10px;
+  flex-direction: column;
   gap: 16px; 
-}
-
-.profile {
-  flex: 0 0 30%;       /* 💡 전체 가로 중 30% 차지 */
-  font-size: 0.7rem;
-  line-height: 1rem;
-  text-align: left;
-  position: sticky;   /* ✅ 스크롤 시 고정 */
-  top: 60px;           /* 💡 상단에서 20px 떨어져서 고정됨 */
-  padding-left:5px;
-  align-self: flex-start; /* ✅ flex 컨테이너 내부에서 sticky가 잘 작동하도록 */
+  width: 50vw;       
+  margin-left: auto;        
+  margin-right: 0;    
+  font-family: "ten-oldstyle", serif;
+  font-size: 0.9rem;
+  color: rgb(165, 165, 165);
 }
 
 .work {  
-  flex: 0 0 70%;  
-  padding-right:20px;
   text-align: left;
   font-size: 0.7rem;
   color: rgb(156, 156, 156);
@@ -90,15 +61,13 @@ font-style: normal;
   gap: 0px;
 }
 
-
 .work5{
   display: block;
-  margin: 0 ;
+  margin: 0;
   max-width: 100%;
   height: auto;
   gap: 0;
 }
-
 
 .work img {
   display: block;
@@ -113,15 +82,18 @@ font-style: normal;
   display: inline-block;
   margin-top: 0.3rem;
   width:fit-content;
-  background-color: #fff;
-  line-height: 0.8rem;
   text-align: left;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  font-family: "aktiv-grotesk", sans-serif;
+font-weight: 400;
+font-style: normal;
+color:rgb(103, 103, 103);
 }
-
 
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color:rgb(103, 103, 103);
   display: inline-block; /* 인라인 */
   line-height: 1.1rem;
   padding: 0; /* 패딩 없음 */
@@ -133,46 +105,28 @@ a:hover {
 
 
 @media screen and (max-width: 768px) {
-  html, body {
-    height: 100%;
-    overflow: visible; 
-    font-family: "aktiv-grotesk", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    letter-spacing: -0.01rem; 
-  }
+    .topbar {
+      display: flex;
+      flex-direction: column; /* 세로 정렬 */
+      align-items: flex-start; /* 좌측 정렬 */
+      width: 100%; 
+      font-size: 0.8rem;
+    }
+  
 
-  .layout{
-    flex-direction: column;    /* ✅ 가로 → 세로 전환 */
-    gap: 2px;                 /* 세로 간 간격 */
-  }
+    .container {
+      display: block;
+    }
 
-  .topbar {
-    flex-direction: column;    /* ✅ 가로 → 세로 전환 */
-    gap: 10px;                 /* 세로 간 간격 */
-    background-color: #fff;
-    padding-right: 10px;
-  }
-
-  .top-left {
-    flex-direction: column;    /* ✅ 가로 → 세로 전환 */
-    gap: 10px;                 /* 세로 간 간격 */
-
-  }
-
-  .profile {
-       display: none; 
-  }
-
-  .main {
-    flex-direction: column;    /* ✅ 가로 → 세로 전환 */
-
-
+  .main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0vw; 
+    margin-top: 10px; /* topbar 아래 여백 */
+    width:100%;
   }
   .work img {
     display: block;
-    max-width: 104%;
     height: auto;
     gap: 0;
 }
