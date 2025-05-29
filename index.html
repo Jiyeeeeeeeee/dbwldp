@@ -1,60 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" class="trancy-ja">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dbwldpdbwldp</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="db.io.png" type="image/icon" rel="icon" />
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://use.typekit.net/dhd7ycp.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dbwldpdbwldp</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="db.io.png" type="image/icon" rel="icon" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/dhd7ycp.css" />
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'bvf8ltz',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h = d.documentElement, t = setTimeout(function() {
+        h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+      }, config.scriptTimeout), tk = d.createElement("script"), f = false, 
+      s = d.getElementsByTagName("script")[0], a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try { Typekit.load(config) } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 </head>
 
 <body>
-    <div id="layout">
-      <div class="topbar">
-        <div class="top-left">
-          <a href="index.html">Yoo Jiye</a>
-          <a href="mailto:dbwldpdbwldp@gmail.com">Contact</a>
-        </div>
-        <div class="top-right">Works</div>
-      </div>
-        <div class="main">
-          <div class="profile">
-            <p>Yoo Jiye works based on typography, expanding her practice into brand identity, editorial design, and web. 
-            She explores structure and hierarchy through various methods and tools. 
-            She is currently interested in sound-based, improvisational approaches to graphic work. </p>
-          </div>
-          <div class="work">
+  <div id="layout">
+    <div class="topbar">
+        <a href="index.html">Jiye Yoo</a>
+        <a href="mailto:dbwldpdbwldp@gmail.com">Contact</a>
+        <a href="works.html">Works</a>
+    </div>
 
-            <div class="work1">
-              <img src="1.jpg" alt="work1">
-            </div>
-            <div class="work-item">
-              <div class="work2">
-                <img src="1_2.jpg" alt="work1-1">
-                <div class="work5">
-                  <img src="5.jpg" alt="work1">
-                </div>
-
-                <p class="caption">
-                  <i>A Story of Eight Cities,</i> editorial, 25.04<br>
-                  <i>Tomorrow’s Myths</i>, e-flux Architecture and <i>“2086: Together How?”</i>, <br>the Korean Pavilion
-                  at the 18th International Architecture Exhibition, <i>La Biennale di Venezia</i>
-                </p>
-              </div>
-            </div>
-        
-            <div class="work-item">
-              <div class="work3">
-                <img src="3.png" alt="work1-1">
-                <p class="caption">scan, 24.11</p>
-              </div>
-            </div>
-        
-          </div>
-        </div>
-        
+    <div class="main">
+      <p></p>
+    </div>
+  </div>
 </body>
 </html>
