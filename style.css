@@ -1,56 +1,89 @@
-* {
+html, body {
+  height: 100%; /* ✅ Sticky 작동 조건 */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: auto;
-  font-style: normal;
-  overflow: visible; /* 전체 스크롤 비활성화 */
-  letter-spacing: -0.01rem; 
+  overflow: visible;
 }
 
 #layout {
-  margin: 10px;
-}
-
-.topbar {
   display: flex;
-  justify-content: space-between; /* 링크들 간의 간격 균등 분배 */
-  align-items: left;
-  width: 50%; /* 전체 화면의 절반 너비 */
-  font-family: "ten-oldstyle", serif;
-  font-size: 0.9rem;
-  font-weight: 400;
-  color: rgb(103, 103, 103);
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  flex-direction: row;
+  position: static;  
 }
 
-.topbar a {
-  flex: 1;
-  text-align: left;
-  text-decoration: none;
-  color: inherit;
+.sidebar {
+  position: fixed;
+  top: 0; /* ✅ 화면 맨 위에 고정 */
+  left: 0;
+  margin:0.5rem;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: "ten-oldstyle", serif;
+  color: rgb(103, 103, 103);
+}
+
+/* 왼쪽 고정 텍스트 */
+.sidebar-left {
+  flex-shrink: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+}
+
+.sidebar-right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 10vw;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.sidebar-r-bottom {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-left: 0.5rem;
+  font-style: normal;
+  color: rgb(188, 188, 188);
+  font-size: 0.8rem;
+  z-index: 1000;
+}
+
+.contact:hover .tooltip,
+.instagram:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 .container {
   display: flex;
-  justify-content: flex-end; /* 오른쪽으로 정렬 */
+  justify-content: flex-end;
 }
 
-.main {  
+
+.main { 
+  margin:10px;
+  position: absolute;
+  left:33vw;                /* 💡 화면의 X축 50% */
+  transform: translateX(0);  /* 💡 필요 시 조절 가능 (기준이 왼쪽이면 0) */
+  
   display: flex;
   flex-direction: column;
-  gap: 16px; 
-  width: 50vw;       
-  margin-left: auto;        
-  margin-right: 0;    
+  gap: 16px;
+  line-height: 1.05rem;
   font-family: "ten-oldstyle", serif;
-  font-size: 0.9rem;
-  color: rgb(165, 165, 165);
+  font-size:0.8rem;
+  color: rgb(103, 103, 103);
 }
 
 .work {  
@@ -88,7 +121,7 @@ body {
   font-family: "aktiv-grotesk", sans-serif;
 font-weight: 400;
 font-style: normal;
-color:rgb(103, 103, 103);
+color:rgb(145, 145, 145);
 }
 
 a {
@@ -103,27 +136,19 @@ a:hover {
   color: rgb(167, 167, 167);
 }
 
-
 @media screen and (max-width: 768px) {
-    .topbar {
-      display: flex;
-      flex-direction: column; /* 세로 정렬 */
-      align-items: flex-start; /* 좌측 정렬 */
-      width: 100%; 
-      font-size: 0.8rem;
-    }
+  #layout {
+    gap: 5px;
+  }
   
-
-    .container {
-      display: block;
-    }
+  .container {
+    display: block;
+  }
 
   .main{
     display: flex;
     flex-direction: column;
-    margin-left: 0vw; 
-    margin-top: 10px; /* topbar 아래 여백 */
-    width:100%;
+    margin-left: 5vw; 
   }
   .work img {
     display: block;
