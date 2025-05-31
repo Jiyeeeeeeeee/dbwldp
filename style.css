@@ -149,7 +149,7 @@ a:hover {
   .main{
     display: flex;
     flex-direction: column;
-    margin-left: 5vw; 
+    margin-left: 10vw; 
   }
   .work img {
     display: block;
