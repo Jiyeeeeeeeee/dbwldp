@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: visible;
+  background-color: rgb(255, 255, 255);
 }
 
 #layout {
@@ -15,7 +16,7 @@ html, body {
   position: fixed;
   top: 0; /* ✅ 화면 맨 위에 고정 */
   left: 0;
-  margin:0.5rem;
+  margin:0.3rem;
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -72,7 +73,7 @@ html, body {
 
 
 .main { 
-  margin:10px;
+  margin:0.3rem;
   position: absolute;
   left:33vw;                /* 💡 화면의 X축 50% */
   transform: translateX(0);  /* 💡 필요 시 조절 가능 (기준이 왼쪽이면 0) */
