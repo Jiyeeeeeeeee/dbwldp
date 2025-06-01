@@ -75,8 +75,8 @@ html, body {
 .main { 
   margin:0.3rem;
   position: absolute;
-  left:33vw;                /* 💡 화면의 X축 50% */
-  transform: translateX(0);  /* 💡 필요 시 조절 가능 (기준이 왼쪽이면 0) */
+  left:32vw;                
+  transform: translateX(0); 
   
   display: flex;
   flex-direction: column;
@@ -128,9 +128,9 @@ color:rgb(145, 145, 145);
 a {
   text-decoration: none;
   color:rgb(103, 103, 103);
-  display: inline-block; /* 인라인 */
+  display: inline-block;
   line-height: 1.1rem;
-  padding: 0; /* 패딩 없음 */
+  padding: 0;
 }
 
 a:hover {
