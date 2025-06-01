@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow: visible;
+  background-color: rgb(255, 255, 255);
 }
 
 #layout {
@@ -16,10 +17,10 @@ html, body {
   position: fixed;
   top: 0; /* ✅ 화면 맨 위에 고정 */
   left: 0;
-  margin:0.3rem;
   display: flex;
   flex-direction: row;
   height: 100vh;
+  margin:0.3rem;
   font-family: "ten-oldstyle", serif;
   color: rgb(103, 103, 103);
 }
@@ -73,11 +74,10 @@ html, body {
 
 
 .main { 
-  margin:0.3rem;
   position: absolute;
-  left:32vw;                
-  transform: translateX(0); 
-  
+  left:30vw;                /* 💡 화면의 X축 50% */
+  transform: translateX(0);  /* 💡 필요 시 조절 가능 (기준이 왼쪽이면 0) */
+  margin:0.3rem;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -128,9 +128,9 @@ color:rgb(145, 145, 145);
 a {
   text-decoration: none;
   color:rgb(103, 103, 103);
-  display: inline-block;
+  display: inline-block; /* 인라인 */
   line-height: 1.1rem;
-  padding: 0;
+  padding: 0; /* 패딩 없음 */
 }
 
 a:hover {
@@ -149,7 +149,7 @@ a:hover {
   .main{
     display: flex;
     flex-direction: column;
-    margin-left: 10vw; 
+    margin-left: 11vw; 
   }
   .work img {
     display: block;
