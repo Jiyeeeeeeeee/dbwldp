@@ -23,6 +23,7 @@ html, body {
   margin:0.3rem;
   font-family: "ten-oldstyle", serif;
   color: rgb(103, 103, 103);
+  background-color: rgb(255, 255, 255);
 }
 
 /* 왼쪽 고정 텍스트 */
