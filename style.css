@@ -1,11 +1,13 @@
 html, body {
-  height: 100%; /* ✅ Sticky 작동 조건 */
+  height: auto;
   margin: 0;
   padding: 0;
   overflow: visible;
   background-color: rgb(255, 255, 255);
 }
-
+#layout, .sidebar, .main, .container, .sidebar-r-bottom {
+  background-color: white;
+}
 #layout {
   display: flex;
   flex-direction: row;
