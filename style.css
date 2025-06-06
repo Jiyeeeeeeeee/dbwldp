@@ -80,11 +80,11 @@ html, body {
   position: absolute;
   left:50vw;                /* 💡 화면의 X축 50% */
   transform: translateX(0);  /* 💡 필요 시 조절 가능 (기준이 왼쪽이면 0) */
-  margin:1.1rem;
+  margin:1rem;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  line-height: 1.05rem;
+  line-height: 1rem;
   font-family: "ten-oldstyle", serif;
   font-size:0.8rem;
   color: rgb(103, 103, 103);
@@ -96,24 +96,13 @@ html, body {
   font-size: 0.7rem;
   color: rgb(156, 156, 156);
   position: relative;
-  gap: 0px;
 }
 
-.work5{
+.main img {
   display: block;
   margin: 0;
   max-width: 100%;
   height: auto;
-  gap: 0;
-}
-
-.work img {
-  display: block;
-  margin: 0;
-  max-width: 100%;
-  height: auto;
-  gap: 0;
-  
 }
 
 .caption {
@@ -142,10 +131,6 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  #layout {
-    gap: 5px;
-  }
-  
   .container {
     display: block;
   }
@@ -153,7 +138,7 @@ a:hover {
   .main{
     display: flex;
     flex-direction: column;
-    margin-left: 11vw; 
+    margin-left: 5vw; 
   }
   .work img {
     display: block;
