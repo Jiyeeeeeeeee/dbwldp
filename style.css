@@ -20,7 +20,7 @@ html, body {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  margin:1rem;
+  margin:0.7rem;
   font-family: "ten-oldstyle", serif;
   color: rgb(103, 103, 103);
   background-color: rgb(234, 234, 234);
@@ -78,9 +78,9 @@ html, body {
 
 .main { 
   position: absolute;
-  left:50vw;                /* 💡 화면의 X축 50% */
+  left:47vw;                /* 💡 화면의 X축 50% */
   transform: translateX(0);  /* 💡 필요 시 조절 가능 (기준이 왼쪽이면 0) */
-  margin:1rem;
+  margin:0.7rem;
   display: flex;
   flex-direction: column;
   gap: 16px;
