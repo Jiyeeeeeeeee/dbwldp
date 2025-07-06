@@ -17,6 +17,7 @@ body {
 @media (max-width: 600px) {
   .profile {
     width: 60vw; 
+    height: auto;
     transform: rotate(4deg);
   }
 }
