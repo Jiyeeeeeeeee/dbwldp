@@ -111,19 +111,19 @@
 body {
   margin: 10px 20px;
   height: 100vh;
-  background-color: #f5f5f5; 
-  gap: 12px;
+  background-color: #f3f3f3; 
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 header {
   position: sticky;   /* 화면 상단에 고정 */
   width: 100%;       /* 화면 전체 너비 */
-  background-color:  #f5f5f5; /* 배경색 (투명 방지) */
+  background-color: #f3f3f3;  /* 배경색 (투명 방지) */
   display: flex;     /* 좌우 정렬 */
-  padding: 0px 0px; /* 여백 */
+  padding: 0px; /* 여백 */
   z-index: 1000;     /* 다른 요소보다 위에 표시 */
   color: rgb(49, 49, 49);
+  line-height: 1;
   
   grid-column: 1 / -1; 
   display: grid; 
@@ -131,7 +131,8 @@ header {
 
   font-family: "Prompt", sans-serif;
   font-weight: 100;
-  font-size: 0.35rem;
+  font-size: 0.73rem;
+  font-weight: 700;
   font-style: normal;
 
   border-bottom: 0.7px solid rgb(182, 182, 182);
@@ -150,7 +151,7 @@ main {
   display: grid;
   padding-top: 9px;
   grid-template-columns: repeat(12, 1fr);
-  gap: 12px;
+  gap: 9px;
   font-family: "Prompt", sans-serif;
   font-weight: 700;
   font-size: 0.73rem;
