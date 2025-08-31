@@ -1,162 +1,52 @@
-/*.prompt-thin {
-  font-family: "Prompt", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.prompt-extralight {
-  font-family: "Prompt", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.prompt-light {
-  font-family: "Prompt", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.prompt-regular {
-  font-family: "Prompt", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.prompt-medium {
-  font-family: "Prompt", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.prompt-semibold {
-  font-family: "Prompt", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.prompt-bold {
-  font-family: "Prompt", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.prompt-extrabold {
-  font-family: "Prompt", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.prompt-black {
-  font-family: "Prompt", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.prompt-thin-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 100;
-  font-style: italic;
-}
-
-.prompt-extralight-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.prompt-light-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.prompt-regular-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.prompt-medium-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-}
-
-.prompt-semibold-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.prompt-bold-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.prompt-extrabold-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 800;
-  font-style: italic;
-}
-
-.prompt-black-italic {
-  font-family: "Prompt", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-*/
-
-
 body {
-  margin: 10px 20px;
-  height: 100vh;
-  background-color: #f3f3f3; 
-  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-header {
-  position: sticky;   /* 화면 상단에 고정 */
-  width: 100%;       /* 화면 전체 너비 */
-  background-color: #f3f3f3;  /* 배경색 (투명 방지) */
-  display: flex;     /* 좌우 정렬 */
-  padding: 0px; /* 여백 */
-  z-index: 1000;     /* 다른 요소보다 위에 표시 */
-  color: rgb(49, 49, 49);
-  line-height: 1;
-  
-  grid-column: 1 / -1; 
-  display: grid; 
-  grid-template-columns: repeat(12, 1fr);
+  margin: 15px 20px;
+  background-color: #ffffff; 
 
   font-family: "Prompt", sans-serif;
   font-weight: 100;
-  font-size: 0.73rem;
+  font-size: 0.8rem;
   font-weight: 700;
   font-style: normal;
-
-  border-bottom: 0.7px solid rgb(182, 182, 182);
 }
 
-.yoojiye {
-  grid-column: span 4;
+.header {
+  display: flex;
+  flex-direction: column; /* 세로로 나열 */
+  width: 100%;    
+  background-color: #ffffff;
+
+  z-index: 1000;     /* 다른 요소보다 위에 표시 */
+}
+.header-1 p, .header-2 p {
+  color: rgb(0, 0, 0);
+  line-height: 2.5;  /* 글자와 줄 사이 여백 최소화 */
+  margin: 0;       /* p 태그 기본 margin 제거 */
 }
 
-/* works = 8단 */
-.works {
-  grid-column: span 8;
+.header-1 {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding-bottom: 5px;
+}
+
+.header-2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);           /* ABOUT ↔ CONTACT 사이 간격 */
+  border-bottom: 1px solid rgb(0, 0, 0);
+  padding: 5px 0px 5px 0px;
+  line-height: 1.3rem;
+}
+
+.header-2-en{
+  grid-column: 5/12;
+
 }
 
 main {
+  min-height: 100vh;   
   display: grid;
-  padding-top: 9px;
+  padding-top: 5px;
   grid-template-columns: repeat(12, 1fr);
-  gap: 9px;
-  font-family: "Prompt", sans-serif;
-  font-weight: 700;
-  font-size: 0.73rem;
-  font-style: normal;
-
+  gap: 3px;
 }
 
 .image{
@@ -169,30 +59,25 @@ main {
   display: block;    /* 여백 제거 */
 }
 
-.paragraph{
+.content{
   grid-column: span 8;
+}
+
+.content-1{
   display:grid;                     
   grid-template-columns:repeat(4,1fr); 
-  color: rgb(49, 49, 49);
+  color: rgb(0, 0, 0);
+  padding-bottom: 10px;
 }
 
-/*body {
-  margin: 0;
-  height: 100vh;
-  background-color: #e4e4e4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.content-2 {
+  color: rgb(87, 87, 87);
 }
 
-.profile {
-  width: 30vw;      
-  height: auto;
-  object-fit: cover;
-  transform: rotate(4deg);
-}*/
-
-@media (max-width: 600px) {
+.numbering {
+  align-self: end; 
+}
+/* @media (max-width: 600px) {
   .profile {
     width: 60vw; 
     height: auto;
