@@ -56,17 +56,23 @@
   padding-bottom: 10px;
 }
 
-.container-1{
+
+.container {
+  display:grid;
+  grid-column: span 12;
+
+}
+
+.info-container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.empty-container{
   grid-column: span 4;
 }
 
-.image img {
-  max-width: 100%;   /* 부모(.image) 너비 안에서만 표시 */
-  height: auto;      /* 비율 유지 */
-  display: block;    /* 여백 제거 */
-}
-
-.container-2{
+.text-container{
   grid-column: span 8;
   display:flex;
   flex-direction: column;
@@ -86,6 +92,25 @@
   color: rgb(195, 195, 195);
   line-height: 1rem;
 }
+
+.scroll-container{
+  display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+}
+
+.scroll-container .image {
+  flex: 0 0 auto; 
+}
+
+.scroll-container .image img {
+  display: block;    /* 여백 제거 */
+  width: 450px;
+  height: auto;      /* 비율 유지 */
+}
+
+
 
 /* @media (max-width: 600px) {
   .profile {
