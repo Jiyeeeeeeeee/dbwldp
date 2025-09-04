@@ -22,8 +22,7 @@
 }
 
 .header-1, .header-2 {
-  flex: 1; /* 50% 차지 */
-  display: flex;
+  flex: 1;
 }
 
 .header-2 {
@@ -68,10 +67,13 @@
 
 .content-1{
   display:flex;
-  color:black;
 }
 
 .content-1-r, .content-1-l{
+  flex:1;
+}
+
+.title {
   flex:1;
 }
 
@@ -79,14 +81,12 @@
   display:flex;
   justify-content: space-between;
 }
-.title {
-  flex:1;
-}
 
 .content-2 {
   display:flex;
   justify-content: space-between;
 }
+
 
 .scroll-container{
   display: flex;
