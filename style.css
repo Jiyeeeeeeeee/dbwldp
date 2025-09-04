@@ -5,14 +5,14 @@
   font-size: 0.8rem;
   font-weight: 700;
   font-style: normal;
-  padding: 1rem;
+  padding: 0.75rem;
   height: 100%;
   box-sizing: border-box;
 }
 
 .header {
   display: flex;
-  flex-direction: column; /* 세로로 나열 */
+  flex-direction: row; /* 세로로 나열 */
   width: 100%;    
   background-color: #ffffff;
   position: sticky;
