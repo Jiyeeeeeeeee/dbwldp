@@ -3,7 +3,7 @@
   font-family: "Prompt", sans-serif;
   font-weight: 100;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   padding: 0.75rem;
   height: 100%;
@@ -12,32 +12,27 @@
 
 .header {
   display: flex;
-  flex-direction: row; /* 세로로 나열 */
+  flex-direction: row;
   width: 100%;    
   background-color: #ffffff;
   position: sticky;
   top:0;
   left:0;
-
   color: rgb(0, 0, 0);
-  line-height: 2.5;  /* 글자와 줄 사이 여백 최소화 */
 }
 
-.header-1 {
-  border-bottom: 1px solid rgb(0, 0, 0);
+.header-1, .header-2 {
+  flex: 1; /* 50% 차지 */
+  display: flex;
 }
 
 .header-2 {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);           /* ABOUT ↔ CONTACT 사이 간격 */
-  border-bottom: 1px solid rgb(0, 0, 0);
-  padding: 5px 0px 5px 0px;
-  line-height: 1.3rem;
+  display: flex;
+  flex-direction: row;
 }
 
-.header-2-en{
-  grid-column: 5/12;
-
+.about, .contact {
+  flex:1;
 }
 
 #main {
@@ -52,45 +47,45 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap:3px;
-  border-bottom: 1px solid rgb(0, 0, 0);
   padding-bottom: 10px;
 }
-
 
 .container {
   display:grid;
   grid-column: span 12;
-
 }
 
-.info-container{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+.content-1-2 {
+  display: flex;
+  width: 100%; /* 50% 차지 */
+  padding-top:1.5rem;
+  padding-bottom:1rem;
 }
 
-.empty-container{
-  grid-column: span 4;
-}
-
-.text-container{
-  grid-column: span 8;
-  display:flex;
-  flex-direction: column;
-  height:100%;
-  justify-content: space-between;
+.content-1, .content-2 {
+  flex:1;
 }
 
 .content-1{
   display:flex;
   color:black;
+}
+
+.content-1-r, .content-1-l{
+  flex:1;
+}
+
+.content-1-r{
+  display:flex;
   justify-content: space-between;
-  padding-top: 4px;
-  padding-bottom: 10px;
+}
+.title {
+  flex:1;
 }
 
 .content-2 {
-  color: rgb(195, 195, 195);
-  line-height: 1rem;
+  display:flex;
+  justify-content: space-between;
 }
 
 .scroll-container{
@@ -119,4 +114,3 @@
     transform: rotate(4deg);
   }
 }
-  
