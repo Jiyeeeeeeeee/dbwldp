@@ -5,19 +5,38 @@
   font-size: 0.8rem;
   font-weight: 400;
   font-style: normal;
-  padding: 0.75rem;
+  padding-top: 0;
+  padding-top: 0;   /* 위쪽 패딩만 0 */
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
   height: 100%;
   box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  /*text-decoration: underline;*/
+  color: gray;
+}
+
+.header-wrapper {
+  background-color: #ffffff;
+  position: sticky;
+  top:0;
+  left:0;
+  display: flex;
+  padding-top: 0.75rem;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   width: 100%;    
-  background-color: #ffffff;
-  position: sticky;
-  top:0;
-  left:0;
   color: rgb(0, 0, 0);
 }
 
@@ -46,7 +65,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap:3px;
-  padding-bottom: 10px;
+  padding-bottom: 0.75rem;
 }
 
 .container {
@@ -55,38 +74,37 @@
 }
 
 .content-1-2 {
-  display: flex;
-  width: 100%; /* 50% 차지 */
-  padding-top:1.5rem;
-  padding-bottom:1rem;
+    display: grid;  
+    grid-column: span 12;
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 1.5rem;
 }
 
-.content-1, .content-2 {
-  flex:1;
+.content-1 {
+    display: grid;  
+    grid-column: span 6;
+    grid-template-columns: repeat(6, 1fr);
 }
 
-.content-1{
-  display:flex;
+.content-2 {  
+    grid-column: span 6;
 }
 
-.content-1-r, .content-1-l{
-  flex:1;
-}
-
-.title {
-  flex:1;
+.content-1-l{
+  display: flex;  
+  grid-column: span 3;
 }
 
 .content-1-r{
-  display:flex;
+  display: flex;  
+  grid-column: span 3;   
   justify-content: space-between;
+  padding-right: 0.75rem;
 }
 
-.content-2 {
-  display:flex;
-  justify-content: space-between;
+.description{
+    line-height:1rem ;
 }
-
 
 .scroll-container{
   display: flex;
@@ -107,10 +125,19 @@
 
 
 
-/* @media (max-width: 600px) {
-  .profile {
-    width: 60vw; 
-    height: auto;
-    transform: rotate(4deg);
+@media (max-width: 600px) {
+
+  .content-1 {
+    display: flex;
+    flex-direction: column; /* 세로 쌓기 */
+  }
+
+  .content-1-l,
+  .content-1-r {
+    display:flex;
+    flex-direction: column;   
+  }
+  .title {
+    line-height:1rem ;
   }
 }
