@@ -84,11 +84,15 @@ a:hover{
     display: grid;  
     grid-column: span 6;
     grid-template-columns: repeat(6, 1fr);
+    
 }
 
 .content-2 {  
     grid-column: span 6;
+    line-height: 1.2rem;
+    word-break:keep-all;
 }
+
 
 .content-1-l{
   display: flex;  
@@ -105,7 +109,6 @@ a:hover{
 .about-p{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;   
   }
 
 .scroll-container{
