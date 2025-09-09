@@ -102,9 +102,11 @@ a:hover{
   padding-right: 0.75rem;
 }
 
-.description{
-    line-height:1rem ;
-}
+.about-p{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;   
+  }
 
 .scroll-container{
   display: flex;
@@ -123,8 +125,6 @@ a:hover{
   height: auto;      /* 비율 유지 */
 }
 
-
-
 @media (max-width: 600px) {
 
   .content-1 {
@@ -140,4 +140,5 @@ a:hover{
   .title {
     line-height:1rem ;
   }
+
 }
