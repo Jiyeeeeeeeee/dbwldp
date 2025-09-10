@@ -1,6 +1,8 @@
+
+
 #body {
   background-color: #ffffff; 
-  font-family: "Prompt", sans-serif;
+  font-family: "inconsolata", sans-serif;
   font-weight: 100;
   font-size: 0.8rem;
   font-weight: 400;
@@ -78,21 +80,29 @@ a:hover{
     grid-column: span 12;
     grid-template-columns: repeat(12, 1fr);
     padding-top: 1.5rem;
+    align-items: baseline;  
 }
 
 .content-1 {
     display: grid;  
     grid-column: span 6;
     grid-template-columns: repeat(6, 1fr);
-    
 }
 
 .content-2 {  
     grid-column: span 6;
-    line-height: 1.2rem;
-    word-break:keep-all;
+    word-break:keep-all;;
 }
 
+.description [lang="kr"] {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5rem;
+}
+
+.description [lang="en"] {
+  line-height: 1.2rem;
+  font-size: 0.85rem;
+}
 
 .content-1-l{
   display: flex;  
@@ -103,13 +113,15 @@ a:hover{
   display: flex;  
   grid-column: span 3;   
   justify-content: space-between;
-  padding-right: 0.75rem;
+  padding-right: 1rem;
 }
 
 .about-p{
     display: flex;
     flex-direction: column;
-  }
+    gap: 0.5rem;
+    font-family: "Noto Sans KR", sans-serif;
+}
 
 .scroll-container{
   display: flex;
