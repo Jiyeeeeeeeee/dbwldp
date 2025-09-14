@@ -1,19 +1,10 @@
-@font-face{
-  font-family: "FifteenTwenty-Bold";
-  src:
-    local("FifteenTwenty-Bold"),
-    /* 있으면 woff2 먼저, 없으면 otf만 둬도 됨 */
-    url("./fonts/FifteenTwenty-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 
 #body {
-  background-color: #ffffff; 
+  background-color: #efefef; 
+  font-family: "Crimson Pro", serif;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 400;
   font-style: normal;
   padding-top: 0;
@@ -36,7 +27,7 @@ a:hover{
 }
 
 .header-wrapper {
-  background-color: #ffffff;
+  background-color: #efefef; 
   position: sticky;
   top:0;
   left:0;
@@ -111,7 +102,7 @@ a:hover{
 
 .description [lang="en"] {
   line-height: 1.15rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .content-1-l{
