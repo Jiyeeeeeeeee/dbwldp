@@ -47,7 +47,7 @@
   flex-direction: row;
 }
 
-.about, .contact {
+.index-about, .contact {
   flex:1;
 }
 
@@ -95,12 +95,14 @@ a:hover{
     grid-template-columns: repeat(12, 1fr);
     padding-top: 1.5rem;
     align-items: flex-start;  
+    position: relative;
 }
 
 .content-1 {
     display: grid;  
     grid-column: span 6;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);  
+    position:sticky;
 }
 
 .content-2 {  
@@ -114,10 +116,9 @@ a:hover{
 }
 
 .title {
-  position:sticky;
   font-style: italic;
-  display: inline-block;     /* 글자 크기에 맞는 박스 */
-  background-color:  #f9faff;  /* 원하는 배경색 */
+  display: inline;     /* 글자 크기에 맞는 박스 */
+  background-color: #f9faff;  /* 원하는 배경색 */
 }
 
 .description [lang="kr"] {
@@ -197,25 +198,22 @@ a:hover{
     flex-direction: column; /* 세로 쌓기 */
   }
 
-  .content-1-l,
-  .content-1-r {
-    display:flex;
-    flex-direction: column;   
-  }
-  .title {
-    line-height:1rem ;
-  }
-
   .content-about {  
     grid-column: span 12;
     word-break:keep-all;
   }  
 
-  .about {
+  .about{
     display: flex;
     flex-direction: row;
     gap: 1rem;
   
+  }
+
+  .title {
+    font-style: italic;
+    display: inline;     /* 글자 크기에 맞는 박스 */
+    background-color: #f9faff;  /* 원하는 배경색 */
   }
 
   .scroll-container{
