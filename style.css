@@ -121,11 +121,21 @@ a:hover{
   background-color: #f9faff;  /* 원하는 배경색 */
 }
 
+.description-kr {
+  display: grid;  
+  grid-column: span 6;
+  grid-template-columns: repeat(2, 1fr);  
+}
+
+.description {
+  gap:2rem;
+}
+
 .description [lang="kr"] {
-  font-family: "agchoijeongho-screen", sans-serif;
-  letter-spacing: 10em;
+  font-family: "pretendard", sans-serif;
   font-size: 0.75rem;
-  line-height: 1.3rem;
+  line-height: 1rem;
+  color: rgb(182, 188, 15);
 }
 
 .description [lang="en"] {
