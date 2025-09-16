@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'BookkMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BookkMyungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
 #body {
   background-color: #f9faff; 
-  font-family: "minion-pro", serif;;
-  font-weight: 400;
-  font-size: 1rem;
+  font-family: "minion-pro", serif;
+  font-size: 1.1rem;
   font-weight: 400;
   font-style: normal;
   padding-top: 0;   /* 위쪽 패딩만 0 */
@@ -118,7 +131,7 @@ a:hover{
 
 .content-about {  
   grid-column: span 4;
-  word-break:keep-all;;
+  word-break:keep-all;
 }
 
 .about-flex {
@@ -134,10 +147,6 @@ a:hover{
   gap: 1.2rem;
 }
 
-.about-edu{
-  line-height: 1.3rem;
-}
-
 .title {
   font-style: italic;
   display: inline;     /* 글자 크기에 맞는 박스 */
@@ -150,16 +159,15 @@ a:hover{
   grid-template-columns: repeat(2, 1fr);  
 }
 
-.description [lang="kr"] {
-  font-family: "agchoijeongho-screen", sans-serif;
+/*.description [lang="kr"] {
   font-size: 0.7rem;
   line-height: 1rem;
   color: rgb(172, 172, 172);
-}
+}*/
 
 .description [lang="en"] {
-  line-height: 1.2rem;
-  font-size: 1rem;
+  line-height: 1.4rem;
+  font-size: 1.1rem;
   background-color: #f9faff; /* 원하는 배경색 */
   display: inline; /* 텍스트 영역에만 배경 적용 */
 }
@@ -184,7 +192,8 @@ a:hover{
 }
 
 .about-kr{
-  font-family: "agchoijeongho-screen", sans-serif;
+  font-family: "BookkMyungjo";
+  font-weight: 700;
   letter-spacing: 0.01em;
   font-size: 0.9rem;
   line-height: 1.55rem;
@@ -193,8 +202,12 @@ a:hover{
 }
 
 .about-en{
-  line-height: 1.3rem;
+  line-height: 1.55rem;
   letter-spacing: 0.005em;
+}
+
+.about-edu{
+    line-height: 1.55rem
 }
 
 .about-sns{
