@@ -15,7 +15,7 @@
 #body {
   background-color: #f9faff; 
   font-family: "minion-pro", serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   font-style: normal;
   padding-top: 0;   /* 위쪽 패딩만 0 */
@@ -166,8 +166,8 @@ a:hover{
 }*/
 
 .description [lang="en"] {
-  line-height: 1.4rem;
-  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-size: 1rem;
   background-color: #f9faff; /* 원하는 배경색 */
   display: inline; /* 텍스트 영역에만 배경 적용 */
 }
@@ -202,12 +202,12 @@ a:hover{
 }
 
 .about-en{
-  line-height: 1.55rem;
+  line-height: 1.35rem;
   letter-spacing: 0.005em;
 }
 
 .about-edu{
-    line-height: 1.55rem
+    line-height: 1.35rem
 }
 
 .about-sns{
