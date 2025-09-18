@@ -257,6 +257,17 @@ a:hover{
   object-fit: cover; /* (선택) 이미지가 찌그러지지 않게 */
 }
 
+.source{
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.quotation{
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+
 @media (max-width: 600px) {
 
   .content-1 {
