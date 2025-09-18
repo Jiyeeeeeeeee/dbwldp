@@ -233,6 +233,30 @@ a:hover{
   height: auto;    /* 비율 유지 */
 }
 
+.work-1-cover{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr 0.5fr 1fr); /* 3열 배치 */
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.work-1-cover .image img {
+  display: block;
+  width: 100%;     /* 칸 너비에 맞게 */
+  height: 75vh;    /* 비율 유지 */
+}
+
+.image-vertical {
+  grid-column: span 1; /* 기본 */
+  justify-self: center; /* 가운데 정렬 */
+}
+
+.image-vertical img {
+  height: 75vh;    /* 비율 유지 */
+  width: auto;     /* 비율 유지 위해 가로는 자동 */
+  object-fit: cover; /* (선택) 이미지가 찌그러지지 않게 */
+}
+
 @media (max-width: 600px) {
 
   .content-1 {
