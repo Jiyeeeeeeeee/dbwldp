@@ -159,7 +159,6 @@ a:hover{
 
 .quotation, .source {
   display: inline;     /* 글자 크기에 맞는 박스 */
-  background-color:#f9faff;  /* 원하는 배경색 */
 }
 
 .description-kr {
@@ -217,8 +216,8 @@ a:hover{
 }
 
 .quotation{
-  border-left: 1px solid rgb(214, 214, 214);
-  border-bottom: 1px solid rgb(214, 214, 214);
+  border-left: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
