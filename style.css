@@ -98,6 +98,7 @@ a:hover{
   display:grid;
   grid-column: span 12;
   position: relative;
+  gap:30px
 }
 
 .info-container {
@@ -174,7 +175,7 @@ a:hover{
 }*/
 
 .description [lang="en"] {
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   font-size: 1rem;
   background-color: #f9faff; /* 원하는 배경색 */
   display: inline; /* 텍스트 영역에만 배경 적용 */
@@ -199,7 +200,7 @@ a:hover{
 
 }
 
-.about-kr, .blog-text{
+.about-kr, .blog-text, .about-career{
   font-family: "BookkMyungjo";
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -207,6 +208,19 @@ a:hover{
   line-height: 1.55rem;
   display: flex;
   flex-direction: column;
+}
+
+.about-career-number {
+  font-size: 0.75rem;
+}
+
+.about-career {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-career-name, .about-career-number{
+  flex:1;
 }
 
 .blog-text{
@@ -255,17 +269,10 @@ a:hover{
   height: auto;    /* 비율 유지 */
 }
 
-.work-1-cover{
-  display: grid;
-  grid-template-columns: repeat(1, 1fr 0.5fr 1fr); /* 3열 배치 */
-  padding-left: 200px;
-  padding-right: 200px;
-}
 
 .work-1-cover .image img {
   display: block;
   width: 100%;     /* 칸 너비에 맞게 */
-  height: 75vh;    /* 비율 유지 */
 }
 
 .image-vertical {
