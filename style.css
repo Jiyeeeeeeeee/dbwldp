@@ -1,24 +1,13 @@
-@font-face {
-    font-family: 'BookkMyungjo';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
-    font-weight: 400;
-    font-display: swap;
-}
 
-@font-face {
-    font-family: 'BookkMyungjo';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
-    font-weight: 700;
-    font-display: swap;
-}
+/*body*/
 
 #body, #body-blog {
   background-color: #f9faff; 
-  font-family: "minion-pro", serif;
-  font-size: 1rem;
+  font-family: helvetica-neue-lt-pro, sans-serif;
+  font-size: 0.8rem;
   font-weight: 400;
   font-style: normal;
-  padding-top: 0;   /* 위쪽 패딩만 0 */
+  padding-top: 0; 
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.5rem;
@@ -26,10 +15,7 @@
   box-sizing: border-box;
 }
 
-#body-blog {
-  background-color: #ebebeb; 
-}
-
+/*header*/
 .header-wrapper {
   position: sticky;
   top:0;
@@ -41,31 +27,16 @@
 
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;    
   color: rgb(0, 0, 0);
+  line-height: 1.2rem;
+  gap:2rem;
 }
 
-.header-1, .header-2 {
-  flex: 1;
-}
-
-.header-1 {
-  display: flex;
-  flex-direction: row;
-}
-
-.name, .blog {
-  flex:1;
-}
-
-.header-2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.index-about, .contact {
-  flex:1;
+hr.line {
+  border-top: 1px dotted #000;
+  width: 100%;
 }
 
 a{
@@ -75,9 +46,13 @@ a{
 }
 
 a:hover{
-  /*text-decoration: underline;*/
-  color: #dbdde3;
+  text-decoration: underline;
 }
+
+.link.active {
+  font-weight: bold;
+}
+/*main*/
 
 #main {
   display: grid;
@@ -90,66 +65,37 @@ a:hover{
   grid-column: span 12;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap:3px;
+  gap:2rem;
   padding-bottom: 0.75rem;
-}
-
-.container {
-  display:grid;
-  grid-column: span 12;
-  position: relative;
-  gap:30px
-}
-
-.info-container {
-  position: sticky;
-  top: 20px; /* 상단에서 20px 떨어진 위치에 고정 */
-  align-self: flex-start; /* flexbox 사용시 */
-}
-
-.content-1-2 {
-    display: grid;  
-    grid-column: span 12;
-    grid-template-columns: repeat(12, 1fr);
-    padding-top: 1.5rem;
-    align-items: flex-start;  
-    position: relative;
 }
 
 .content-1 {
     display: grid;  
-    grid-column: span 6;
+    grid-column: span 12;
     grid-template-columns: repeat(6, 1fr);  
     position:sticky;
 }
 
-.content-2 {  
-    grid-column: span 6;
-    word-break:keep-all;;
-}
-
-.content-blank {
-    display: grid;  
-    grid-column: span 4;
-    grid-template-columns: repeat(6, 1fr);  
+.container{
+  display: grid;  
+  grid-column: span 12;
+  grid-template-columns: repeat(6, 1fr);  
+  display: flex;
+  flex-direction: column;
+  gap:1.5rem;
+  line-height: 1.2rem;
 }
 
 .content-about {  
-  grid-column: span 4;
-  word-break:keep-all;
+  display: grid;  
+  grid-column: span 12;
+  grid-template-columns: repeat(6, 1fr); 
+  display: flex;
+  flex-direction: column; 
 }
 
-.about-flex {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 100vh; 
-}
-
-.about-info, .blog-scroll {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+.about-info {
+  line-height: 1.2rem;
 }
 
 .title {
@@ -193,36 +139,6 @@ a:hover{
   padding-right: 1rem;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-
-}
-
-.about-kr, .blog-text, .about-career{
-  font-family: "BookkMyungjo";
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  font-size: 0.9rem;
-  line-height: 1.55rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.about-career-number {
-  font-size: 0.75rem;
-}
-
-.about-career {
-  display: flex;
-  flex-direction: row;
-}
-
-.about-career-name, .about-career-number{
-  flex:1;
-}
-
 .blog-text{
   display: flex;
   flex-direction: column;
@@ -235,28 +151,6 @@ a:hover{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.about-en{
-  line-height: 1.35rem;
-  letter-spacing: 0.005em;
-}
-
-.about-edu{
-    line-height: 1.35rem
-}
-
-.about-sns{
-  display: flex;
-  flex-direction: column;
-  gap:0.25rem;
-}
-
-.scroll-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3열 배치 */
-  gap: 20px;
-  padding: 10px;
 }
 
 .scroll-container .image {
