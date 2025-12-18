@@ -8,16 +8,17 @@
   <link rel="stylesheet" href="https://use.typekit.net/rzo0dmu.css">
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
-<script>
-  (function(d) {
-    var config = {
-      kitId: 'rzo0dmu',
-      scriptTimeout: 3000,
-      async: true
-    },
-    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-  })(document);
-</script>
+  <script src="script.js"></script>
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'rzo0dmu',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
 </head>
 
 <body id="body">
@@ -45,12 +46,38 @@
 
   <main id="main">
     <div class="section">
-      <div class="content-0">
-        Directory 
-      </div>
       <div class="content-1">
-        <div class="work-1">
-          <img src="">
+        <div class="content-description">
+          <div class="work-title-date">
+            <div class="work-title">
+              Harakami-Hypnosis
+            </div>
+            <div class="work-date">
+              Dec 2025
+            </div>
+          </div>
+          <div class="work-description">
+            For Rei Harakami. He is a musician who passed away in 2017. 
+            <br>This piece is inspired by his music and
+            dedicated to him.
+          </div>
+        </div>
+        <div class="work-image">
+          <div class="work-1">
+            <img src="rei-1.jpg" class="image">
+          </div>
+          <div class="work-1">
+            <img src="rei-2.jpg" class="image">
+          </div>
+          <div class="work-1">
+            <img src="rei-3.jpg" class="image">
+          </div>
+          <div class="work-1">
+            <img src="rei-4.jpg" class="image">
+          </div>
+          <div class="work-1">
+            <img src="rei-17.jpg" class="image">
+          </div>
         </div>
       </div>
     </div>

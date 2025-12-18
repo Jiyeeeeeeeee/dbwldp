@@ -57,23 +57,54 @@ a:hover{
 #main {
   display: grid;
   padding-top: 5px;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
 .section{
-  grid-column: span 12;
+  grid-column: span 4;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap:2rem;
+  grid-template-columns: repeat(2, 1fr);
   padding-bottom: 0.75rem;
 }
 
 .content-1 {
-    display: grid;  
-    grid-column: span 12;
-    grid-template-columns: repeat(6, 1fr);  
-    position:sticky;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.work-title-date{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.work-title {
+  font-weight: bold;
+}
+
+.content-description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 1rem;
+}
+
+.work-description {
+  line-height: 1rem;
+}
+
+.work-image {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image {
+  width: 100%;     /* 칸 너비에 맞게 */
+  height: auto;    /* 비율 유지 */
+  object-fit: cover; /* (선택) 이미지가 찌그러지지 않게 */
 }
 
 .container{
