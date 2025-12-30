@@ -1,0 +1,298 @@
+@font-face {
+  font-family: 'BookkMyungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+/*body*/
+
+#body {
+  background-color: #f6f6f6;
+  font-family: minion-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  padding: 1.25rem;
+
+  height: auto;
+  /* ✅ 100% 제거 */
+  min-height: 100vh;
+  /* ✅ 화면 높이 기준 */
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+
+  overflow: visible;
+
+
+
+}
+
+.ko {
+  font-family: 'BookkMyungjo', serif;
+  font-weight: 400;
+  font-style: normal;
+
+  word-break: keep-all;
+  /* 단어(어절) 유지 */
+  letter-spacing: -0.015em;
+
+}
+
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*header*/
+
+#header {
+  font-size: 0.9rem;
+
+  grid-column: span 4;
+  gap: 6px;
+
+  position: sticky;
+  top: 1rem;
+  /* body에 padding:1rem 있어서 0 대신 1rem 추천 */
+  z-index: 1000;
+
+  align-self: start;
+}
+
+.header-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  position: static;
+}
+
+.header-1 {
+  grid-column: span 2;
+}
+
+.header-2-3 {
+  grid-column: span 2;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 16px;
+}
+
+.header-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header-3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+}
+
+/*main*/
+
+#main {
+  grid-column: span 12;
+}
+
+.container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.container-1 {
+  grid-column: span 6;
+
+}
+
+.container-1-images {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 4px;
+}
+
+.container-2 {
+  grid-column: span 6;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.035em;
+
+  position: sticky;
+  top: 1rem;
+  /* body에 padding:1rem 있어서 0 대신 1rem 추천 */
+  z-index: 1000;
+  align-self: start;
+}
+
+.container-1 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container-2-description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.container-2-description-en {
+  line-height: 1.35rem;
+  letter-spacing: 0.005rem;
+  font-size: 0.95rem;
+}
+
+.container-2-description-en p {
+  text-indent: 1.75rem;
+}
+
+.container-2-info {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.95rem;
+}
+
+.container-2-info-year {
+  flex: 1;
+}
+
+.container-2-info-type {
+  flex: 1;
+}
+
+/*contact*/
+
+.container-2-contact {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  letter-spacing: 0.005rem;
+  font-size: 0.95rem;
+
+}
+
+.contact-1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25rem;
+}
+
+.contact-2 {
+  flex: 1;
+  display: flex;
+  color: darkgrey;
+}
+
+@media (max-width: 600px) {
+
+  #body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 0.5rem;
+
+    min-height: 100vh;
+    overflow: visible;
+    /* sticky 방해하지 않게 */
+  }
+
+  #header {
+    position: sticky;
+    top: 0;
+    /* ✅ 꼭 숫자! */
+    z-index: 1000;
+    /* ✅ 꼭 값! */
+
+    width: 100%;
+    font-size: 0.95rem;
+
+    background: #f6f6f6;
+
+    padding-top: 0.25rem;
+    /* 선택 */
+    padding-bottom: 0.5rem;
+    /* 선택 */
+  }
+
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* 모바일에서 가로 1:1 */
+    gap: 12px;
+  }
+
+  .header-1,
+  .header-2-3 {
+    flex: 1;
+  }
+
+  .header-2-3 {
+    height: auto;
+    gap: 12px;
+  }
+
+  .header-3 {
+    padding: 1rem;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .container-1,
+  .container-2 {
+    width: 100%;
+  }
+
+  .container-2 {
+    position: static;
+    height: auto;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    letter-spacing: -0.02em;
+  }
+
+  .container-2-description-en {
+    line-height: 1.35rem;
+    letter-spacing: 0.005rem;
+    font-size: 0.95rem;
+  }
+
+  .container-2-description-en p {
+    text-indent: 1.75rem;
+  }
+
+  .container-2-info {
+    margin-top: auto;
+  }
+}
