@@ -157,6 +157,15 @@ a:hover {
 
 }
 
+.container-2-description-ko {
+  font-family: 'BookkMyungjo', serif;
+  font-weight: 300;
+
+  word-break: keep-all;
+  letter-spacing: -0.015em;
+  line-height: 1.6rem;
+}
+
 .container-2-description-en {
   line-height: 1.35rem;
   letter-spacing: 0.005rem;
@@ -213,7 +222,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    padding-top: 0.5rem;
+    padding: 0.5rem;
 
     min-height: 100vh;
     overflow: visible;
