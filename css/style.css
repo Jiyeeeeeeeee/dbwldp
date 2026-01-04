@@ -166,6 +166,7 @@ a:hover {
   line-height: 1.6rem;
 }
 
+
 .container-2-description-en {
   line-height: 1.35rem;
   letter-spacing: 0.005rem;
@@ -181,13 +182,24 @@ a:hover {
   display: flex;
   flex-direction: row;
   font-size: 0.95rem;
+
+  font-family: minion-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
-.container-2-info-year {
+.container-2-info span[lang="ko"] {
+  font-family: 'BookkMyungjo', serif;
+    font-size: 0.85rem;
+      word-break: keep-all;
+}
+
+.container-2-info-1 {
   flex: 1;
 }
 
-.container-2-info-type {
+.container-2-info-2 {
   flex: 1;
 }
 
