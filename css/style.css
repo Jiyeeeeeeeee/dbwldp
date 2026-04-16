@@ -343,7 +343,7 @@ main {
 .detail-quote {
   margin: 0;
   padding-left: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
   white-space: pre-line;
   text-decoration: none;
 }
@@ -401,6 +401,7 @@ main {
   flex-direction: column;
   gap: 8px;
   padding-top: 2px;
+  font-weight: 700;
 }
 
 .detail-contact-line {
@@ -480,7 +481,7 @@ main.is-image-mode {
     --footer-height: 22px;
     --grid-gap: 8px;
     --image-gap: 4px;
-      --main-top-gap: 20px;
+      --main-top-gap: 38px;
   }
 
   .detail-panel {
@@ -494,30 +495,6 @@ main.is-image-mode {
     overflow-y: auto;
     overflow-x: hidden;
     padding-bottom: 24px;
-  }
-
-.mobile-back-button {
-  display: none;
-  position: sticky;
-  top: 6px;
-  z-index: 101;
-  border: none;
-  background: transparent;
-  font: inherit;
-  color: inherit;
-  text-align: left;
-  cursor: pointer;
-  padding: 0.75rem 0 1rem 0;
-  font-size: 0;
-}
-  .mobile-back-button::before {
-    content: "←";
-    font-size: 1rem;
-    line-height: 1;
-  }
-
-  .mobile-back-button.is-visible {
-    display: block;
   }
 
   .page-grid {
@@ -566,6 +543,7 @@ main.is-image-mode {
   .detail-panel {
     height: 100%;
     min-height: 0;
+
   }
 
   .detail-content {
@@ -574,6 +552,7 @@ main.is-image-mode {
     overflow-y: auto;
     overflow-x: hidden;
     padding-bottom: 24px;
+
   }
 
   .detail-entry {
@@ -597,6 +576,10 @@ main.is-image-mode {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: 16px;
     row-gap: 20px;
+  }
+
+    .detail-content {
+    padding-right: 0;
   }
 
   .detail-text {

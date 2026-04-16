@@ -21,8 +21,8 @@ const projects = [
       }
     },
     description: {
-      ko: "to be updated.",
-      en: "to be updated."
+      ko: "To be updated.",
+      en: "To be updated."
     },
     images: [
       { src: "images/tshirt-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
@@ -40,10 +40,6 @@ const projects = [
       ko: "To be updated.",
       en: "To be updated."
     },
-    image: {
-      src: "images/project-1.jpg",
-      alt: { ko: "", en: "" }
-    }
   },
   {
     id: "project-3",
@@ -54,30 +50,26 @@ const projects = [
       ko: {
         year: "2025",
         size: "130×200 mm",
-        /*production: "인터프로프린트",*/
-        /*paper: "백색 모조지",*/
-        printing: "인디고 1도 인쇄",
-        /*pages: "44p"*/
+        printing: "인디고 1도 인쇄"
       },
       en: {
         year: "2025",
         size: "130×200 mm",
-        /*production: "Interpro Print",*/
-        /*paper: "White woodfree paper",*/
-        printing: "Indigo 1-color printing",
-        /*pages: "44p"*/
+        printing: "Indigo 1-color printing"
       }
     },
     description: {
-      ko: `> 따라서 읽기는 쓰기 후에 일어나는 행위이다. 보다 겸손하고, 보다 거슬리지 않고, 보다 지적인 행위.
-      — 불한당의 세계사, 호르헤 루이스 보르헤스, 민음사, 1994
+      ko: `아래는 보르헤스의 「불한당의 세계사」 프롤로그 속 마지막 문장이다. 
 
-보르헤스의 <불한당의 세계사> 프롤로그 속 마지막 문장으로, 읽기는 쓰기 전 선행되는 — 어쩌면 쓰기보다 더 겸손할지 모르는 — 행위이다. 선조들은 읽고자 하는 겸손한 행위를 참지 못하고 다양한 읽기 도구를 만들었다. 자고로 겸손하게 읽힌 글들은 겸손하지 못한 수집욕을 자극하는 법. 지난 한 달 동안 읽은 18개의 글을 아카이빙한 진이자 한 권의 책을 만들었다. 글자의 형태를 띄지 않은, 가령 분위기, 수, 마음 같은 고도의 술수를 요구하는 것들은 수집에 포함하지 않았다.`,
+      > 따라서 읽기는 쓰기 후에 일어나는 행위이다. 보다 겸손하고, 보다 거슬리지 않고, 보다 지적인 행위.
+— 호르헤 루이스 보르헤스, 『불한당의 세계사』, 민음사, 1994
+
+읽기는 쓰기 전 선행되는 — 어쩌면 쓰기보다 더 겸손할지 모르는 — 행위이다. 선조들은 읽고자 하는 겸손한 행위를 참지 못하고 다양한 읽기 도구를 만들었다. 자고로 겸손하게 읽힌 글들은 겸손하지 못한 수집욕을 자극하는 법. 지난 한 달 동안 읽은 18개의 글을 아카이빙한 진이자 한 권의 책을 만들었다. 글자의 형태를 띄지 않은, 가령 분위기, 수, 마음 같은 고도의 술수를 요구하는 것들은 수집에 포함하지 않았다.`,
       en: "To be updated."
     },
     images: [
       { src: "images/reading-2.png", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
-      { src: "images/reading-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+      { src: "images/reading-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } }
     ]
   },
   {
@@ -113,20 +105,20 @@ const projects = [
 > 우리는 도서관이나 기록관의 ‘중립성’이라는 신화를 거부하기 때문에,
 > 이용자, 기관, 창작자, 기증자, 그리고 공동체에 대해 책임을 져야 한다고 믿는다.
 
-지난 4월, 더북소사이어티의 웹사이트에는 진을 다루는 사서와 아키비스트로서 지녀야할 태도를 이야기하는 [진 라이브러리언 윤리 강령](https://thebooksociety.org/)이 게재되었다. 서문에 나오는 진의 가치는 25년 9월부터 지금까지 이어져 오고 있는 [⌜서신교환⌟](https://www.instagram.com/exchange.papers/)을 지속하고 있는 이유를 설명하기에 충분했다.
+지난 4월, 더북소사이어티의 웹사이트에는 진을 다루는 사서와 아키비스트로서 지녀야할 태도를 이야기하는 [진 라이브러리언 윤리 강령](https://thebooksociety.org/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170698456&t=board)이 게재되었다. 서문에 나오는 진의 가치는 25년 9월부터 지금까지 이어져 오고 있는 [⌜서신교환⌟](https://www.instagram.com/exchange.papers/)을 지속하고 있는 이유를 설명하기에 충분했다.
 
-> 사람들은 동료를 찾기 위해 출판한다! 
-— One publishes to find comrades / Andre Breton, Les Pas Perdus, 1924
+> 사람들은 동료를 찾기 위해 출판한다!
+— Andre Breton, Les Pas Perdus, 1924
 
-18세기 후반, 정치적, 종교적 메시지를 전달하는 매체로서의 진은 자유로운 창작과 배포가 이루어지는 네트워크를 형성했고, 20세기 후반에 들어 점차 개인의 정체성이나 관심사, 경험을 표현하는 사소하고, 개별적인 성향을 띈다. 이제 무얼 진이라 부를 수 있을까? 판형이 작은 중철 제본 또는 무선제본으로 이루어진 책? ISBN이 없는 책? 개인적인 성향 또는 정치적인 메시지가 담긴 책? 제작부터 유통까지 스스로 진행한 책? 모조지로 만들어진 책? 제작 권수가 100부 이내인 책? 가정용 프린터로 만들어진 책? 진은 혼란스럽다. 
+18세기 후반, 정치적, 종교적 메시지를 전달하는 매체로서의 진은 자유로운 창작과 배포가 이루어지는 네트워크를 형성했고, 20세기 후반에 들어 점차 개인의 정체성이나 관심사, 경험을 표현하는 사소하고, 개별적인 성격을 띈다. 무얼 진이라 부를까? 중철 또는 무선제본으로 이루어진 책? ISBN이 없는 책? 개인적인 성향 또는 정치적인 메시지가 담긴 책? 제작부터 유통까지 스스로 진행한 책? 모조지로 만들어진 책? 제작 권수가 100부 이내인 책? 가정용 프린터로 만들어진 책? 진은 여러모로 혼란스럽다.
 
 > 진이라는 단어를 들었을 때 떠올리는 이미지는 각자의 경험에 따라 크게 다를 수 있다. 이러한 일반화의 어려움, 다양성, 혼돈 자체가 진의 본질이라고도 할 수 있다.
-— 한국 진 문화의 지형도 그리기, 한지은, 홍익대학교 석사 논문, 2026
+— 한지은, 「한국 진 문화의 지형도 그리기」, 홍익대학교 석사 논문, 2026
 
-그럼에도 사라지기는 커녕 여전히 지속되고 있는 이유라 함은 진은 하나로 정의 내릴 수 없는 혼돈이자 좋아하는 것을 동료들과 나누기 위해 기꺼이 만드는 실천이라는 불변의 태도이기 때문일 것이다. 이러한 태도는 더 이상의 화이트 큐브를 필요로 하지 않는다.
+그럼에도 사라지기는 커녕 여전히 지속되고 있는 이유는 진이 하나로 정의 내릴 수 없는 혼돈이자 좋아하는 것을 동료들과 나누기 위해 기꺼이 만드는 실천이라는 불변의 태도이기 때문일 것이다. 이러한 태도 앞에서 더 이상의 화이트 큐브는 필요하지 않다.
 
-작년 여름과 가을, 강렬하고 빠른 bpm의 전자음악이 아닌 차분하고 느린, 엠비언트에 가까운 음악을 찾았고, 일본의 전자 음악가 레이 하라카미를 그 시기에 알게 되었다. 서신교환의 첫 활동으로 하라카미의 측근과 진행한 인터뷰 전문의 한국어 번역과 그의 음악에 대한 나의 생각과 사랑을 담은 팬진을 만들고자 했다. 의지가 무색하게 작년 중 가장 바빴던 시기와 서신교환의 활동 시기가 맞물려 진에 담긴 내용과 이미지 모두 구글에서 가져와 구색만 겨우 갖춘 책자가 되었지만 무언가를 만들고, 나누고자 하는 마음 하나면 완성 여부나 퀄리티는 중요하지 않은 것이 진의 정신이다.  `,
-      en: `To be updated.`
+작년 여름과 가을, 강렬하고 빠른 bpm의 전자음악이 아닌 차분하고 느린, 엠비언트에 가까운 음악을 찾았고, 일본의 전자 음악가 레이 하라카미를 그 시기에 알게 되었다. 서신교환의 첫 활동으로 하라카미의 측근과 진행한 인터뷰 전문의 한국어 번역과 그의 음악에 대한 나의 생각과 사랑을 담은 팬진을 만들고자 했다. 의지가 무색하게 작년 중 가장 바빴던 시기와 서신교환의 활동 시기가 맞물려 진에 담긴 내용과 이미지 모두 구글에서 가져와 구색만 겨우 갖춘 책자가 되었지만 무언가를 만들고, 나누고자 하는 마음 하나면 완성 여부나 퀄리티는 중요하지 않은 것이 진의 정신이다.`,
+      en: "To be updated."
     },
     images: [
       { src: "images/rei-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
@@ -143,11 +135,7 @@ const projects = [
     description: {
       ko: "To be updated.",
       en: "To be updated."
-    },
-    /*image: {
-      src: "images/project-3.jpg",
-      alt: { ko: "진 프로젝트 이미지", en: "Zine project image" }
-    }*/
+    }
   }
 ];
 
@@ -181,9 +169,11 @@ const contactButton = document.getElementById("contact-button");
 const footerContactButton = document.getElementById("footer-contact-button");
 const indexPanel = document.querySelector(".index-panel");
 const detailPanel = document.querySelector(".detail-panel");
-const mobileBackButton = document.getElementById("mobile-back-button");
 const mainElement = document.querySelector("main");
 
+function isMobileView() {
+  return window.matchMedia("(max-width: 900px)").matches;
+}
 
 function updateLayoutMode() {
   const isHome = currentMode === "home";
@@ -198,17 +188,7 @@ function updateLayoutMode() {
 
   detailPanel.classList.toggle("is-full", isImage);
   detailPanel.classList.toggle("has-border", !isHome && !isImage);
-
-  const shouldShowMobileBack =
-    isMobileView() && currentMode === "project";
-
-  mobileBackButton?.classList.toggle("is-visible", shouldShowMobileBack);
-
   mainElement?.classList.toggle("is-image-mode", isImage);
-}
-
-function isMobileView() {
-  return window.matchMedia("(max-width: 900px)").matches;
 }
 
 function wrapByLang(text, lang) {
@@ -254,23 +234,24 @@ function parseDescription(text = "") {
 
       const sourceLine = quoteLines.find((line) => line.startsWith("—"));
       const quoteOnlyLines = quoteLines.filter((line) => !line.startsWith("—"));
-
-     const sourceText = sourceLine || "";
-
-      const isListQuote = quoteLines.length > 1;
+      const sourceText = sourceLine || "";
+      const isListQuote = quoteOnlyLines.length > 1;
 
       if (isListQuote) {
         return `
-  <blockquote class="detail-quote" lang="${currentLang}">
-    ${replaceLinks(escapeHtml(quoteOnlyLines.join("\n")))}
-    ${sourceText ? `<div class="detail-quote-source">${replaceLinks(escapeHtml(sourceText))}</div>` : ""}
-  </blockquote>
-`;
+          <blockquote class="detail-quote detail-quote-list" lang="${currentLang}">
+            <ul>
+              ${quoteOnlyLines.map((line) => `<li>${replaceLinks(escapeHtml(line))}</li>`).join("")}
+            </ul>
+            ${sourceText ? `<div class="detail-quote-source">${replaceLinks(escapeHtml(sourceText))}</div>` : ""}
+          </blockquote>
+        `;
       }
 
       return `
         <blockquote class="detail-quote" lang="${currentLang}">
-          ${replaceLinks(escapeHtml(quoteLines[0] || ""))}
+          ${replaceLinks(escapeHtml(quoteOnlyLines.join("\n")))}
+          ${sourceText ? `<div class="detail-quote-source">${replaceLinks(escapeHtml(sourceText))}</div>` : ""}
         </blockquote>
       `;
     }
@@ -340,7 +321,8 @@ function renderProjectMeta(project) {
     meta.size,
     meta.printing,
     meta.paper,
-    meta.color
+    meta.color,
+    meta.pages
   ].filter(Boolean);
 
   return `
@@ -382,9 +364,7 @@ function renderContactDetail() {
 }
 
 function renderHomeDetail() {
-  return `
-    <article class="detail-entry"></article>
-  `;
+  return `<article class="detail-entry"></article>`;
 }
 
 function renderImageArchive() {
@@ -396,17 +376,13 @@ function renderImageArchive() {
 
   return `
     <div class="image-archive">
-      ${allImages
-        .map(
-          (image) => `
-            <img
-              class="image-archive-item"
-              src="${image.src}"
-              alt="${image.alt?.[currentLang] || ""}"
-            />
-          `
-        )
-        .join("")}
+      ${allImages.map((image) => `
+        <img
+          class="image-archive-item"
+          src="${image.src}"
+          alt="${image.alt?.[currentLang] || ""}"
+        />
+      `).join("")}
     </div>
   `;
 }
@@ -415,23 +391,15 @@ function renderDetail() {
   detailContent.classList.remove("is-image-mode");
 
   if (currentMode === "contact") {
-    detailContent.innerHTML = `
-      ${getMobileBackButtonMarkup()}
-      ${renderContactDetail()}
-    `;
+    detailContent.innerHTML = renderContactDetail();
     updateLayoutMode();
-    bindMobileBackButton();
     return;
   }
 
   if (currentMode === "image") {
     detailContent.classList.add("is-image-mode");
-    detailContent.innerHTML = `
-      ${getMobileBackButtonMarkup()}
-      ${renderImageArchive()}
-    `;
+    detailContent.innerHTML = renderImageArchive();
     updateLayoutMode();
-    bindMobileBackButton();
     return;
   }
 
@@ -448,13 +416,9 @@ function renderDetail() {
     return;
   }
 
-  detailContent.innerHTML = `
-    ${getMobileBackButtonMarkup()}
-    ${renderProjectDetail(project, false)}
-  `;
+  detailContent.innerHTML = renderProjectDetail(project, false);
   updateLayoutMode();
   bindMediaDragScroll();
-  bindMobileBackButton();
 }
 
 function updateLanguageLabels() {
@@ -509,23 +473,6 @@ function bindMediaDragScroll() {
   });
 }
 
-function getMobileBackButtonMarkup() {
-  if (!isMobileView() || currentMode === "home") return "";
-  return `<button class="mobile-back-button is-visible" id="mobile-back-button" type="button" lang="en">←</button>`;
-}
-
-function bindMobileBackButton() {
-  const mobileBackButton = document.getElementById("mobile-back-button");
-  if (!mobileBackButton) return;
-
-  mobileBackButton.addEventListener("click", () => {
-    currentMode = "home";
-    currentProjectId = null;
-    renderProjects();
-    renderDetail();
-  });
-}
-
 langToggle.addEventListener("click", () => {
   currentLang = currentLang === "ko" ? "en" : "ko";
   updateLanguageLabels();
@@ -540,24 +487,20 @@ homeButton.addEventListener("click", () => {
 
 imgButton.addEventListener("click", () => {
   currentMode = "image";
+  currentProjectId = null;
   renderProjects();
   renderDetail();
 });
 
 contactButton.addEventListener("click", () => {
   currentMode = "contact";
+  currentProjectId = null;
   renderProjects();
   renderDetail();
 });
 
 footerContactButton?.addEventListener("click", () => {
   currentMode = "contact";
-  renderProjects();
-  renderDetail();
-});
-
-mobileBackButton?.addEventListener("click", () => {
-  currentMode = "home";
   currentProjectId = null;
   renderProjects();
   renderDetail();
