@@ -148,6 +148,14 @@ main {
   align-items: start;
 }
 
+.index-panel.is-home-full {
+  grid-column: 1 / -1;
+}
+
+.detail-panel.is-hidden {
+  display: none;
+}
+
 .index-panel {
   grid-column: span 4;
   min-width: 0;
@@ -156,9 +164,9 @@ main {
   overflow-x: hidden;
   padding-right: 8px;
   font-weight: 700;
-  font-size: 1rem;
-  
+  font-size: 1.75rem;
 }
+
 
 .detail-panel {
   grid-column: span 8;
@@ -170,23 +178,24 @@ main {
 }
 
 .project-list {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+  line-height: 1.4;
+  word-break: break-all;
+  overflow-wrap: anywhere;
 }
 
 .project-list-item {
-  display: block;
-  width: 100%;
-  border: none;
-  background: none;
-  color: #111;
-  text-align: left;
-  font: inherit;
+  display: inline;
+  width: auto;
   padding: 0;
+  margin: 0;
+  white-space: normal;
   cursor: pointer;
-  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+.project-list-title {
+  display: inline;
+  width: auto;
+  margin-right: 0.35em;
 }
 
 /* 기본 active 상태 */
@@ -225,11 +234,6 @@ main {
   margin-right: 0.15em;
 }
 
-
-.project-list-title {
-  display: block;
-  width: 100%;
-}
 
 .detail-content {
   width: 100%;
@@ -481,7 +485,7 @@ main.is-image-mode {
     --footer-height: 22px;
     --grid-gap: 8px;
     --image-gap: 4px;
-      --main-top-gap: 38px;
+    --main-top-gap: 32px;
   }
 
   .detail-panel {
@@ -531,9 +535,32 @@ main.is-image-mode {
     grid-column: 1 / -1;
   }
 
-  .index-panel {
-    height: auto;
-    max-height: 30vh;
+  .index-panel .project-list {
+    display: block;
+    line-height: 1;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    font-size: 36px;
+  }
+
+  .index-panel .project-list-item {
+    display: contents;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    white-space: normal;
+  }
+
+  .index-panel .project-list-title {
+    display: inline;
+    width: auto;
+    font-size: 24px;
+    margin-right: 0.35em;
+  }
+
+  .index-panel .project-list-title {
+    display: inline;
+    width: auto;
   }
 
   .index-panel.is-hidden {
@@ -578,7 +605,7 @@ main.is-image-mode {
     row-gap: 20px;
   }
 
-    .detail-content {
+  .detail-content {
     padding-right: 0;
   }
 
