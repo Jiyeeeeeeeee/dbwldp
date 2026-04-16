@@ -4,52 +4,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dbwldp</title>
-  <link rel="stylesheet" href="https://use.typekit.net/nzc6swq.css">
-  <link rel="stylesheet" href="css/reset.css" />
+  <title lang="en">JY Web</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="script.js" defer></script>
 </head>
 
-<body id="body">
+<body>
+  <header class="site-header">
+    <div class="header-inner page-grid">
+      <button class="header-home-button" id="home-button" type="button" data-ko="Yoo Jiye" data-en="Yoo Jiye" lang="en">
+        Yoo Jiye
+      </button>
 
-  <header id="header">
-    <div class="header-wrapper">
-      <div class="header-1">
-        <a href="index.html">Yoo Jiye</a>
-      </div>
-      <div class="header-2-3">
-        <div class="header-2">
-          <div class="works">
-            <a href="works.html">Works</a>
-          </div>
-          <div class="research">
-            <a href="research.html">Research</a>
-          </div>
-          <div class="contact">
-            <a href="contact.html">Contact</a>
-          </div>
-        </div>
+      <button class="header-img-button" id="img-button" type="button" data-ko="Img" data-en="Img" lang="en">
+        Img
+      </button>
 
-      </div>
+      <button class="header-contact-button" id="contact-button" type="button" data-ko="Contact" data-en="Contact"
+        lang="en">
+        Contact
+      </button>
     </div>
   </header>
 
-  <main id="main">
-    <div class="container-wrapper">
-      <div class="container-1">
-      </div>
-      <div class="container-2">
-        <div class="container-2-description-time">
-            <div class="time">
-              <span id="kst-time"></span>
-            </div>
+  <main>
+    <section class="main-layout page-grid">
+      <aside class="index-panel">
+        <div class="project-list" id="project-list"></div>
+      </aside>
+
+      <section class="detail-panel">
+        <div id="detail-content" class="detail-content">
+          <button class="mobile-back-button" id="mobile-back-button" type="button" lang="en">←</button>
         </div>
-        <div class="container-2-info">
-        </div>
-      </div>
+      </section>
   </main>
 
+  <footer class="site-footer">
+    <div class="footer-inner page-grid">
+      <div class="footer-lang">
+        <button class="lang-toggle" id="lang-toggle" type="button" lang="en">Kr</button>
+      </div>
+      <button class="footer-contact" id="footer-contact-button" type="button" lang="en">
+        Contact
+      </button>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

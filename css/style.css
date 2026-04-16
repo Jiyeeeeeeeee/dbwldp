@@ -5,319 +5,620 @@
   font-display: swap;
 }
 
-/*body*/
+@font-face {
+  font-family: 'BookkMyungjo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
 
-#body {
-  background-color: #f6f6f6;
-  font-family: minion-pro, serif;
+@font-face {
+  font-family: 'Eyja';
+  src: url('../fonts/EyjaUnlicencedTrial-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
+}
 
+@font-face {
+  font-family: 'Eyja';
+  src: url('../fonts/EyjaUnlicencedTrial-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
 
-  padding: 1.25rem;
+:root {
+  --page-padding: 0.5rem;
+  --grid-gap: 12px;
+  --header-height: 32px;
+  --footer-height: 18px;
+  --main-top-gap: 20px;
+  --image-gap: 4px;
+}
 
-  height: auto;
-  /* ✅ 100% 제거 */
-  min-height: 100vh;
-  /* ✅ 화면 높이 기준 */
+* {
   box-sizing: border-box;
-
-  display: grid;
-  grid-template-columns: repeat(16, minmax(0, 1fr));
-
-  overflow: visible;
-
-
-
+  margin: 0;
+  padding: 0;
 }
 
-.ko {
-  font-family: 'BookkMyungjo', serif;
-  font-weight: 400;
-  font-style: normal;
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
 
+body {
+  font-family: 'Eyja', serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.35;
+  font-size: 0.95rem;
   word-break: keep-all;
-  /* 단어(어절) 유지 */
-  letter-spacing: -0.015em;
-
 }
 
-
-a {
-  color: #000000;
-  text-decoration: none;
+[lang="ko"] {
+  font-family: 'BookkMyungjo', serif !important;
 }
 
-a:hover {
-  text-decoration: underline;
+[lang="en"] {
+  font-family: 'Eyja', serif !important;
 }
 
-/*header*/
-
-#header {
-  font-size: 0.9rem;
-
-  grid-column: span 4;
-  gap: 6px;
-
-  position: sticky;
-  top: 1rem;
-  /* body에 padding:1rem 있어서 0 대신 1rem 추천 */
-  z-index: 1000;
-
-  align-self: start;
-}
-
-.header-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  position: static;
-}
-
-.header-1 {
-  grid-column: span 2;
-}
-
-.header-2-3 {
-  grid-column: span 2;
-
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  gap: 16px;
-}
-
-.header-2 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.header-3 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-
-}
-
-/*main*/
-
-#main {
-  grid-column: span 12;
-}
-
-.container-wrapper {
+.page-grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 16px;
+  gap: var(--grid-gap);
+  width: 100%;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
 }
 
-.container-1 {
-  grid-column: span 6;
-
+.site-header,
+.site-footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+  font-weight: 700;
 }
 
-.container-1-images {
+.site-header {
+  top: 0;
+  height: var(--header-height);
+  padding-top: var(--page-padding);
+  border-bottom: 1px solid #111;
+  padding-bottom: 1.75rem;
+}
+
+.site-footer {
+  bottom: 0;
+  height: var(--footer-height);
+  padding-bottom: var(--page-padding);
   display: flex;
-  flex-direction: column;
-  height: auto;
-  gap: 4px;
+  align-items: flex-end;
+  font-size: 0.95rem;
+  border-top: 1px solid #111;
+  padding-top: 1.5rem;
 }
 
-.container-2 {
-  grid-column: span 6;
+.header-inner,
+.footer-inner {
+  width: 100%;
+}
 
-  display: flex;
-  flex-direction: column;
+.header-home-button,
+.header-img-button,
+.header-contact-button,
+.lang-toggle {
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header-home-button {
+  grid-column: span 4;
+}
+
+.header-img-button {
+  grid-column: span 5;
+}
+
+.header-contact-button {
+  grid-column: span 3;
+}
+
+.footer-lang {
+  grid-column: 1 / -1;
+}
+
+main {
+  padding-top: calc(var(--header-height) + var(--main-top-gap));
+  padding-bottom: calc(var(--footer-height) + var(--main-bottom-gap));
   height: 100vh;
-
-  font-size: 0.85rem;
-  line-height: 1.5rem;
-  letter-spacing: -0.035em;
-
-  position: sticky;
-  top: 1rem;
-  /* body에 padding:1rem 있어서 0 대신 1rem 추천 */
-  z-index: 1000;
-  align-self: start;
+  overflow: hidden;
 }
 
-.container-1 img {
-  max-width: 100%;
-  height: auto;
+.main-layout {
+  height: 100%;
+  align-items: start;
+}
+
+.index-panel {
+  grid-column: span 4;
+  min-width: 0;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  
+}
+
+.detail-panel {
+  grid-column: span 8;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  top: -16px;
+}
+
+.project-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-list-item {
+  display: block;
+  width: 100%;
+  border: none;
+  background: none;
+  color: #111;
+  text-align: left;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.15s ease, opacity 0.15s ease;
+}
+
+/* 기본 active 상태 */
+.project-list-item.is-active {
+  color: #111;
+}
+
+.project-list-item.is-inactive {
+  color: rgba(0, 0, 0, 0.28);
+}
+
+/* 리스트 전체에 hover가 들어오면 일단 전부 회색 */
+.project-list:hover .project-list-item {
+  color: rgba(0, 0, 0, 0.28);
+}
+
+/* hover된 항목은 다시 검정 */
+.project-list:hover .project-list-item:hover {
+  color: #111;
+}
+
+/* active 항목은 hover 상황에서도 계속 검정 */
+.project-list:hover .project-list-item.is-active {
+  color: #111;
+}
+
+.project-list-title::before {
+  content: "";
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.project-list-item:hover .project-list-title::before {
+  content: "↗";
+  opacity: 1;
+  margin-right: 0.15em;
+}
+
+
+.project-list-title {
+  display: block;
+  width: 100%;
+}
+
+.detail-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 2px;
+}
+
+.detail-entry {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-media {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--image-gap);
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: grab;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.detail-media.is-dragging {
+  cursor: grabbing;
+}
+
+.detail-image {
+  flex: 0 0 auto;
+  width: auto;
+  height: 520px;
+  max-width: none;
+  max-height: 520px;
+  object-fit: contain;
   display: block;
 }
 
-.container-2-description {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-
+.detail-image:last-child {
+  margin-right: 0;
 }
 
-.container-2-description-time {
+.detail-lower {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  width: 100%;
+  align-items: start;
+  padding-bottom: 24px;
+}
+
+.detail-text {
+  grid-column: span 5;
+  min-width: 0;
   font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 700;
 }
 
-.container-2-description-ko {
-  font-family: 'BookkMyungjo', serif;
-  font-weight: 300;
-
-  word-break: keep-all;
-  letter-spacing: -0.015em;
-  line-height: 1.6rem;
-}
-
-
-.container-2-description-en {
-  line-height: 1.35rem;
-  letter-spacing: 0.005rem;
-  font-size: 0.95rem;
-}
-
-.container-2-description-en p {
-  text-indent: 1.75rem;
-}
-
-.container-2-info {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  font-size: 0.95rem;
-
-  font-family: minion-pro, serif;
-  font-weight: 400;
-  font-style: normal;
-
-}
-
-.container-2-info span[lang="ko"] {
-  font-family: 'BookkMyungjo', serif;
-    font-size: 0.85rem;
-      word-break: keep-all;
-}
-
-.container-2-info-1 {
-  flex: 1;
-}
-
-.container-2-info-2 {
-  flex: 1;
-}
-
-/*contact*/
-
-.container-2-contact {
+.detail-meta {
+  grid-column: span 3;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-
-  letter-spacing: 0.005rem;
-  font-size: 0.95rem;
-
+  gap: 2px;
+  font-size: 0.85rem;
+  line-height: 1.15rem;
+  font-weight: 700;
 }
 
-.contact-1 {
-  flex: 1;
+.detail-meta-item {
+  display: block;
+}
+
+.detail-meta-value {
+  overflow-wrap: break-word;
+}
+
+.detail-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+.detail-link {
+  color: inherit;
+}
+
+.detail-link::before {
+  content: "↗";
+  display: inline-block;
+
+  font-size: 0.7em;
+  line-height: 1;
+  offset: 1.5px;
+  vertical-align: 0.08em;
+}
+
+.detail-paragraph,
+.detail-quote {
+  margin: 0;
+}
+
+.detail-paragraph {
+  white-space: pre-line;
+}
+
+.detail-quote {
+  margin: 0;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  white-space: pre-line;
+  text-decoration: none;
+}
+
+.detail-quote-source {
+  margin-top: 0.4rem;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+/* 일반 문단 / 일반 인용 간격 통일 */
+.detail-paragraph+.detail-paragraph,
+.detail-paragraph+.detail-quote:not(.detail-quote-list),
+.detail-quote:not(.detail-quote-list)+.detail-paragraph,
+.detail-quote:not(.detail-quote-list)+.detail-quote:not(.detail-quote-list) {
+  margin-top: 1rem;
+}
+
+
+/* 리스트형 인용구는 완전히 별도 */
+.detail-quote.detail-quote-list {
+  margin: 0 !important;
+  padding: 1.5rem 0rem 1.5rem 0 !important;
+  white-space: normal;
+}
+
+.detail-quote.detail-quote-list ul {
+  margin: 0 !important;
+  padding: 0 1.5rem 0 3rem !important;
+}
+
+.detail-quote.detail-quote-list li {
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1.65rem !important;
+}
+
+.detail-quote.detail-quote-list li+li {
+  margin-top: 0 !important;
+}
+
+/* 리스트형 인용구 앞뒤 간격 */
+.detail-paragraph+.detail-quote.detail-quote-list,
+.detail-quote.detail-quote-list+.detail-paragraph,
+.detail-quote.detail-quote-list+.detail-quote.detail-quote-list {
+  margin-top: 0 !important;
+}
+
+.detail-empty {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.detail-contact {
   display: flex;
   flex-direction: column;
-  line-height: 1.25rem;
+  gap: 8px;
+  padding-top: 2px;
 }
 
-.contact-2 {
-  flex: 1;
+.detail-contact-line {
+  white-space: pre-line;
+}
+
+.detail-contact-line a,
+.detail-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.detail-contact-line a::before,
+.detail-link::before {
+  content: "↗";
+  display: inline-block;
+  margin-right: 0.3em;
+  font-size: 0.75em;
+  vertical-align: 0.08em;
+}
+
+.detail-contact-line a:hover,
+.detail-link:hover {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 1px;
+}
+
+main.is-image-mode {
+  padding-top: var(--header-height);
+}
+
+.detail-panel.is-full {
+  grid-column: 1 / -1;
+  width: 100%;
+  top: 4px;
+}
+
+.index-panel.is-hidden {
+  display: none;
+}
+
+.image-archive {
+  margin-top: 0;
+  padding-top: 0;
   display: flex;
-  color: darkgrey;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  overflow: visible;
 }
 
-@media (max-width: 600px) {
+.image-archive-item {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: calc(10% - 2px);
+  max-height: 50vh;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
 
-  #body {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 0.5rem;
+.index-panel.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}
 
-    min-height: 100vh;
-    overflow: visible;
-    /* sticky 방해하지 않게 */
+
+.footer-contact {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  :root {
+    --header-height: 22px;
+    --footer-height: 22px;
+    --grid-gap: 8px;
+    --image-gap: 4px;
+      --main-top-gap: 20px;
   }
 
-  #header {
-    position: sticky;
-    top: 0;
-    /* ✅ 꼭 숫자! */
-    z-index: 1000;
-    /* ✅ 꼭 값! */
-
-    width: 100%;
-    font-size: 0.95rem;
-
-    background: #f6f6f6;
-
-    padding-top: 0.25rem;
-    /* 선택 */
-    padding-bottom: 0.5rem;
-    /* 선택 */
+  .detail-panel {
+    position: relative;
   }
 
-  .header-wrapper {
-    display: flex;
-    flex-direction: row;
-    /* 모바일에서 가로 1:1 */
-    gap: 12px;
+  .detail-content {
+    position: relative;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 24px;
   }
 
-  .header-1,
-  .header-2-3 {
-    flex: 1;
+.mobile-back-button {
+  display: none;
+  position: sticky;
+  top: 6px;
+  z-index: 101;
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.75rem 0 1rem 0;
+  font-size: 0;
+}
+  .mobile-back-button::before {
+    content: "←";
+    font-size: 1rem;
+    line-height: 1;
   }
 
-  .header-2-3 {
+  .mobile-back-button.is-visible {
+    display: block;
+  }
+
+  .page-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .header-home-button,
+  .header-img-button {
+    grid-column: span 3;
+  }
+
+  .header-contact-button {
+    display: none;
+  }
+
+  .footer-lang {
+    grid-column: 1 / span 3;
+  }
+
+  .footer-contact {
+    display: block;
+    grid-column: 4 / span 3;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .index-panel,
+  .detail-panel {
+    grid-column: 1 / -1;
+  }
+
+  .index-panel {
     height: auto;
-    gap: 12px;
+    max-height: 30vh;
   }
 
-  .header-3 {
-    padding: 1rem;
+  .index-panel.is-hidden {
+    display: none;
   }
 
-  #main {
-    width: 100%;
+  .detail-panel {
+    height: 100%;
+    min-height: 0;
   }
 
-  .container-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  .detail-content {
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 24px;
   }
 
-  .container-1,
-  .container-2 {
-    width: 100%;
+  .detail-entry {
+    min-height: auto;
   }
 
-  .container-2 {
-    position: static;
-    height: auto;
-    font-size: 0.9rem;
-    line-height: 1.6rem;
-    letter-spacing: -0.02em;
+  .detail-media {
+    margin-left: calc(-1 * var(--page-padding));
+    margin-right: calc(-1 * var(--page-padding));
+    padding-left: 0;
+    padding-right: 0;
   }
 
-  .container-2-description-en {
-    line-height: 1.35rem;
-    letter-spacing: 0.005rem;
-    font-size: 0.95rem;
+  .detail-image {
+    height: 280px;
+    width: auto;
+    max-height: 280px;
   }
 
-  .container-2-description-en p {
-    text-indent: 1.75rem;
+  .detail-lower {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 16px;
+    row-gap: 20px;
   }
 
-  .container-2-info {
-    margin-top: auto;
+  .detail-text {
+    grid-column: 1 / -1;
+  }
+
+  .detail-meta {
+    grid-column: 3 / span 2;
+    justify-self: stretch;
+  }
+
+  .detail-text .detail-paragraph,
+  .detail-text .detail-quote {
+    grid-column: 1 / -1;
+  }
+
+  .image-archive {
+    gap: 2px;
+  }
+
+  .image-archive-item {
+    max-width: calc(33.3% - 6px);
+    max-height: 90vh;
   }
 }

@@ -1,0 +1,568 @@
+const projects = [
+  {
+    id: "project-1",
+    year: "2026",
+    title: { ko: "스코어 티셔츠", en: "Score T-Shirt" },
+    type: { ko: "그래픽", en: "Graphic" },
+    meta: {
+      ko: {
+        year: "2026",
+        production: "유니클로 드라이컬러크루넥T 남색, 노란색, S",
+        size: "240*350 mm",
+        printing: "실크 스크린",
+        color: "은색",
+      },
+      en: {
+        year: "2026",
+        production: "Uniqlo Dry Color Crew Neck T-shirt Navy, Yellow, S",
+        size: "240*350 mm",
+        printing: "Silk Screen",
+        color: "Silver",
+      }
+    },
+    description: {
+      ko: "to be updated.",
+      en: "to be updated."
+    },
+    images: [
+      { src: "images/tshirt-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+      { src: "images/tshirt-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
+      { src: "images/tshirt-3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
+      { src: "images/tshirt-4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } }
+    ]
+  },
+  {
+    id: "project-2",
+    year: "2026",
+    title: { ko: "스스로 출판 도구 만들기", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand" },
+    type: { ko: "프로젝트", en: "Project" },
+    description: {
+      ko: "To be updated.",
+      en: "To be updated."
+    },
+    image: {
+      src: "images/project-1.jpg",
+      alt: { ko: "", en: "" }
+    }
+  },
+  {
+    id: "project-3",
+    year: "2026",
+    title: { ko: "보다 겸손하고 보다 거슬리지 않고 보다 지적인 행위", en: "Reading" },
+    type: { ko: "진", en: "Zine" },
+    meta: {
+      ko: {
+        year: "2025",
+        size: "130×200 mm",
+        /*production: "인터프로프린트",*/
+        /*paper: "백색 모조지",*/
+        printing: "인디고 1도 인쇄",
+        /*pages: "44p"*/
+      },
+      en: {
+        year: "2025",
+        size: "130×200 mm",
+        /*production: "Interpro Print",*/
+        /*paper: "White woodfree paper",*/
+        printing: "Indigo 1-color printing",
+        /*pages: "44p"*/
+      }
+    },
+    description: {
+      ko: `> 따라서 읽기는 쓰기 후에 일어나는 행위이다. 보다 겸손하고, 보다 거슬리지 않고, 보다 지적인 행위.
+      — 불한당의 세계사, 호르헤 루이스 보르헤스, 민음사, 1994
+
+보르헤스의 <불한당의 세계사> 프롤로그 속 마지막 문장으로, 읽기는 쓰기 전 선행되는 — 어쩌면 쓰기보다 더 겸손할지 모르는 — 행위이다. 선조들은 읽고자 하는 겸손한 행위를 참지 못하고 다양한 읽기 도구를 만들었다. 자고로 겸손하게 읽힌 글들은 겸손하지 못한 수집욕을 자극하는 법. 지난 한 달 동안 읽은 18개의 글을 아카이빙한 진이자 한 권의 책을 만들었다. 글자의 형태를 띄지 않은, 가령 분위기, 수, 마음 같은 고도의 술수를 요구하는 것들은 수집에 포함하지 않았다.`,
+      en: "To be updated."
+    },
+    images: [
+      { src: "images/reading-2.png", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
+      { src: "images/reading-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+    ]
+  },
+  {
+    id: "project-4",
+    year: "2025",
+    title: { ko: "다양하고, 기이하며, 일시적이고, 마법같고, 위험하며 감정적인 것을 만들기", en: "Make a Zine" },
+    type: { ko: "프로젝트", en: "Project" },
+    meta: {
+      ko: {
+        year: "2025",
+        size: "130×200 mm",
+        production: "인터프로프린트",
+        paper: "백색 모조지",
+        printing: "인디고 1도 인쇄",
+        pages: "44p"
+      },
+      en: {
+        year: "2025",
+        size: "130×200 mm",
+        production: "Interpro Print",
+        paper: "White woodfree paper",
+        printing: "Indigo 1-color printing",
+        pages: "44p"
+      }
+    },
+    description: {
+      ko: `우리는 진 사서 및 아키비스트 공동체로서 다음과 같은 이유로 다음의 가치를 믿는다.
+
+> 진은 종종 사회적으로 주변화된 공동체의 구성원들에 의해 제작되며,
+> 우리는 그러한 공동체를 존중하며 재현하고자 노력해야 하고,
+> 사서와 아키비스트는 종종 진을 만들고 읽는 공동체의 일원이기도 하며,
+> 진이라는 매체는 매우 다양하고, 기이하며, 일시적이고, 마법 같고, 위험하며, 감정적인 성격을 띠고 있고,
+> 우리는 도서관이나 기록관의 ‘중립성’이라는 신화를 거부하기 때문에,
+> 이용자, 기관, 창작자, 기증자, 그리고 공동체에 대해 책임을 져야 한다고 믿는다.
+
+지난 4월, 더북소사이어티의 웹사이트에는 진을 다루는 사서와 아키비스트로서 지녀야할 태도를 이야기하는 [진 라이브러리언 윤리 강령](https://thebooksociety.org/)이 게재되었다. 서문에 나오는 진의 가치는 25년 9월부터 지금까지 이어져 오고 있는 [⌜서신교환⌟](https://www.instagram.com/exchange.papers/)을 지속하고 있는 이유를 설명하기에 충분했다.
+
+> 사람들은 동료를 찾기 위해 출판한다! 
+— One publishes to find comrades / Andre Breton, Les Pas Perdus, 1924
+
+18세기 후반, 정치적, 종교적 메시지를 전달하는 매체로서의 진은 자유로운 창작과 배포가 이루어지는 네트워크를 형성했고, 20세기 후반에 들어 점차 개인의 정체성이나 관심사, 경험을 표현하는 사소하고, 개별적인 성향을 띈다. 이제 무얼 진이라 부를 수 있을까? 판형이 작은 중철 제본 또는 무선제본으로 이루어진 책? ISBN이 없는 책? 개인적인 성향 또는 정치적인 메시지가 담긴 책? 제작부터 유통까지 스스로 진행한 책? 모조지로 만들어진 책? 제작 권수가 100부 이내인 책? 가정용 프린터로 만들어진 책? 진은 혼란스럽다. 
+
+> 진이라는 단어를 들었을 때 떠올리는 이미지는 각자의 경험에 따라 크게 다를 수 있다. 이러한 일반화의 어려움, 다양성, 혼돈 자체가 진의 본질이라고도 할 수 있다.
+— 한국 진 문화의 지형도 그리기, 한지은, 홍익대학교 석사 논문, 2026
+
+그럼에도 사라지기는 커녕 여전히 지속되고 있는 이유라 함은 진은 하나로 정의 내릴 수 없는 혼돈이자 좋아하는 것을 동료들과 나누기 위해 기꺼이 만드는 실천이라는 불변의 태도이기 때문일 것이다. 이러한 태도는 더 이상의 화이트 큐브를 필요로 하지 않는다.
+
+작년 여름과 가을, 강렬하고 빠른 bpm의 전자음악이 아닌 차분하고 느린, 엠비언트에 가까운 음악을 찾았고, 일본의 전자 음악가 레이 하라카미를 그 시기에 알게 되었다. 서신교환의 첫 활동으로 하라카미의 측근과 진행한 인터뷰 전문의 한국어 번역과 그의 음악에 대한 나의 생각과 사랑을 담은 팬진을 만들고자 했다. 의지가 무색하게 작년 중 가장 바빴던 시기와 서신교환의 활동 시기가 맞물려 진에 담긴 내용과 이미지 모두 구글에서 가져와 구색만 겨우 갖춘 책자가 되었지만 무언가를 만들고, 나누고자 하는 마음 하나면 완성 여부나 퀄리티는 중요하지 않은 것이 진의 정신이다.  `,
+      en: `To be updated.`
+    },
+    images: [
+      { src: "images/rei-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+      { src: "images/rei-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
+      { src: "images/rei-3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
+      { src: "images/rei-10.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } }
+    ]
+  },
+  {
+    id: "project-5",
+    year: "2023",
+    title: { ko: "E-flux: 2086년 이후의 미래", en: "E-flux: The Future After 2086" },
+    type: { ko: "잔", en: "zine" },
+    description: {
+      ko: "To be updated.",
+      en: "To be updated."
+    },
+    /*image: {
+      src: "images/project-3.jpg",
+      alt: { ko: "진 프로젝트 이미지", en: "Zine project image" }
+    }*/
+  }
+];
+
+const CONTACT_CONTENT = {
+  ko: {
+    title: "Contact",
+    body: `<a href="mailto:dbwldp@gmail.com">dbwldpdbwldp@gmail.com</a> on Gmail
+<a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
+<a href="https://www.are.na/jiye-yoo/web-54l-2yfnizi">jiye yoo</a> on Are.na
+<a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG`
+  },
+  en: {
+    title: "Contact",
+    body: `<a href="mailto:dbwldp@gmail.com">dbwldpdbwldp@gmail.com</a> on Gmail
+<a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
+<a href="https://www.are.na/jiye-yoo/web-54l-2yfnizi">jiye yoo</a> on Are.na
+<a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG`
+  }
+};
+
+let currentLang = "ko";
+let currentProjectId = null;
+let currentMode = "home";
+
+const projectList = document.getElementById("project-list");
+const detailContent = document.getElementById("detail-content");
+const langToggle = document.getElementById("lang-toggle");
+const homeButton = document.getElementById("home-button");
+const imgButton = document.getElementById("img-button");
+const contactButton = document.getElementById("contact-button");
+const footerContactButton = document.getElementById("footer-contact-button");
+const indexPanel = document.querySelector(".index-panel");
+const detailPanel = document.querySelector(".detail-panel");
+const mobileBackButton = document.getElementById("mobile-back-button");
+const mainElement = document.querySelector("main");
+
+
+function updateLayoutMode() {
+  const isHome = currentMode === "home";
+  const isImage = currentMode === "image";
+  const shouldHideIndexOnMobile = isMobileView() && !isHome;
+  const shouldHideIndexOnDesktop = currentMode === "contact" || isImage;
+
+  indexPanel.classList.toggle(
+    "is-hidden",
+    shouldHideIndexOnMobile || shouldHideIndexOnDesktop
+  );
+
+  detailPanel.classList.toggle("is-full", isImage);
+  detailPanel.classList.toggle("has-border", !isHome && !isImage);
+
+  const shouldShowMobileBack =
+    isMobileView() && currentMode === "project";
+
+  mobileBackButton?.classList.toggle("is-visible", shouldShowMobileBack);
+
+  mainElement?.classList.toggle("is-image-mode", isImage);
+}
+
+function isMobileView() {
+  return window.matchMedia("(max-width: 900px)").matches;
+}
+
+function wrapByLang(text, lang) {
+  return `<span lang="${lang}">${text}</span>`;
+}
+
+function escapeHtml(text = "") {
+  return text
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
+}
+
+function replaceLinks(text = "") {
+  return text.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_, label, url) => {
+    return `<a class="detail-link" href="${url}" target="_blank" rel="noopener noreferrer">${escapeHtml(label)}</a>`;
+  });
+}
+
+function normalizeText(text = "") {
+  return text
+    .replace(/&ndash;/g, "–")
+    .replace(/\[\^\d+\]/g, "")
+    .trim();
+}
+
+function parseDescription(text = "") {
+  const cleaned = normalizeText(text);
+  if (!cleaned) return "";
+
+  const blocks = cleaned.split(/\n\s*\n/);
+
+  return blocks.map((block) => {
+    const trimmed = block.trim();
+
+    if (trimmed.startsWith(">")) {
+      const quoteLines = trimmed
+        .split("\n")
+        .map((line) => line.replace(/^>\s?/, "").trim())
+        .filter(Boolean);
+
+      const sourceLine = quoteLines.find((line) => line.startsWith("—"));
+      const quoteOnlyLines = quoteLines.filter((line) => !line.startsWith("—"));
+
+     const sourceText = sourceLine || "";
+
+      const isListQuote = quoteLines.length > 1;
+
+      if (isListQuote) {
+        return `
+  <blockquote class="detail-quote" lang="${currentLang}">
+    ${replaceLinks(escapeHtml(quoteOnlyLines.join("\n")))}
+    ${sourceText ? `<div class="detail-quote-source">${replaceLinks(escapeHtml(sourceText))}</div>` : ""}
+  </blockquote>
+`;
+      }
+
+      return `
+        <blockquote class="detail-quote" lang="${currentLang}">
+          ${replaceLinks(escapeHtml(quoteLines[0] || ""))}
+        </blockquote>
+      `;
+    }
+
+    return `<p class="detail-paragraph" lang="${currentLang}">${replaceLinks(escapeHtml(trimmed))}</p>`;
+  }).join("");
+}
+
+function getProjectMedia(project) {
+  if (project.images && project.images.length > 0) return project.images;
+  if (project.image && project.image.src) return [project.image];
+  return [];
+}
+
+function renderProjects() {
+  projectList.innerHTML = "";
+
+  projects.forEach((project) => {
+    const isActive = currentMode === "project" && currentProjectId === project.id;
+    const isInactive = currentMode === "project" && currentProjectId !== project.id;
+
+    const item = document.createElement("button");
+    item.type = "button";
+    item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}`;
+    item.dataset.id = project.id;
+
+    item.innerHTML = `
+      <span class="project-list-title">${wrapByLang(project.title[currentLang], currentLang)}</span>
+    `;
+
+    item.addEventListener("click", () => {
+      currentProjectId = project.id;
+      currentMode = "project";
+      renderProjects();
+      renderDetail();
+    });
+
+    projectList.appendChild(item);
+  });
+}
+
+function renderMedia(media) {
+  if (!media.length) {
+    return `<div class="detail-empty">${wrapByLang("Image not available", "en")}</div>`;
+  }
+
+  return `
+    <div class="detail-media">
+      ${media.map((image) => `
+        <img
+          class="detail-image"
+          src="${image.src}"
+          alt="${image.alt?.[currentLang] || ""}"
+        />
+      `).join("")}
+    </div>
+  `;
+}
+
+function renderProjectMeta(project) {
+  const meta = project.meta?.[currentLang];
+  if (!meta) return "";
+
+  const values = [
+    meta.year,
+    meta.production,
+    meta.size,
+    meta.printing,
+    meta.paper,
+    meta.color
+  ].filter(Boolean);
+
+  return `
+    <aside class="detail-meta">
+      ${values.map((value) => `
+        <div class="detail-meta-item">
+          <div class="detail-meta-value">${wrapByLang(value, currentLang)}</div>
+        </div>
+      `).join("")}
+    </aside>
+  `;
+}
+
+function renderProjectDetail(project, imageOnly = false) {
+  const media = getProjectMedia(project);
+  const textHtml = parseDescription(project.description[currentLang]);
+
+  return `
+    <article class="detail-entry">
+      ${renderMedia(media)}
+      ${imageOnly ? "" : `
+        <div class="detail-lower">
+          <div class="detail-text" lang="${currentLang}">${textHtml}</div>
+          ${renderProjectMeta(project)}
+        </div>
+      `}
+    </article>
+  `;
+}
+
+function renderContactDetail() {
+  return `
+    <article class="detail-entry">
+      <div class="detail-contact">
+        <div class="detail-contact-line" lang="en">${CONTACT_CONTENT[currentLang].body}</div>
+      </div>
+    </article>
+  `;
+}
+
+function renderHomeDetail() {
+  return `
+    <article class="detail-entry"></article>
+  `;
+}
+
+function renderImageArchive() {
+  const allImages = projects.flatMap((project) => getProjectMedia(project));
+
+  if (!allImages.length) {
+    return `<div class="detail-empty">${wrapByLang("Image not available", "en")}</div>`;
+  }
+
+  return `
+    <div class="image-archive">
+      ${allImages
+        .map(
+          (image) => `
+            <img
+              class="image-archive-item"
+              src="${image.src}"
+              alt="${image.alt?.[currentLang] || ""}"
+            />
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderDetail() {
+  detailContent.classList.remove("is-image-mode");
+
+  if (currentMode === "contact") {
+    detailContent.innerHTML = `
+      ${getMobileBackButtonMarkup()}
+      ${renderContactDetail()}
+    `;
+    updateLayoutMode();
+    bindMobileBackButton();
+    return;
+  }
+
+  if (currentMode === "image") {
+    detailContent.classList.add("is-image-mode");
+    detailContent.innerHTML = `
+      ${getMobileBackButtonMarkup()}
+      ${renderImageArchive()}
+    `;
+    updateLayoutMode();
+    bindMobileBackButton();
+    return;
+  }
+
+  if (!currentProjectId) {
+    detailContent.innerHTML = renderHomeDetail();
+    updateLayoutMode();
+    return;
+  }
+
+  const project = projects.find((item) => item.id === currentProjectId);
+  if (!project) {
+    detailContent.innerHTML = renderHomeDetail();
+    updateLayoutMode();
+    return;
+  }
+
+  detailContent.innerHTML = `
+    ${getMobileBackButtonMarkup()}
+    ${renderProjectDetail(project, false)}
+  `;
+  updateLayoutMode();
+  bindMediaDragScroll();
+  bindMobileBackButton();
+}
+
+function updateLanguageLabels() {
+  document.documentElement.lang = currentLang;
+
+  homeButton.textContent = homeButton.dataset[currentLang];
+  imgButton.textContent = imgButton.dataset[currentLang];
+  contactButton.textContent = contactButton.dataset[currentLang];
+
+  homeButton.setAttribute("lang", "en");
+  imgButton.setAttribute("lang", "en");
+  contactButton.setAttribute("lang", "en");
+
+  langToggle.textContent = currentLang === "ko" ? "En" : "한";
+  langToggle.setAttribute("lang", "en");
+
+  renderProjects();
+  renderDetail();
+}
+
+function bindMediaDragScroll() {
+  const mediaBlocks = detailContent.querySelectorAll(".detail-media");
+
+  mediaBlocks.forEach((media) => {
+    let isDown = false;
+    let startX = 0;
+    let startScrollLeft = 0;
+
+    media.addEventListener("mousedown", (event) => {
+      isDown = true;
+      media.classList.add("is-dragging");
+      startX = event.pageX;
+      startScrollLeft = media.scrollLeft;
+    });
+
+    window.addEventListener("mouseup", () => {
+      isDown = false;
+      media.classList.remove("is-dragging");
+    });
+
+    media.addEventListener("mouseleave", () => {
+      isDown = false;
+      media.classList.remove("is-dragging");
+    });
+
+    media.addEventListener("mousemove", (event) => {
+      if (!isDown) return;
+      event.preventDefault();
+      const deltaX = event.pageX - startX;
+      media.scrollLeft = startScrollLeft - deltaX;
+    });
+  });
+}
+
+function getMobileBackButtonMarkup() {
+  if (!isMobileView() || currentMode === "home") return "";
+  return `<button class="mobile-back-button is-visible" id="mobile-back-button" type="button" lang="en">←</button>`;
+}
+
+function bindMobileBackButton() {
+  const mobileBackButton = document.getElementById("mobile-back-button");
+  if (!mobileBackButton) return;
+
+  mobileBackButton.addEventListener("click", () => {
+    currentMode = "home";
+    currentProjectId = null;
+    renderProjects();
+    renderDetail();
+  });
+}
+
+langToggle.addEventListener("click", () => {
+  currentLang = currentLang === "ko" ? "en" : "ko";
+  updateLanguageLabels();
+});
+
+homeButton.addEventListener("click", () => {
+  currentMode = "home";
+  currentProjectId = null;
+  renderProjects();
+  renderDetail();
+});
+
+imgButton.addEventListener("click", () => {
+  currentMode = "image";
+  renderProjects();
+  renderDetail();
+});
+
+contactButton.addEventListener("click", () => {
+  currentMode = "contact";
+  renderProjects();
+  renderDetail();
+});
+
+footerContactButton?.addEventListener("click", () => {
+  currentMode = "contact";
+  renderProjects();
+  renderDetail();
+});
+
+mobileBackButton?.addEventListener("click", () => {
+  currentMode = "home";
+  currentProjectId = null;
+  renderProjects();
+  renderDetail();
+});
+
+renderProjects();
+renderDetail();
+updateLanguageLabels();
