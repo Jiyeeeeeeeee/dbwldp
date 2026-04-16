@@ -2,7 +2,7 @@ const projects = [
   {
     id: "project-1",
     year: "2026",
-    title: { ko: "스코어 티셔츠,", en: "Score T-Shirt" },
+    title: { ko: "스코어 티셔츠,", en: "Score T-Shirt," },
     type: { ko: "그래픽", en: "Graphic" },
     meta: {
       ko: {
@@ -34,7 +34,7 @@ const projects = [
   {
     id: "project-2",
     year: "2026",
-    title: { ko: "스스로 출판 도구 만들기,", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand" },
+    title: { ko: "스스로 출판 도구 만들기,", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand," },
     type: { ko: "프로젝트", en: "Project" },
     description: {
       ko: "To be updated.",
@@ -44,7 +44,7 @@ const projects = [
   {
     id: "project-3",
     year: "2026",
-    title: { ko: "보다 겸손하고 보다 거슬리지 않고 보다 지적인 행위,", en: "Reading" },
+    title: { ko: "보다 겸손하고 보다 거슬리지 않고 보다 지적인 행위,", en: "Reading," },
     type: { ko: "진", en: "Zine" },
     meta: {
       ko: {
@@ -75,7 +75,7 @@ const projects = [
   {
     id: "project-4",
     year: "2025",
-    title: { ko: "다양하고, 기이하며, 일시적이고, 마법같고, 위험하며 감정적인 것을 만들기,", en: "Make a Zine" },
+    title: { ko: "다양하고, 기이하며, 일시적이고, 마법같고, 위험하며 감정적인 것을 만들기,", en: "Make a Zine," },
     type: { ko: "프로젝트", en: "Project" },
     meta: {
       ko: {
@@ -130,7 +130,7 @@ const projects = [
   {
     id: "project-5",
     year: "2023",
-    title: { ko: "E-flux: 2086년 이후의 미래,", en: "E-flux: The Future After 2086" },
+    title: { ko: "E-flux: 2086년 이후의 미래", en: "E-flux: The Future After 2086" },
     type: { ko: "잔", en: "zine" },
     description: {
       ko: "To be updated.",

@@ -485,11 +485,12 @@ main.is-image-mode {
     --footer-height: 22px;
     --grid-gap: 8px;
     --image-gap: 4px;
-    --main-top-gap: 32px;
+    --main-top-gap: 24px;
   }
 
   .detail-panel {
     position: relative;
+    top:0;
   }
 
   .detail-content {
@@ -536,11 +537,11 @@ main.is-image-mode {
   }
 
   .index-panel .project-list {
-    display: block;
     line-height: 1;
-    word-break: break-all;
+    word-break: keep-all;
     overflow-wrap: anywhere;
-    font-size: 36px;
+    font-size: 1.25rem;
+    line-height: 1.3;
   }
 
   .index-panel .project-list-item {
@@ -554,7 +555,6 @@ main.is-image-mode {
   .index-panel .project-list-title {
     display: inline;
     width: auto;
-    font-size: 24px;
     margin-right: 0.35em;
   }
 
