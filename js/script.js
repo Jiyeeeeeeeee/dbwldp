@@ -21,8 +21,8 @@ const projects = [
       }
     },
     description: {
-      ko: "To be updated.",
-      en: "To be updated."
+      ko: "Not yet.",
+      en: "Not yet."
     },
     images: [
       { src: "images/tshirt-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
@@ -41,8 +41,8 @@ const projects = [
     title: { ko: "스스로 출판 도구 만들기,", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand," },
     type: { ko: "프로젝트", en: "Project" },
     description: {
-      ko: "To be updated.",
-      en: "To be updated."
+      ko: "Not yet.",
+      en: "Not yet."
     },
   },
   {
@@ -69,7 +69,7 @@ const projects = [
 — 호르헤 루이스 보르헤스, 『불한당의 세계사』, 민음사, 1994
 
 읽기는 쓰기 전 선행되는 — 어쩌면 쓰기보다 더 겸손할지 모르는 — 행위이다. 선조들은 읽고자 하는 겸손한 행위를 참지 못하고 다양한 읽기 도구를 만들었다. 자고로 겸손하게 읽힌 글들은 겸손하지 못한 수집욕을 자극하는 법. 지난 한 달 동안 읽은 18개의 글을 아카이빙한 진이자 한 권의 책을 만들었다. 글자의 형태를 띄지 않은, 가령 분위기, 수, 마음 같은 고도의 능력을 요구하는 것들은 수집에 포함하지 않았다.`,
-      en: "To be updated."
+      en: "Not yet."
     },
     images: [
       { src: "images/reading-2.png", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
@@ -137,8 +137,8 @@ const projects = [
     title: { ko: "E-flux: 2086년 이후의 미래", en: "E-flux: The Future After 2086" },
     type: { ko: "잔", en: "zine" },
     description: {
-      ko: "To be updated.",
-      en: "To be updated."
+      ko: "Not yet.",
+      en: "Not yet."
     }
   }
 ];
