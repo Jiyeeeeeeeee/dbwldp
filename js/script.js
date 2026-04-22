@@ -18,8 +18,10 @@ const projects = [
     },
     description: {
       ko: `[JY 케이팝 믹스 바로가기](https://open.spotify.com/playlist/67x7bItzRlsLSpaXvr1Tki?si=6abe8765ab4c4c74)
-      
-      Spicy (Nitepunk Remix) - aespa, nitepunk
+
+      스트리밍 플랫폼인 스포티파이로 만든 플레이리스트로, 서비스 내에 믹스 기능을 활성화하여 감상할 수 있다. 
+
+      >Spicy (Nitepunk Remix) - aespa, nitepunk
       2 Different Tears (Remix) - Wondergirls
       Little Things x Gypsy Woman (LBeat Remix) - Jorja Smith
       Icarus (Artronic Waves Remix) - ARTMS
@@ -36,18 +38,18 @@ const projects = [
 `,
       en: `[JY Kpop Mix](https://open.spotify.com/playlist/67x7bItzRlsLSpaXvr1Tki?si=6abe8765ab4c4c74)
       
-      Spicy (Nitepunk Remix) - aespa, nitepunk
+      > Spicy (Nitepunk Remix) - aespa, nitepunk
       2 Different Tears (Remix) - Wondergirls
       Little Things x Gypsy Woman (LBeat Remix) - Jorja Smith
       Icarus (Artronic Waves Remix) - ARTMS
       Soap (feat.PinkPantheress) - Yves, PinkPantheress
       The Chase (Arti & Suchan Kim Remix) - Hearts2Hearts, Arti, Suchan Kim, ScreaM Records
-      기분 좋아지는 노래 - SUMIN
+      KIKI - SUMIN
       STUNNER (English Version) - TEN
       Take Me Home (IDIOTAPE Remix) - ATEEZ
       SILK SCARF - Tiga, Fcukers
       SPAGHETTI (Hot Chill ver.) - LE SSERAFIM, j-hope
-      아이 (Love) - f(x)
+      Love - f(x)
       LOOP (feat.Lil Cherry) - Yves, Lil Cherry
 `
     },
