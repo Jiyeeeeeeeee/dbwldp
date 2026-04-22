@@ -1,4 +1,60 @@
 const projects = [
+    {
+    id: "project-6",
+    year: "2026",
+    title: { ko: "케이팝 믹스,", en: "Kpop Mix," },
+    type: { ko: "플레이리스트", en: "playlist" },
+    meta: {
+      ko: {
+        year: "2026",
+        production: "스포티파이",
+        time: "43분 19초",
+      },
+      en: {
+        year: "2026",
+        production: "Spotify",
+        time: "43m 19s",
+      }
+    },
+    description: {
+      ko: `[JY 케이팝 믹스 바로가기](https://open.spotify.com/playlist/67x7bItzRlsLSpaXvr1Tki?si=6abe8765ab4c4c74)
+      
+      Spicy (Nitepunk Remix) - aespa, nitepunk
+      2 Different Tears (Remix) - Wondergirls
+      Little Things x Gypsy Woman (LBeat Remix) - Jorja Smith
+      Icarus (Artronic Waves Remix) - ARTMS
+      Soap (feat.PinkPantheress) - Yves, PinkPantheress
+      The Chase (Arti & Suchan Kim Remix) - Hearts2Hearts, Arti, Suchan Kim, ScreaM Records
+      기분 좋아지는 노래 - SUMIN
+      STUNNER (English Version) - TEN
+      Take Me Home (IDIOTAPE Remix) - ATEEZ
+      SILK SCARF - Tiga, Fcukers
+      SPAGHETTI (Hot Chill ver.) - LE SSERAFIM, j-hope
+      아이 (Love) - f(x)
+      LOOP (feat.Lil Cherry) - Yves, Lil Cherry
+
+`,
+      en: `[JY Kpop Mix](https://open.spotify.com/playlist/67x7bItzRlsLSpaXvr1Tki?si=6abe8765ab4c4c74)
+      
+      Spicy (Nitepunk Remix) - aespa, nitepunk
+      2 Different Tears (Remix) - Wondergirls
+      Little Things x Gypsy Woman (LBeat Remix) - Jorja Smith
+      Icarus (Artronic Waves Remix) - ARTMS
+      Soap (feat.PinkPantheress) - Yves, PinkPantheress
+      The Chase (Arti & Suchan Kim Remix) - Hearts2Hearts, Arti, Suchan Kim, ScreaM Records
+      기분 좋아지는 노래 - SUMIN
+      STUNNER (English Version) - TEN
+      Take Me Home (IDIOTAPE Remix) - ATEEZ
+      SILK SCARF - Tiga, Fcukers
+      SPAGHETTI (Hot Chill ver.) - LE SSERAFIM, j-hope
+      아이 (Love) - f(x)
+      LOOP (feat.Lil Cherry) - Yves, Lil Cherry
+`
+    },
+    images: [
+      { src: "images/kpopmix.PNG", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
+    ]
+  },
   {
     id: "project-1",
     year: "2026",
@@ -343,7 +399,8 @@ function renderProjectMeta(project) {
     meta.printing,
     meta.paper,
     meta.color,
-    meta.pages
+    meta.pages,
+    meta.time
   ].filter(Boolean);
 
   return `
