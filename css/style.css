@@ -29,9 +29,9 @@
 :root {
   --page-padding: 0.5rem;
   --grid-gap: 12px;
-  --header-height: 32px;
+  --header-height: 34px;
+  --main-top-gap: 2px;
   --footer-height: 18px;
-  --main-top-gap: 20px;
   --image-gap: 4px;
 }
 
@@ -85,10 +85,10 @@ body {
 
 .site-header {
   top: 0;
-  height: var(--header-height);
+  height: auto;
   padding-top: var(--page-padding);
+  padding-bottom: 0.35rem;
   border-bottom: 1px solid #111;
-  padding-bottom: 1.75rem;
 }
 
 .site-footer {
@@ -479,13 +479,21 @@ main.is-image-mode {
   display: none;
 }
 
+.detail-panel.is-contact {
+  top: 0;
+}
+
+.detail-panel.no-media {
+  top: 0;
+}
+
 @media (max-width: 900px) {
   :root {
     --header-height: 22px;
     --footer-height: 22px;
     --grid-gap: 8px;
     --image-gap: 4px;
-    --main-top-gap: 24px;
+    --main-top-gap: 16px;
   }
 
   .detail-panel {

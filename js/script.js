@@ -256,8 +256,13 @@ function updateLayoutMode() {
   detailPanel.classList.toggle("is-full", isImage);
   detailPanel.classList.toggle("is-hidden", isHome);
   detailPanel.classList.toggle("has-border", !isHome && !isImage);
+  detailPanel.classList.toggle("is-contact", currentMode === "contact");
 
   mainElement?.classList.toggle("is-image-mode", isImage);
+
+    if (currentMode !== "project") {
+    detailPanel.classList.remove("no-media");
+  }
 }
 
 function wrapByLang(text, lang) {
@@ -374,7 +379,7 @@ function renderProjects() {
 
 function renderMedia(media) {
   if (!media.length) {
-    return `<div class="detail-empty">${wrapByLang("Image not available", "en")}</div>`;
+    return "";
   }
 
   return `
@@ -495,6 +500,9 @@ function renderDetail() {
     updateLayoutMode();
     return;
   }
+
+  const media = getProjectMedia(project);
+detailPanel.classList.toggle("no-media", media.length === 0);
 
   detailContent.innerHTML = renderProjectDetail(project, false);
   updateLayoutMode();
