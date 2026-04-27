@@ -7,7 +7,7 @@ const projects = [
     meta: {
     },
     description: {
-      ko: "Not yet.",
+      ko: "아무리 들어도 절대 흥얼거릴 수 없는 노래 출시 예정.",
       en: "Not yet."
     },
     images: [
