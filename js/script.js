@@ -1,4 +1,18 @@
 const projects = [
+      {
+    id: "project-7",
+    year: "2026",
+    title: { ko: "흥얼거림을 허락하지 않는 노래,", en: "Untitled Song," },
+    type: { ko: "음악", en: "music" },
+    meta: {
+    },
+    description: {
+      ko: "Not yet.",
+      en: "Not yet."
+    },
+    images: [
+    ]
+  },
     {
     id: "project-6",
     year: "2026",
@@ -343,12 +357,14 @@ function getProjectMedia(project) {
 function renderProjects() {
   projectList.innerHTML = "";
 
-  projects.forEach((project) => {
+  projects.forEach((project,index) => {
     const isActive = currentMode === "project" && currentProjectId === project.id;
     const isInactive = currentMode === "project" && currentProjectId !== project.id;
 
     const item = document.createElement("span");
     item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}`;
+const randomColumn = Math.floor(Math.random() * 40);
+item.style.marginLeft = `${randomColumn}em`;
     item.dataset.id = project.id;
     item.setAttribute("role", "button");
     item.setAttribute("tabindex", "0");
