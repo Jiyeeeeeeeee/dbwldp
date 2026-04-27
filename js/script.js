@@ -376,8 +376,6 @@ if (shouldStair) {
   item.style.marginLeft = "";
 }
 
-const randomColumn = Math.floor(Math.random() * 40);
-item.style.marginLeft = `${randomColumn}em`;
     item.dataset.id = project.id;
     item.setAttribute("role", "button");
     item.setAttribute("tabindex", "0");
