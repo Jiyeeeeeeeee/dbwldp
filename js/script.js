@@ -357,12 +357,23 @@ function getProjectMedia(project) {
 function renderProjects() {
   projectList.innerHTML = "";
 
+    projectList.classList.toggle("is-stair", currentMode === "home");
+  projectList.classList.toggle("is-inline", currentMode !== "home");
+
   projects.forEach((project,index) => {
     const isActive = currentMode === "project" && currentProjectId === project.id;
     const isInactive = currentMode === "project" && currentProjectId !== project.id;
 
     const item = document.createElement("span");
     item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}`;
+
+    if (currentMode === "home") {
+  const randomColumn = Math.floor(Math.random() * 6);
+  item.style.marginLeft = `${randomColumn}em`;
+} else {
+  item.style.marginLeft = "";
+}
+
 const randomColumn = Math.floor(Math.random() * 40);
 item.style.marginLeft = `${randomColumn}em`;
     item.dataset.id = project.id;

@@ -234,6 +234,19 @@ main {
   margin-right: 0.15em;
 }
 
+.project-list.is-stair .project-list-item {
+  display: block;
+  width: fit-content;
+  margin-bottom: 0.15em;
+}
+
+.project-list.is-inline .project-list-item {
+  display: inline;
+  width: auto;
+  margin-left: 0 !important;
+  margin-bottom: 0;
+}
+
 
 .detail-content {
   width: 100%;
