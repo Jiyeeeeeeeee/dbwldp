@@ -357,8 +357,10 @@ function getProjectMedia(project) {
 function renderProjects() {
   projectList.innerHTML = "";
 
-    projectList.classList.toggle("is-stair", currentMode === "home");
-  projectList.classList.toggle("is-inline", currentMode !== "home");
+const shouldStair = currentMode === "home" && !isMobileView();
+
+projectList.classList.toggle("is-stair", shouldStair);
+projectList.classList.toggle("is-inline", !shouldStair);
 
   projects.forEach((project,index) => {
     const isActive = currentMode === "project" && currentProjectId === project.id;
@@ -367,7 +369,7 @@ function renderProjects() {
     const item = document.createElement("span");
     item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}`;
 
-    if (currentMode === "home") {
+if (shouldStair) {
   const randomColumn = Math.floor(Math.random() * 6);
   item.style.marginLeft = `${randomColumn}em`;
 } else {
