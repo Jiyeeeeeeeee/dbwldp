@@ -2,7 +2,7 @@ const projects = [
       {
     id: "project-7",
     year: "2026",
-    title: { ko: "흥얼거림을 허락하지 않는 노래,", en: "Untitled Song," },
+    title: { ko: "절대 흥얼거릴 수 없는 노래,", en: "Untitled Song," },
     type: { ko: "음악", en: "music" },
     meta: {
     },
