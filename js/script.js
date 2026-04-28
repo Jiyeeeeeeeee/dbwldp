@@ -68,7 +68,6 @@ const projects = [
 `
     },
     images: [
-      { src: "images/kpopmix.PNG", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
     ]
   },
   {
@@ -209,29 +208,44 @@ const projects = [
   {
     id: "project-5",
     year: "2023",
-    title: { ko: "E-flux: 2086년 이후의 미래", en: "E-flux: The Future After 2086" },
+    title: { ko: "E-flux: 2086년 이후의 미래,", en: "E-flux: The Future After 2086," },
     type: { ko: "잔", en: "zine" },
     description: {
       ko: "Not yet.",
       en: "Not yet."
     }
-  }
+  },
+        {
+    id: "project-8",
+    year: "2026",
+    title: { ko: "유지예?", en: "Yoo Jiye?" },
+    type: { ko: "음악", en: "music" },
+    meta: {
+    },
+    description: {
+      ko: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너",
+      en: "Not yet."
+    },
+    images: [
+    ]
+  },
 ];
 
 const CONTACT_CONTENT = {
   ko: {
     title: "Contact",
     body: `<a href="mailto:dbwldp@gmail.com">dbwldpdbwldp@gmail.com</a> on Gmail
+    <a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG
 <a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
-<a href="https://www.are.na/jiye-yoo/web-54l-2yfnizi">jiye yoo</a> on Are.na
-<a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG`
+<a href="https://www.are.na/jiye-yoo/channels">jiye yoo</a> on Are.na
+`
   },
   en: {
     title: "Contact",
     body: `<a href="mailto:dbwldp@gmail.com">dbwldpdbwldp@gmail.com</a> on Gmail
+    <a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG
 <a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
-<a href="https://www.are.na/jiye-yoo/web-54l-2yfnizi">jiye yoo</a> on Are.na
-<a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG`
+<a href="https://www.are.na/jiye-yoo/channels">jiye yoo</a> on Are.na`
   }
 };
 
