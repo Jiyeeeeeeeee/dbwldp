@@ -384,7 +384,7 @@ projectList.classList.toggle("is-inline", !shouldStair);
     item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}`;
 
 if (shouldStair) {
-  const randomColumn = Math.floor(Math.random() * 40);
+  const randomColumn = Math.floor(Math.random() * 50);
   item.style.marginLeft = `${randomColumn}em`;
 } else {
   item.style.marginLeft = "";
