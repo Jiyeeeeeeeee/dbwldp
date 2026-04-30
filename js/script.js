@@ -1,5 +1,17 @@
 const projects = [
       {
+    id: "project-8",
+    year: "2026",
+    title: { ko: "인덱싱 아상블라주,", en: "Indexing Asangblaju," },
+    type: { ko: "음악", en: "music" },
+    meta: {
+    },
+    description: {
+    },
+    images: [{ src: "images/indexing.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+    ]
+  },
+  {
     id: "project-7",
     year: "2026",
     title: { ko: "절대 흥얼거릴 수 없는 노래,", en: "Untitled Song," },
@@ -216,7 +228,7 @@ const projects = [
     }
   },
         {
-    id: "project-8",
+    id: "project-9",
     year: "2026",
     title: { ko: "유지예?", en: "Yoo Jiye?" },
     type: { ko: "음악", en: "music" },

@@ -174,7 +174,7 @@ main {
   height: 100%;
   overflow: hidden;
   position: relative;
-  top: -16px;
+  top: 0px;
 }
 
 .project-list {
