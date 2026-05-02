@@ -3,10 +3,24 @@ const projects = [
     id: "project-8",
     year: "2026",
     title: { ko: "인덱싱 아상블라주,", en: "Indexing Asangblaju," },
-    type: { ko: "음악", en: "music" },
+    type: { ko: "진", en: "zine" },
     meta: {
+            ko: {
+        year: "2026",
+        size: "210×297 mm",
+        paper: "",
+        printing: ""
+      },
+      en: {
+        year: "2026",
+        size: "210×297 mm",
+        paper: "",
+        printing: ""
+      }
     },
-    description: {
+    description: {     
+      ko: "338개의 인덱스는 우선 순위를 정하는 표식에서 덩어리가 되었다. 서로를 지시하거나 종속시키지 않는 36개의 비위계적 표면을 아카이빙한 책. ",
+      en: "Not yet."
     },
     images: [{ src: "images/indexing-spread.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
     { src: "images/indexing-spread2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
