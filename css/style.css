@@ -29,8 +29,8 @@
 :root {
   --page-padding: 0.5rem;
   --grid-gap: 12px;
-  --header-height: 34px;
-  --main-top-gap: 2px;
+  --header-height: 26px;
+  --main-top-gap: 8px;
   --footer-height: 18px;
   --image-gap: 4px;
 }
@@ -73,24 +73,31 @@ body {
   padding-right: var(--page-padding);
 }
 
-.site-header,
-.site-footer {
+.site-header {
   position: fixed;
   left: 0;
   width: 100%;
-  background: #fff;
   z-index: 100;
-  font-weight: 700;
-}
+  font-weight: 400;
 
-.site-header {
   top: 0;
   height: auto;
   padding-top: var(--page-padding);
   padding-bottom: 0.35rem;
+
+  background: transparent;
+  color: #fff;
+  mix-blend-mode: exclusion;
+  
 }
 
 .site-footer {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  font-weight: 400;
+
   bottom: 0;
   height: var(--footer-height);
   padding-bottom: var(--page-padding);
@@ -98,6 +105,8 @@ body {
   align-items: flex-end;
   font-size: 0.95rem;
   padding-top: 1.5rem;
+
+  background: #fff;
 }
 
 .header-inner,
@@ -444,10 +453,6 @@ main {
   text-decoration-thickness: 1px;
 }
 
-main.is-image-mode {
-  padding-top: var(--header-height);
-}
-
 .detail-panel.is-full {
   grid-column: 1 / -1;
   width: 100%;
@@ -458,26 +463,43 @@ main.is-image-mode {
   display: none;
 }
 
+/* IMG archive */
+main.is-image-mode .main-layout {
+  padding-left: 0;
+  padding-right: 0;
+  gap: 0;
+}
+
+main.is-image-mode .detail-panel.is-full {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  top: 0;
+}
+
+main.is-image-mode .detail-content {
+  width: 100%;
+  padding-right: 0;
+  overflow-x: hidden;
+}
+
 .image-archive {
   margin-top: 0;
   padding-top: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
   gap: 4px;
-  align-items: flex-start;
-  align-content: flex-start;
   width: 100%;
-  overflow: visible;
 }
 
 .image-archive-item {
   display: block;
-  width: auto;
+  width: 100%;
   height: auto;
-  max-width: calc(10% - 2px);
+  max-width: none;
   max-height: 50vh;
   object-fit: contain;
-  flex: 0 0 auto;
 }
 
 .index-panel.is-hidden {
@@ -498,9 +520,40 @@ main.is-image-mode {
   top: 0;
 }
 
+@media (max-width: 1200px) {
+  :root {
+    --grid-gap: 8px;
+    --image-gap: 3px;
+  }
+
+  .index-panel {
+    font-size: 1.3rem;
+  }
+
+  .detail-image {
+    height: 420px;
+    max-height: 420px;
+  }
+
+  .image-archive {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 3px;
+  }
+
+  .detail-text {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  .detail-meta {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+}
+
 @media (max-width: 900px) {
   :root {
-    --header-height: 22px;
+    --header-height: 18px;
     --footer-height: 22px;
     --grid-gap: 8px;
     --image-gap: 4px;
@@ -643,11 +696,72 @@ main.is-image-mode {
   }
 
   .image-archive {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2px;
   }
 
   .image-archive-item {
-    max-width: calc(33.3% - 6px);
+    width: 100%;
+    max-width: none;
     max-height: 90vh;
   }
+}
+
+/* IMG mode: 이미지가 헤더 뒤에서 바로 시작 */
+body:has(main.is-image-mode) .site-header {
+  background: transparent;
+  color: #fff;
+  mix-blend-mode: exclusion;
+}
+
+main.is-image-mode {
+  padding-top: 0;
+}
+
+main.is-image-mode .main-layout {
+  padding-left: 0;
+  padding-right: 0;
+  gap: 0;
+}
+
+main.is-image-mode .detail-panel.is-full {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  top: 0;
+}
+
+main.is-image-mode .detail-content {
+  width: 100%;
+  height: 100vh;
+  padding-right: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+main.is-image-mode .image-archive {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .detail-panel {
+  margin-top: calc(-1 * (var(--header-height) + var(--main-top-gap)));
+  height: calc(100% + var(--header-height) + var(--main-top-gap));
+  top: 0;
+}
+
+body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .detail-content {
+  height: 100%;
+  padding-top: 0;
+}
+
+body:has(.detail-panel.no-media):not(:has(main.is-image-mode)) .detail-panel {
+  margin-top: 0;
+  height: 100%;
+  top: 0;
+}
+
+body:has(.detail-panel.no-media):not(:has(main.is-image-mode)) .detail-content {
+  padding-top: 0;
 }

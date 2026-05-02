@@ -1,5 +1,5 @@
 const projects = [
-      {
+  {
     id: "project-8",
     year: "2026",
     title: { ko: "인덱싱 아상블라주,", en: "Indexing Asangblaju," },
@@ -8,8 +8,28 @@ const projects = [
     },
     description: {
     },
-    images: [{ src: "images/indexing-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
-      { src: "images/indexing-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } }
+    images: [{ src: "images/indexing-spread.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+    { src: "images/indexing-spread2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
+    { src: "images/indexing-spread3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
+      /*{ src: "images/indexing-spread4.jpg", alt: { ko: "진 프로젝트 이미지 4", en: "Zine project image 4" } },
+    { src: "images/indexing-spread5.jpg", alt: { ko: "진 프로젝트 이미지 5", en: "Zine project image 5" } },
+    { src: "images/indexing-spread6.jpg", alt: { ko: "진 프로젝트 이미지 6", en: "Zine project image 6" } },
+    { src: "images/indexing-spread7.jpg", alt: { ko: "진 프로젝트 이미지 7", en: "Zine project image 7" } },
+    { src: "images/indexing-spread8.jpg", alt: { ko: "진 프로젝트 이미지 8", en: "Zine project image 8" } },
+    { src: "images/indexing-spread9.jpg", alt: { ko: "진 프로젝트 이미지 9", en: "Zine project image 9" } },
+    { src: "images/indexing-spread10.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
+    { src: "images/indexing-spread11.jpg", alt: { ko: "진 프로젝트 이미지 11", en: "Zine project image 11" } },
+    { src: "images/indexing-spread12.jpg", alt: { ko: "진 프로젝트 이미지 12", en: "Zine project image 12" } },
+    { src: "images/indexing-spread13.jpg", alt: { ko: "진 프로젝트 이미지 13", en: "Zine project image 13" } },
+    /*{ src: "images/indexing-spread14.jpg", alt: { ko: "진 프로젝트 이미지 14", en: "Zine project image 14" } },
+    { src: "images/indexing-spread15.jpg", alt: { ko: "진 프로젝트 이미지 15", en: "Zine project image 15" } },
+    /*{ src: "images/indexing-spread16.jpg", alt: { ko: "진 프로젝트 이미지 16", en: "Zine project image 16" } },
+    { src: "images/indexing-spread17.jpg", alt: { ko: "진 프로젝트 이미지 17", en: "Zine project image 17" } },
+    { src: "images/indexing-spread18.jpg", alt: { ko: "진 프로젝트 이미지 18", en: "Zine project image 18" } },
+    /*{ src: "images/indexing-spread19.jpg", alt: { ko: "진 프로젝트 이미지 19", en: "Zine project image 19" } },*/
+
+
+
     ]
   },
   {
@@ -26,7 +46,7 @@ const projects = [
     images: [
     ]
   },
-    {
+  {
     id: "project-6",
     year: "2026",
     title: { ko: "케이팝 믹스,", en: "Kpop Mix," },
@@ -113,9 +133,9 @@ const projects = [
       { src: "images/tshirt-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
       { src: "images/tshirt-3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
       { src: "images/tshirt-4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
-            { src: "images/4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
-                  { src: "images/5.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
-                        { src: "images/9.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
+      { src: "images/4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
+      { src: "images/5.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
+      { src: "images/9.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
 
     ]
   },
@@ -228,7 +248,7 @@ const projects = [
       en: "Not yet."
     }
   },
-        {
+  {
     id: "project-9",
     year: "2026",
     title: { ko: "유지예?", en: "Yoo Jiye?" },
@@ -301,7 +321,7 @@ function updateLayoutMode() {
 
   mainElement?.classList.toggle("is-image-mode", isImage);
 
-    if (currentMode !== "project") {
+  if (currentMode !== "project") {
     detailPanel.classList.remove("no-media");
   }
 }
@@ -384,24 +404,24 @@ function getProjectMedia(project) {
 function renderProjects() {
   projectList.innerHTML = "";
 
-const shouldStair = currentMode === "home" && !isMobileView();
+  const shouldStair = currentMode === "home" && !isMobileView();
 
-projectList.classList.toggle("is-stair", shouldStair);
-projectList.classList.toggle("is-inline", !shouldStair);
+  projectList.classList.toggle("is-stair", shouldStair);
+  projectList.classList.toggle("is-inline", !shouldStair);
 
-  projects.forEach((project,index) => {
+  projects.forEach((project, index) => {
     const isActive = currentMode === "project" && currentProjectId === project.id;
     const isInactive = currentMode === "project" && currentProjectId !== project.id;
 
     const item = document.createElement("span");
     item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}`;
 
-if (shouldStair) {
-  const randomColumn = Math.floor(Math.random() * 50);
-  item.style.marginLeft = `${randomColumn}em`;
-} else {
-  item.style.marginLeft = "";
-}
+    if (shouldStair) {
+      const randomColumn = Math.floor(Math.random() * 50);
+      item.style.marginLeft = `${randomColumn}em`;
+    } else {
+      item.style.marginLeft = "";
+    }
 
 
     item.dataset.id = project.id;
@@ -557,7 +577,7 @@ function renderDetail() {
   }
 
   const media = getProjectMedia(project);
-detailPanel.classList.toggle("no-media", media.length === 0);
+  detailPanel.classList.toggle("no-media", media.length === 0);
 
   detailContent.innerHTML = renderProjectDetail(project, false);
   updateLayoutMode();
