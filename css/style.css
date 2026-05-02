@@ -88,7 +88,7 @@ body {
   background: transparent;
   color: #fff;
   mix-blend-mode: exclusion;
-  
+
 }
 
 .site-footer {
@@ -560,9 +560,14 @@ main.is-image-mode .detail-content {
     --main-top-gap: 16px;
   }
 
+  .site-header,
+  .site-header button {
+    font-weight: 700;
+  }
+
   .detail-panel {
     position: relative;
-    top:0;
+    top: 0;
   }
 
   .detail-content {
@@ -757,11 +762,16 @@ body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .detail-co
 }
 
 body:has(.detail-panel.no-media):not(:has(main.is-image-mode)) .detail-panel {
-  margin-top: 0;
-  height: 100%;
+  margin-top: calc(-1 * (var(--header-height) + var(--main-top-gap)));
+  height: calc(100% + var(--header-height) + var(--main-top-gap));
   top: 0;
 }
 
 body:has(.detail-panel.no-media):not(:has(main.is-image-mode)) .detail-content {
+  height: 100%;
   padding-top: 0;
+}
+
+body:has(.detail-panel.no-media):not(:has(main.is-image-mode)) .detail-entry {
+  padding-top: calc(var(--header-height) + var(--main-top-gap));
 }
