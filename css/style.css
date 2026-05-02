@@ -192,6 +192,11 @@ main {
   overflow-wrap: anywhere;
 }
 
+.project-list.is-inline {
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
 .project-list-item {
   display: block;
   width: fit-content;
@@ -645,11 +650,11 @@ main.is-image-mode .detail-content {
   .index-panel.is-hidden {
     display: none;
   }
+  
 
   .detail-panel {
     height: 100%;
     min-height: 0;
-
   }
 
   .detail-content {
