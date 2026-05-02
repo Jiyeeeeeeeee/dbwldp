@@ -106,7 +106,9 @@ body {
   font-size: 0.95rem;
   padding-top: 1.5rem;
 
-  background: #fff;
+  background: transparent;
+  color: #fff;
+  mix-blend-mode: exclusion;
 }
 
 .header-inner,
@@ -560,8 +562,6 @@ main.is-image-mode .detail-content {
     --main-top-gap: 16px;
   }
 
-  .site-header,
-  .site-header button,
   .site-footer
    .site-footer button {
     font-weight: 700;
