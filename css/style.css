@@ -561,7 +561,8 @@ main.is-image-mode .detail-content {
   }
 
   .site-header,
-  .site-header button {
+  .site-header button
+  .site-footer  {
     font-weight: 700;
   }
 
@@ -774,4 +775,19 @@ body:has(.detail-panel.no-media):not(:has(main.is-image-mode)) .detail-content {
 
 body:has(.detail-panel.no-media):not(:has(main.is-image-mode)) .detail-entry {
   padding-top: calc(var(--header-height) + var(--main-top-gap));
+}
+
+body:has(.detail-panel.is-contact):not(:has(main.is-image-mode)) .detail-panel {
+  margin-top: 0;
+  height: 100%;
+  top: 0;
+}
+
+body:has(.detail-panel.is-contact):not(:has(main.is-image-mode)) .detail-content {
+  height: 100%;
+  padding-top: 0;
+}
+
+body:has(.detail-panel.is-contact):not(:has(main.is-image-mode)) .detail-entry {
+  padding-top: 0;
 }
