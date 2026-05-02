@@ -561,8 +561,9 @@ main.is-image-mode .detail-content {
   }
 
   .site-header,
-  .site-header button
-  .site-footer  {
+  .site-header button,
+  .site-footer
+   .site-footer button {
     font-weight: 700;
   }
 
