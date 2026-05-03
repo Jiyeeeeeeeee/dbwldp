@@ -2,7 +2,7 @@ const projects = [
   {
     id: "project-8",
     year: "2026",
-    title: { ko: "인덱싱 아상블라주,", en: "Indexing Asangblaju," },
+    title: { ko: "인덱스 336,", en: "Index 336," },
     type: { ko: "진", en: "zine" },
     meta: {
             ko: {
