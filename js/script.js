@@ -22,7 +22,9 @@ const projects = [
       ko: "338개의 인덱스는 우선 순위를 정하는 표식에서 덩어리가 되었다. 서로를 지시하거나 종속시키지 않는 36개의 비위계적 표면을 아카이빙한 책. ",
       en: "Not yet."
     },
-    images: [{ src: "images/indexing-spread.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+    images: [{ src: "images/binding-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+      { src: "images/binding-2.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+      { src: "images/indexing-spread.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
     { src: "images/indexing-spread2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
     { src: "images/indexing-spread3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
       /*{ src: "images/indexing-spread4.jpg", alt: { ko: "진 프로젝트 이미지 4", en: "Zine project image 4" } },
