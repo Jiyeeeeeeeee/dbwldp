@@ -250,8 +250,9 @@ const projects = [
       { src: "images/rei-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
       { src: "images/rei-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
       { src: "images/rei-3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
-      { src: "images/rei-11.jpg", alt: { ko: "진 프로젝트 이미지 11", en: "Zine project image 11" } },
-            { src: "images/rei-10.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
+                                    { src: "images/rei-12.jpg", alt: { ko: "진 프로젝트 이미지 12", en: "Zine project image 12" } },
+                                                                                                            { src: "images/rei-13.jpg", alt: { ko: "진 프로젝트 이미지 13", en: "Zine project image 13" } },
+                                                                                                                        { src: "images/rei-10.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
     ]
   },
   {
