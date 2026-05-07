@@ -158,7 +158,7 @@ const projects = [
   {
     id: "project-2",
     year: "2026",
-    title: { ko: "스스로 출판 도구 만들기,", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand," },
+    title: { ko: "출판 기계,", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand," },
     type: { ko: "프로젝트", en: "Project" },
     description: {
       ko: "Not yet.",
