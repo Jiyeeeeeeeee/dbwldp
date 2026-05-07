@@ -8,18 +8,22 @@ const projects = [
             ko: {
         year: "2026",
         size: "210×297 mm",
-        paper: "",
-        printing: ""
+        pages: "36p",
+        paper: "문켄프린트화이트 115g",
+        printing: "인디고 출력",
+                binding: "실제본"
       },
       en: {
         year: "2026",
         size: "210×297 mm",
-        paper: "",
-        printing: ""
+        pages: "36p",
+        paper: "MunkenPrintWhite 115g",
+        printing: "Indigo Printing",
+        binding: "Saddle Stitch Binding"
       }
     },
     description: {     
-      ko: "338개의 인덱스는 우선 순위를 정하는 표식에서 덩어리가 되었다. 서로를 지시하거나 종속시키지 않는 36개의 비위계적 표면을 아카이빙한 책. ",
+      ko: "336개의 인덱스로 만들어진 36개의 비위계적 표면을 아카이빙한 책. ",
       en: "Not yet."
     },
     images: [{ src: "images/binding-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
@@ -172,13 +176,13 @@ const projects = [
     type: { ko: "진", en: "Zine" },
     meta: {
       ko: {
-        year: "2025",
-        size: "130×200 mm",
+        year: "2026",
+        size: "297*420 mm",
         printing: "인디고 1도 인쇄"
       },
       en: {
-        year: "2025",
-        size: "130×200 mm",
+        year: "2026",
+        size: "297*420 mm",
         printing: "Indigo 1-color printing"
       }
     },
@@ -499,7 +503,8 @@ function renderProjectMeta(project) {
     meta.paper,
     meta.color,
     meta.pages,
-    meta.time
+    meta.time,
+    meta.binding,
   ].filter(Boolean);
 
   return `
