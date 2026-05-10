@@ -23,36 +23,33 @@ const projects = [
       }
     },
     description: {     
-      ko: "336개의 인덱스로 만들어진 36개의 비위계적 표면을 아카이빙한 책. ",
-      en: "Not yet."
+      ko: "336개의 인덱스 스티커로 만들어진 36개의 비위계적 표면을 모은 책.",
+      en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."
     },
-    images: [{ src: "images/binding-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
-      { src: "images/binding-2.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
-        /*{ src: "images/indexing-spread.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
-    { src: "images/indexing-spread2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
-    { src: "images/indexing-spread3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
-      { src: "images/indexing-spread4.jpg", alt: { ko: "진 프로젝트 이미지 4", en: "Zine project image 4" } },
-    { src: "images/indexing-spread5.jpg", alt: { ko: "진 프로젝트 이미지 5", en: "Zine project image 5" } },
-    { src: "images/indexing-spread6.jpg", alt: { ko: "진 프로젝트 이미지 6", en: "Zine project image 6" } },
-    { src: "images/indexing-spread7.jpg", alt: { ko: "진 프로젝트 이미지 7", en: "Zine project image 7" } },
-    { src: "images/indexing-spread8.jpg", alt: { ko: "진 프로젝트 이미지 8", en: "Zine project image 8" } },
-    { src: "images/indexing-spread9.jpg", alt: { ko: "진 프로젝트 이미지 9", en: "Zine project image 9" } },
-    { src: "images/indexing-spread10.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
-    { src: "images/indexing-spread11.jpg", alt: { ko: "진 프로젝트 이미지 11", en: "Zine project image 11" } },
-    { src: "images/indexing-spread12.jpg", alt: { ko: "진 프로젝트 이미지 12", en: "Zine project image 12" } },
-    { src: "images/indexing-spread13.jpg", alt: { ko: "진 프로젝트 이미지 13", en: "Zine project image 13" } },
-    /*{ src: "images/indexing-spread14.jpg", alt: { ko: "진 프로젝트 이미지 14", en: "Zine project image 14" } },
-    { src: "images/indexing-spread15.jpg", alt: { ko: "진 프로젝트 이미지 15", en: "Zine project image 15" } },
-    /*{ src: "images/indexing-spread16.jpg", alt: { ko: "진 프로젝트 이미지 16", en: "Zine project image 16" } },
-    { src: "images/indexing-spread17.jpg", alt: { ko: "진 프로젝트 이미지 17", en: "Zine project image 17" } },
-    { src: "images/indexing-spread18.jpg", alt: { ko: "진 프로젝트 이미지 18", en: "Zine project image 18" } },
-    /*{ src: "images/indexing-spread19.jpg", alt: { ko: "진 프로젝트 이미지 19", en: "Zine project image 19" } },*/
-
-
-
+    images: [{ src: "images/binding-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/binding-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+        /*{ src: "images/indexing-spread.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    { src: "images/indexing-spread2.jpg", alt: { ko: "프로젝트 이미지 2", en: "project image 2" } },
+    { src: "images/indexing-spread3.jpg", alt: { ko: "프로젝트 이미지 3", en: "project image 3" } },
+      { src: "images/indexing-spread4.jpg", alt: { ko: "프로젝트 이미지 4", en: "project image 4" } },
+    { src: "images/indexing-spread5.jpg", alt: { ko: "프로젝트 이미지 5", en: "project image 5" } },
+    { src: "images/indexing-spread6.jpg", alt: { ko: "프로젝트 이미지 6", en: "project image 6" } },
+    { src: "images/indexing-spread7.jpg", alt: { ko: "프로젝트 이미지 7", en: "project image 7" } },
+    { src: "images/indexing-spread8.jpg", alt: { ko: "프로젝트 이미지 8", en: "project image 8" } },
+    { src: "images/indexing-spread9.jpg", alt: { ko: "프로젝트 이미지 9", en: "project image 9" } },
+    { src: "images/indexing-spread10.jpg", alt: { ko: "프로젝트 이미지 10", en: "project image 10" } },
+    { src: "images/indexing-spread11.jpg", alt: { ko: "프로젝트 이미지 11", en: "project image 11" } },
+    { src: "images/indexing-spread12.jpg", alt: { ko: "프로젝트 이미지 12", en: "project image 12" } },
+    { src: "images/indexing-spread13.jpg", alt: { ko: "프로젝트 이미지 13", en: "project image 13" } },
+    /*{ src: "images/indexing-spread14.jpg", alt: { ko: "프로젝트 이미지 14", en: "project image 14" } },
+    { src: "images/indexing-spread15.jpg", alt: { ko: "프로젝트 이미지 15", en: "project image 15" } },
+    /*{ src: "images/indexing-spread16.jpg", alt: { ko: "프로젝트 이미지 16", en: "project image 16" } },
+    { src: "images/indexing-spread17.jpg", alt: { ko: "프로젝트 이미지 17", en: "project image 17" } },
+    { src: "images/indexing-spread18.jpg", alt: { ko: "프로젝트 이미지 18", en: "project image 18" } },
+    /*{ src: "images/indexing-spread19.jpg", alt: { ko: "프로젝트 이미지 19", en: "project image 19" } },*/
     ]
   },
-  {
+  /*{
     id: "project-7",
     year: "2026",
     title: { ko: "절대 흥얼거릴 수 없는 노래,", en: "Untitled Song," },
@@ -65,7 +62,7 @@ const projects = [
     },
     images: [
     ]
-  },
+  },*/
   {
     id: "project-6",
     year: "2026",
@@ -278,7 +275,7 @@ const projects = [
     },
     description: {
       ko: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너",
-      en: "Not yet."
+      en: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너"
     },
     images: [
     ]
@@ -416,6 +413,13 @@ function parseDescription(text = "") {
   }).join("");
 }
 
+function isNotYetProject(project) {
+  return (
+    project.description?.ko?.trim().toLowerCase() === "not yet." &&
+    project.description?.en?.trim().toLowerCase() === "not yet."
+  );
+}
+
 function getProjectMedia(project) {
   if (project.images && project.images.length > 0) return project.images;
   if (project.image && project.image.src) return [project.image];
@@ -430,12 +434,13 @@ function renderProjects() {
   projectList.classList.toggle("is-stair", shouldStair);
   projectList.classList.toggle("is-inline", !shouldStair);
 
-  projects.forEach((project, index) => {
-    const isActive = currentMode === "project" && currentProjectId === project.id;
-    const isInactive = currentMode === "project" && currentProjectId !== project.id;
+projects.forEach((project, index) => {
+  const isActive = currentMode === "project" && currentProjectId === project.id;
+  const isInactive = currentMode === "project" && currentProjectId !== project.id;
+  const isDisabled = isNotYetProject(project);
 
-    const item = document.createElement("span");
-    item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}`;
+  const item = document.createElement("span");
+  item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}${isDisabled ? " is-disabled" : ""}`;
 
     if (shouldStair) {
       const randomColumn = Math.floor(Math.random() * 50);
@@ -445,9 +450,14 @@ function renderProjects() {
     }
 
 
-    item.dataset.id = project.id;
-    item.setAttribute("role", "button");
-    item.setAttribute("tabindex", "0");
+item.dataset.id = project.id;
+
+if (isDisabled) {
+  item.setAttribute("aria-disabled", "true");
+} else {
+  item.setAttribute("role", "button");
+  item.setAttribute("tabindex", "0");
+}
 
     item.innerHTML = `
       <span class="project-list-title">${wrapByLang(project.title[currentLang], currentLang)}</span>
@@ -460,14 +470,16 @@ function renderProjects() {
       renderDetail();
     };
 
-    item.addEventListener("click", openProject);
+if (!isDisabled) {
+  item.addEventListener("click", openProject);
 
-    item.addEventListener("keydown", (event) => {
-      if (event.key === "Enter" || event.key === " ") {
-        event.preventDefault();
-        openProject();
-      }
-    });
+  item.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openProject();
+    }
+  });
+}
 
     projectList.appendChild(item);
   });

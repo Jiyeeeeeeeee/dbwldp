@@ -173,7 +173,7 @@ main {
   overflow-x: hidden;
   padding-right: 8px;
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
 }
 
 
@@ -201,7 +201,7 @@ main {
   display: block;
   width: fit-content;
   padding: 0;
-  margin: 0 0 0.15em 0;
+  margin: 0 0 0.1em 0;
   white-space: normal;
   cursor: pointer;
 }
@@ -717,6 +717,16 @@ main.is-image-mode .detail-content {
     max-width: none;
     max-height: 90vh;
   }
+}
+
+.project-list-item.is-disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.35;
+}
+
+.project-list-item.is-disabled .project-list-title {
+  color: inherit;
 }
 
 /* IMG mode: 이미지가 헤더 뒤에서 바로 시작 */
