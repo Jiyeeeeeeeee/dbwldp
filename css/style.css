@@ -722,7 +722,8 @@ main.is-image-mode .detail-content {
 .project-list-item.is-disabled {
   pointer-events: none;
   cursor: default;
-  opacity: 0.35;
+  opacity: 1;
+  color: #111;
 }
 
 .project-list-item.is-disabled .project-list-title {
