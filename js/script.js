@@ -99,6 +99,8 @@ const projects = [
       아이 (Love) - f(x)
       LOOP (feat.Lil Cherry) - Yves, Lil Cherry
 
+      케이팝은 이상하다. 이상하고 공허하다. 곰팡이 범벅인 그릭요거트를 기꺼이 먹고 마는 이유. 운전하는 엄마 옆에서 훗을 부르며 간헐적으로 일어났던 소녀시대 10번째 멤버라는 착각은 10년이 넘는 시간을 지탱하고 해방시킨다.  
+
 `,
       en: `[JY Kpop Mix](https://open.spotify.com/playlist/67x7bItzRlsLSpaXvr1Tki?si=6abe8765ab4c4c74)
       
