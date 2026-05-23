@@ -122,7 +122,7 @@ const projects = [
     images: [
     ]
   },
-  {
+ {
     id: "project-1",
     year: "2026",
     title: { ko: "스코어 티셔츠,", en: "Score T-Shirt," },
@@ -148,13 +148,13 @@ const projects = [
       en: "Not yet."
     },
     images: [
-      { src: "images/tshirt-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
+      /*{ src: "images/tshirt-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
       { src: "images/tshirt-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
       { src: "images/tshirt-3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
       { src: "images/tshirt-4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
-      { src: "images/4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
+      { src: "images/4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },*/
       { src: "images/5.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
-      { src: "images/9.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
+      /*{ src: "images/9.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },*/
 
     ]
   },
@@ -195,7 +195,6 @@ const projects = [
       en: "Not yet."
     },
     images: [
-      { src: "images/reading-2.png", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
     ]
   },
   {
@@ -444,12 +443,12 @@ projects.forEach((project, index) => {
   const item = document.createElement("span");
   item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}${isDisabled ? " is-disabled" : ""}`;
 
-    if (shouldStair) {
+    /*if (shouldStair) {
       const randomColumn = Math.floor(Math.random() * 50);
       item.style.marginLeft = `${randomColumn}em`;
     } else {
       item.style.marginLeft = "";
-    }
+    }*/
 
 
 item.dataset.id = project.id;
