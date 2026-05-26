@@ -57,7 +57,7 @@ body {
   background-image: url("../images/yellow.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 50%;
 }
 
 [lang="ko"] {
