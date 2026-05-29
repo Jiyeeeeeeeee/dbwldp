@@ -1,6 +1,6 @@
 const projects = [
   {
-    id: "project-9",
+    id: "project-10",
     year: "2026",
     title: { ko: "명함,", en: "business card," },
     type: { ko: "그래픽", en: "graphic" },
@@ -294,8 +294,6 @@ const projects = [
       ko: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너",
       en: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너"
     },
-    images: [
-    ]
   },
 ];
 

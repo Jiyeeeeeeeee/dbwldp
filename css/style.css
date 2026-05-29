@@ -32,7 +32,7 @@
   --header-height: 26px;
   --main-top-gap: 16px;
   --footer-height: 18px;
-  --image-gap: 4px;
+  --image-gap: 0px;
 }
 
 * {
@@ -506,7 +506,6 @@ main.is-image-mode .detail-content {
   padding-top: 0;
   display: grid;
   grid-template-columns: repeat(9, minmax(0, 1fr));
-  gap: 4px;
   width: 100%;
 }
 
@@ -540,7 +539,7 @@ main.is-image-mode .detail-content {
 @media (max-width: 1200px) {
   :root {
     --grid-gap: 8px;
-    --image-gap: 3px;
+    --image-gap: 0px;
   }
 
   .index-panel {
@@ -554,7 +553,7 @@ main.is-image-mode .detail-content {
 
   .image-archive {
     grid-template-columns: repeat(7, minmax(0, 1fr));
-    gap: 3px;
+    gap: 0px;
   }
 
   .detail-text {
@@ -573,7 +572,7 @@ main.is-image-mode .detail-content {
     --header-height: 18px;
     --footer-height: 22px;
     --grid-gap: 8px;
-    --image-gap: 4px;
+    --image-gap: 0px;
     --main-top-gap: 16px;
   }
 
@@ -634,7 +633,7 @@ main.is-image-mode .detail-content {
     line-height: 1;
     word-break: keep-all;
     overflow-wrap: anywhere;
-    font-size: 1.15rem;
+    font-size: 0.95rem;
     line-height: 1.3;
   }
 
@@ -719,7 +718,6 @@ main.is-image-mode .detail-content {
 
   .image-archive {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2px;
   }
 
   .image-archive-item {
