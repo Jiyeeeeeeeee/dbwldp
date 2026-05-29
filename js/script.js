@@ -23,7 +23,7 @@ const projects = [
       en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."*/
     },
     images: [
-      { src: "images/bc-5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/bc-5.JPG", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
             { src: "images/bc-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
       { src: "images/bc-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
