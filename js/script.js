@@ -1,17 +1,46 @@
 const projects = [
   {
+    id: "project-9",
+    year: "2026",
+    title: { ko: "명함,", en: "business card," },
+    type: { ko: "그래픽", en: "graphic" },
+    meta: {
+      ko: {
+        year: "2026",
+        size: "165x255, 220x340, 275x385 mm",
+        paper: "엔티랏샤 화이트 151g, NS보드 1100mm 합지",
+        printing: "인디고 출력",
+      },
+      en: {
+        year: "2026",
+        size: "165x255, 220x340, 275x385 mm",
+        paper: "NT white 151g, NS board 1100mm",
+        printing: "Indigo Printing",
+      }
+    },
+    description: {
+      /*ko: "336개의 인덱스 스티커로 만들어진 36개의 비위계적 표면을 모은 책.",
+      en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."*/
+    },
+    images: [
+      { src: "images/bc-5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+            { src: "images/bc-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/bc-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    ]
+  },
+  {
     id: "project-8",
     year: "2026",
     title: { ko: "인덱싱 336,", en: "Indexing 336," },
     type: { ko: "책", en: "editorial" },
     meta: {
-            ko: {
+      ko: {
         year: "2026",
         size: "210×297 mm",
         pages: "36p",
         paper: "문켄프린트화이트 115g",
         printing: "인디고 출력",
-                binding: "실제본"
+        binding: "실제본"
       },
       en: {
         year: "2026",
@@ -22,31 +51,16 @@ const projects = [
         binding: "Saddle Stitch Binding"
       }
     },
-    description: {     
+    description: {
       ko: "336개의 인덱스 스티커로 만들어진 36개의 비위계적 표면을 모은 책.",
       en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."
     },
     images: [{ src: "images/binding-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/binding-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-        /*{ src: "images/indexing-spread.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    { src: "images/indexing-spread2.jpg", alt: { ko: "프로젝트 이미지 2", en: "project image 2" } },
-    { src: "images/indexing-spread3.jpg", alt: { ko: "프로젝트 이미지 3", en: "project image 3" } },
-      { src: "images/indexing-spread4.jpg", alt: { ko: "프로젝트 이미지 4", en: "project image 4" } },
-    { src: "images/indexing-spread5.jpg", alt: { ko: "프로젝트 이미지 5", en: "project image 5" } },
-    { src: "images/indexing-spread6.jpg", alt: { ko: "프로젝트 이미지 6", en: "project image 6" } },
-    { src: "images/indexing-spread7.jpg", alt: { ko: "프로젝트 이미지 7", en: "project image 7" } },
-    { src: "images/indexing-spread8.jpg", alt: { ko: "프로젝트 이미지 8", en: "project image 8" } },
-    { src: "images/indexing-spread9.jpg", alt: { ko: "프로젝트 이미지 9", en: "project image 9" } },
-    { src: "images/indexing-spread10.jpg", alt: { ko: "프로젝트 이미지 10", en: "project image 10" } },
-    { src: "images/indexing-spread11.jpg", alt: { ko: "프로젝트 이미지 11", en: "project image 11" } },
-    { src: "images/indexing-spread12.jpg", alt: { ko: "프로젝트 이미지 12", en: "project image 12" } },
-    { src: "images/indexing-spread13.jpg", alt: { ko: "프로젝트 이미지 13", en: "project image 13" } },
-    /*{ src: "images/indexing-spread14.jpg", alt: { ko: "프로젝트 이미지 14", en: "project image 14" } },
-    { src: "images/indexing-spread15.jpg", alt: { ko: "프로젝트 이미지 15", en: "project image 15" } },
-    /*{ src: "images/indexing-spread16.jpg", alt: { ko: "프로젝트 이미지 16", en: "project image 16" } },
-    { src: "images/indexing-spread17.jpg", alt: { ko: "프로젝트 이미지 17", en: "project image 17" } },
-    { src: "images/indexing-spread18.jpg", alt: { ko: "프로젝트 이미지 18", en: "project image 18" } },
-    /*{ src: "images/indexing-spread19.jpg", alt: { ko: "프로젝트 이미지 19", en: "project image 19" } },*/
+    { src: "images/binding-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    { src: "images/indexing-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    { src: "images/indexing-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    { src: "images/indexing-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    { src: "images/indexing-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
   /*{
@@ -99,7 +113,7 @@ const projects = [
       아이 (Love) - f(x)
       LOOP (feat.Lil Cherry) - Yves, Lil Cherry
 
-      케이팝은 이상하다. 이상하고 공허하다. 곰팡이 범벅인 그릭요거트를 기꺼이 먹고 마는 이유. 운전하는 엄마 옆에서 훗을 부르며 간헐적으로 일어났던 소녀시대 10번째 멤버라는 착각은 10년이 넘는 시간을 지탱하고 해방시킨다.  
+      케이팝은 이상하다. 이상하고 공허하다. 곰팡이 범벅인 그릭요거트를 기꺼이 먹고 마는 이유.
 
 `,
       en: `[JY Kpop Mix](https://open.spotify.com/playlist/67x7bItzRlsLSpaXvr1Tki?si=6abe8765ab4c4c74)
@@ -122,7 +136,7 @@ const projects = [
     images: [
     ]
   },
- {
+  {
     id: "project-1",
     year: "2026",
     title: { ko: "스코어 티셔츠,", en: "Score T-Shirt," },
@@ -186,13 +200,15 @@ const projects = [
       }
     },
     description: {
-      ko: `아래는 보르헤스의 「불한당의 세계사」 프롤로그 속 마지막 문장이다. 
+      ko: "Not yet.",
+      en: "Not yet."
+      /*ko: `아래는 보르헤스의 「불한당의 세계사」 프롤로그 속 마지막 문장이다. 
 
       > 따라서 읽기는 쓰기 후에 일어나는 행위이다. 보다 겸손하고, 보다 거슬리지 않고, 보다 지적인 행위.
 — 호르헤 루이스 보르헤스, 『불한당의 세계사』, 민음사, 1994
 
 읽기는 쓰기 전 선행되는 — 어쩌면 쓰기보다 더 겸손할지 모르는 — 행위이다. 선조들은 읽고자 하는 겸손한 행위를 참지 못하고 다양한 읽기 도구를 만들었다. 자고로 겸손하게 읽힌 글들은 겸손하지 못한 수집욕을 자극하는 법. 지난 한 달 동안 읽은 18개의 글을 아카이빙한 진이자 한 권의 책을 만들었다. 글자의 형태를 띄지 않은, 가령 분위기, 수, 마음 같은 고도의 능력을 요구하는 것들은 수집에 포함하지 않았다.`,
-      en: "Not yet."
+      en: "Not yet."*/
     },
     images: [
     ]
@@ -252,9 +268,9 @@ const projects = [
       { src: "images/rei-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
       { src: "images/rei-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
       { src: "images/rei-3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
-                                    { src: "images/rei-12.jpg", alt: { ko: "진 프로젝트 이미지 12", en: "Zine project image 12" } },
-                                                                                                            { src: "images/rei-13.jpg", alt: { ko: "진 프로젝트 이미지 13", en: "Zine project image 13" } },
-                                                                                                                        { src: "images/rei-10.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
+      { src: "images/rei-12.jpg", alt: { ko: "진 프로젝트 이미지 12", en: "Zine project image 12" } },
+      { src: "images/rei-13.jpg", alt: { ko: "진 프로젝트 이미지 13", en: "Zine project image 13" } },
+      { src: "images/rei-10.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
     ]
   },
   {
@@ -286,7 +302,7 @@ const projects = [
 const CONTACT_CONTENT = {
   ko: {
     title: "Contact",
-    body: `<a href="mailto:dbwldp@gmail.com">dbwldpdbwldp@gmail.com</a> on Gmail
+    body: `<a href="mailto:yoojiye@gmail.com">yoojiye@gmail.com</a> on Gmail
     <a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG
 <a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
 <a href="https://www.are.na/jiye-yoo/channels">jiye yoo</a> on Are.na
@@ -294,7 +310,7 @@ const CONTACT_CONTENT = {
   },
   en: {
     title: "Contact",
-    body: `<a href="mailto:dbwldp@gmail.com">dbwldpdbwldp@gmail.com</a> on Gmail
+    body: `<a href="mailto:yoojiye@gmail.com">yoojiye@gmail.com</a> on Gmail
     <a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG
 <a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
 <a href="https://www.are.na/jiye-yoo/channels">jiye yoo</a> on Are.na`
@@ -435,13 +451,13 @@ function renderProjects() {
   projectList.classList.toggle("is-stair", shouldStair);
   projectList.classList.toggle("is-inline", !shouldStair);
 
-projects.forEach((project, index) => {
-  const isActive = currentMode === "project" && currentProjectId === project.id;
-  const isInactive = currentMode === "project" && currentProjectId !== project.id;
-  const isDisabled = isNotYetProject(project);
+  projects.forEach((project, index) => {
+    const isActive = currentMode === "project" && currentProjectId === project.id;
+    const isInactive = currentMode === "project" && currentProjectId !== project.id;
+    const isDisabled = isNotYetProject(project);
 
-  const item = document.createElement("span");
-  item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}${isDisabled ? " is-disabled" : ""}`;
+    const item = document.createElement("span");
+    item.className = `project-list-item${isActive ? " is-active" : ""}${isInactive ? " is-inactive" : ""}${isDisabled ? " is-disabled" : ""}`;
 
     /*if (shouldStair) {
       const randomColumn = Math.floor(Math.random() * 50);
@@ -451,14 +467,14 @@ projects.forEach((project, index) => {
     }*/
 
 
-item.dataset.id = project.id;
+    item.dataset.id = project.id;
 
-if (isDisabled) {
-  item.setAttribute("aria-disabled", "true");
-} else {
-  item.setAttribute("role", "button");
-  item.setAttribute("tabindex", "0");
-}
+    if (isDisabled) {
+      item.setAttribute("aria-disabled", "true");
+    } else {
+      item.setAttribute("role", "button");
+      item.setAttribute("tabindex", "0");
+    }
 
     item.innerHTML = `
       <span class="project-list-title">${wrapByLang(project.title[currentLang], currentLang)}</span>
@@ -471,16 +487,16 @@ if (isDisabled) {
       renderDetail();
     };
 
-if (!isDisabled) {
-  item.addEventListener("click", openProject);
+    if (!isDisabled) {
+      item.addEventListener("click", openProject);
 
-  item.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      openProject();
+      item.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openProject();
+        }
+      });
     }
-  });
-}
 
     projectList.appendChild(item);
   });

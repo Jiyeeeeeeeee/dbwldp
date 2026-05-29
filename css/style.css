@@ -30,7 +30,7 @@
   --page-padding: 0.5rem;
   --grid-gap: 12px;
   --header-height: 26px;
-  --main-top-gap: 8px;
+  --main-top-gap: 16px;
   --footer-height: 18px;
   --image-gap: 4px;
 }
@@ -54,7 +54,7 @@ body {
   line-height: 1.35;
   font-size: 0.95rem;
   word-break: keep-all;
-  background-image: url("../images/yellow.jpg");
+  background-image: noen;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50%;
@@ -161,9 +161,9 @@ main {
   align-items: start;
 }
 
-.index-panel .project-list {
+/*.index-panel .project-list {
   display: none;
-}
+}*/
 
 .index-panel.is-home-full {
   grid-column: 1 / -1;
@@ -181,7 +181,7 @@ main {
   overflow-x: hidden;
   padding-right: 8px;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 0.95rem;
 }
 
 
@@ -330,7 +330,7 @@ main {
 .detail-text {
   grid-column: span 5;
   min-width: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.75rem;
   font-weight: 700;
 }
