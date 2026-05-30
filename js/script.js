@@ -2,7 +2,7 @@ const projects = [
   {
     id: "project-10",
     year: "2026",
-    title: { ko: "명함,", en: "business card," },
+    title: { ko: "규격 외 명함,", en: "business card," },
     type: { ko: "그래픽", en: "graphic" },
     meta: {
       ko: {
