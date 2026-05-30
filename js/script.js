@@ -17,15 +17,14 @@ const projects = [
         paper: "NT white 151g, NS board 1100mm",
         printing: "Indigo Printing",
       }
-    },
-    description: {
-      /*ko: "336개의 인덱스 스티커로 만들어진 36개의 비위계적 표면을 모은 책.",
-      en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."*/
-    },
+  },
+  description: {
+  },
     images: [
+      { src: "images/bc-fn-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/bc-fn-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/bc-fn-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
       { src: "images/bc-5.JPG", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-            { src: "images/bc-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/bc-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
   {
