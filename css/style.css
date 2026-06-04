@@ -679,9 +679,23 @@ main.is-image-mode .detail-content {
     min-height: auto;
   }
 
-  .detail-media {
-    margin-left: calc(-1 * var(--page-padding));
-    margin-right: calc(-1 * var(--page-padding));
+  body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .main-layout {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .detail-media {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .detail-lower {
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+  }
+
+  .detail-content {
     padding-left: 0;
     padding-right: 0;
   }
@@ -816,3 +830,22 @@ body:has(.detail-panel.is-contact):not(:has(main.is-image-mode)) .detail-content
 body:has(.detail-panel.is-contact):not(:has(main.is-image-mode)) .detail-entry {
   padding-top: 0;
 }
+
+  /* contact는 다시 양옆 여백 살리기 */
+  body:has(.detail-panel.is-contact) .main-layout {
+    padding-left: var(--page-padding);
+    padding-right: var(--page-padding);
+  }
+
+  body:has(.detail-panel.is-contact) .detail-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* detail 이미지가 1장일 때는 모바일 가로폭 꽉 채우기 */
+  .detail-media .detail-image:only-child {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+  }

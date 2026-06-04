@@ -2,7 +2,7 @@ const projects = [
   {
     id: "project-10",
     year: "2026",
-    title: { ko: "규격 외 명함,", en: "business card," },
+    title: { ko: "규격 외 명함,", en: "growing business cards," },
     type: { ko: "그래픽", en: "graphic" },
     meta: {
       ko: {
@@ -17,9 +17,11 @@ const projects = [
         paper: "NT white 151g, NS board 1100mm",
         printing: "Indigo Printing",
       }
-  },
-  description: {
-  },
+    },
+    description: {
+      ko: ".",
+      en: "."
+    },
     images: [
       { src: "images/bc-fn-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
       { src: "images/bc-fn-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
