@@ -78,7 +78,7 @@ const projects = [
     images: [
     ]
   },*/
-  {
+  /*{
     id: "project-6",
     year: "2026",
     title: { ko: "케이팝 믹스,", en: "Kpop Mix," },
@@ -136,7 +136,7 @@ const projects = [
     },
     images: [
     ]
-  },
+  },*/
   {
     id: "project-1",
     year: "2026",
