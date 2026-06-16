@@ -769,6 +769,24 @@ footerContactButton?.addEventListener("click", () => {
   renderDetail();
 });
 
-renderProjects();
-renderDetail();
+function playRainbowMotion() {
+  const indexTitles = document.querySelectorAll(".project-list-title");
+
+  indexTitles.forEach((title, i) => {
+    setTimeout(() => {
+      title.classList.add("rainbow-motion");
+
+      title.addEventListener(
+        "animationend",
+        () => {
+          title.classList.remove("rainbow-motion");
+        },
+        { once: true }
+      );
+    }, i * 70);
+  });
+}
+
 updateLanguageLabels();
+playRainbowMotion();
+

@@ -849,3 +849,42 @@ body:has(.detail-panel.is-contact):not(:has(main.is-image-mode)) .detail-entry {
     max-height: 80vh;
     object-fit: contain;
   }
+
+.project-list-title {
+  color: #111;
+}
+
+.project-list-title.rainbow-motion {
+  background: linear-gradient(
+    180deg,
+    #111 0%,
+    #111 30%,
+    red 38%,
+    orange 43%,
+    yellow 48%,
+    lime 53%,
+    cyan 58%,
+    blue 63%,
+    violet 68%,
+    #111 78%,
+    #111 100%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  animation: rainbow-sweep 1.2s ease-out 1 forwards;
+}
+
+@keyframes rainbow-sweep {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: 0% 0;
+  }
+}
