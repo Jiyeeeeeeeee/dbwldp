@@ -303,7 +303,7 @@ const projects = [
 const CONTACT_CONTENT = {
   ko: {
     title: "Contact",
-    body: `<a href="mailto:yoojiye@gmail.com">yoojiye@gmail.com</a> on Gmail
+    body: `<a href="mailto:yoojiyekr@gmail.com">yoojiyekr@gmail.com</a> on Gmail
     <a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG
 <a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
 <a href="https://www.are.na/jiye-yoo/channels">jiye yoo</a> on Are.na
