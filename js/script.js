@@ -1,4 +1,52 @@
 const projects = [
+      {
+    id: "project-12",
+    year: "2026",
+    title: { ko: "kmh 네오시티", en: "kmh neocity," },
+    type: { ko: "진", en: "Zine" },
+    meta: {
+      ko: {
+        year: "2026",
+        size: "297*420 mm",
+        printing: "인디고 1도 인쇄"
+      },
+      en: {
+        year: "2026",
+        size: "297*420 mm",
+        printing: "Indigo 1-color printing"
+      }
+    },
+    description: {
+      ko: "Not yet.",
+      en: "Not yet."
+    },
+    images: [
+    ]
+  },
+    {
+    id: "project-11",
+    year: "2026",
+    title: { ko: "가난한 목소리: 허리케인 이르마,", en: "Poor voices: Hurricane Irma," },
+    type: { ko: "진", en: "Zine" },
+    meta: {
+      ko: {
+        year: "2026",
+        size: "297*420 mm",
+        printing: "인디고 1도 인쇄"
+      },
+      en: {
+        year: "2026",
+        size: "297*420 mm",
+        printing: "Indigo 1-color printing"
+      }
+    },
+    description: {
+      ko: "Not yet.",
+      en: "Not yet."
+    },
+    images: [
+    ]
+  },
   {
     id: "project-10",
     year: "2026",
