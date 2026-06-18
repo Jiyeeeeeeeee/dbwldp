@@ -341,14 +341,10 @@ const projects = [
     type: { ko: "음악", en: "music" },
     meta: {
     },
-        description: {
-      ko: "Not yet.",
-      en: "Not yet."
-    },
-    /*description: {
+    description: {
       ko: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너",
       en: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너"
-    },*/
+    },
   },
 ];
 
