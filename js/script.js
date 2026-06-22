@@ -2,23 +2,19 @@ const projects = [
       {
     id: "project-12",
     year: "2026",
-    title: { ko: "kmh 네오시티,", en: "kmh neocity," },
+    title: { ko: "kmhservice in neocities,", en: "kmhservice in neocities," },
     type: { ko: "진", en: "Zine" },
     meta: {
       ko: {
         year: "2026",
-        size: "297*420 mm",
-        printing: "인디고 1도 인쇄"
       },
       en: {
         year: "2026",
-        size: "297*420 mm",
-        printing: "Indigo 1-color printing"
       }
     },
     description: {
-      ko: "Not yet.",
-      en: "Not yet."
+      ko: "[kmhservice](https://kmhservice.neocities.org/)",
+      en: "[kmhservice](https://kmhservice.neocities.org/)"
     },
     images: [
     ]
