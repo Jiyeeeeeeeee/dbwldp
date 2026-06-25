@@ -1,5 +1,5 @@
 const projects = [
-      {
+  {
     id: "project-12",
     year: "2026",
     title: { ko: "kmhservice in neocities,", en: "kmhservice in neocities," },
@@ -13,13 +13,33 @@ const projects = [
       }
     },
     description: {
-      ko: "[kmhservice](https://kmhservice.neocities.org/)",
-      en: "[kmhservice](https://kmhservice.neocities.org/)"
+      ko: `
+[kmhservice](https://kmhservice.neocities.org/)
+
+1st Intro Sound
+
+<audio
+  src="audio/intro.mp3"
+  controls
+  controlsList="nodownload"
+  preload="none">
+</audio>
+`,
+      en: `
+[kmhservice](https://kmhservice.neocities.org/)
+
+<audio
+  src="audio/intro.mp3"
+  controls
+  controlsList="nodownload"
+  preload="none">
+</audio>
+`
     },
     images: [
     ]
   },
-    {
+  {
     id: "project-11",
     year: "2026",
     title: { ko: "허리케인 이르마,", en: "Poor voices: Hurricane Irma," },
@@ -440,6 +460,10 @@ function parseDescription(text = "") {
 
   return blocks.map((block) => {
     const trimmed = block.trim();
+
+        if (trimmed.startsWith("<audio") && trimmed.endsWith("</audio>")) {
+      return `<div class="detail-audio">${trimmed}</div>`;
+    }
 
     if (trimmed.startsWith(">")) {
       const quoteLines = trimmed
