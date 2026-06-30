@@ -1,8 +1,28 @@
 const projects = [
+     {
+    id: "project-14",
+    year: "2026",
+    title: { ko: "ReCAPTCHA,", en: "Happy Box Cardog Mix," },
+    type: { ko: "음악", en: "Music" },
+    meta: {
+      ko: {
+        year: "2026",
+      },
+      en: {
+        year: "2026",
+      }
+    },
+    description: {
+      ko: "not yet.",
+      en: "not yet."
+    },
+    images: [
+    ]
+  },
     {
     id: "project-13",
     year: "2026",
-    title: { ko: "해피박스카도그 믹스", en: "Happy Box Cardog Mix," },
+    title: { ko: "해피박스카도그 믹스,", en: "Happy Box Cardog Mix," },
     type: { ko: "음악", en: "Music" },
     meta: {
       ko: {
