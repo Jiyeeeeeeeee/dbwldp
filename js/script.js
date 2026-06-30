@@ -13,8 +13,8 @@ const projects = [
       }
     },
     description: {
-      ko: "Not yet.",
-      en: "Not yet."
+      ko: "[해피도그하우스인터뷰](https://www.koreanindie.com/2014/01/27/interview-with-happy-doghouse/)",
+      en: "[Interview with Happy Doghouse](https://www.koreanindie.com/2014/01/27/interview-with-happy-doghouse/)"
     },
     images: [
     ]
@@ -387,19 +387,10 @@ const projects = [
 const CONTACT_CONTENT = {
   ko: {
     title: "Contact",
-    body: `<a href="mailto:yoojiyekr@gmail.com">yoojiyekr@gmail.com</a> on Gmail
-    <a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG
-<a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
-<a href="https://www.are.na/jiye-yoo/channels">jiye yoo</a> on Are.na
+    body: `<span class="contact-line"><a href="mailto:yoojiyekr@gmail.com">yoojiyekr@gmail.com</a> on Gmail</span>
+<span class="contact-line"><a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG</span>
 `
   },
-  en: {
-    title: "Contact",
-    body: `<a href="mailto:yoojiye@gmail.com">yoojiye@gmail.com</a> on Gmail
-    <a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG
-<a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=7ca4759260564bcc">zi ye west</a> on Spotify
-<a href="https://www.are.na/jiye-yoo/channels">jiye yoo</a> on Are.na`
-  }
 };
 
 let currentLang = "ko";
@@ -408,11 +399,9 @@ let currentMode = "home";
 
 const projectList = document.getElementById("project-list");
 const detailContent = document.getElementById("detail-content");
-const langToggle = document.getElementById("lang-toggle");
 const homeButton = document.getElementById("home-button");
 const imgButton = document.getElementById("img-button");
-const contactButton = document.getElementById("contact-button");
-const footerContactButton = document.getElementById("footer-contact-button");
+const floatingContactContent = document.getElementById("floating-contact-content");
 const indexPanel = document.querySelector(".index-panel");
 const detailPanel = document.querySelector(".detail-panel");
 const mainElement = document.querySelector("main");
@@ -425,7 +414,7 @@ function updateLayoutMode() {
   const isHome = currentMode === "home";
   const isImage = currentMode === "image";
   const shouldHideIndexOnMobile = isMobileView() && !isHome;
-  const shouldHideIndexOnDesktop = currentMode === "contact" || isImage;
+  const shouldHideIndexOnDesktop = isImage;
 
   indexPanel.classList.toggle(
     "is-hidden",
@@ -437,7 +426,6 @@ function updateLayoutMode() {
   detailPanel.classList.toggle("is-full", isImage);
   detailPanel.classList.toggle("is-hidden", isHome);
   detailPanel.classList.toggle("has-border", !isHome && !isImage);
-  detailPanel.classList.toggle("is-contact", currentMode === "contact");
 
   mainElement?.classList.toggle("is-image-mode", isImage);
 
@@ -653,16 +641,6 @@ function renderProjectDetail(project, imageOnly = false) {
   `;
 }
 
-function renderContactDetail() {
-  return `
-    <article class="detail-entry">
-      <div class="detail-contact">
-        <div class="detail-contact-line" lang="en">${CONTACT_CONTENT[currentLang].body}</div>
-      </div>
-    </article>
-  `;
-}
-
 function renderHomeDetail() {
   return `<article class="detail-entry"></article>`;
 }
@@ -689,12 +667,6 @@ function renderImageArchive() {
 
 function renderDetail() {
   detailContent.classList.remove("is-image-mode");
-
-  if (currentMode === "contact") {
-    detailContent.innerHTML = renderContactDetail();
-    updateLayoutMode();
-    return;
-  }
 
   if (currentMode === "image") {
     detailContent.classList.add("is-image-mode");
@@ -729,14 +701,10 @@ function updateLanguageLabels() {
 
   homeButton.textContent = homeButton.dataset[currentLang];
   imgButton.textContent = imgButton.dataset[currentLang];
-  contactButton.textContent = contactButton.dataset[currentLang];
 
   homeButton.setAttribute("lang", "en");
   imgButton.setAttribute("lang", "en");
-  contactButton.setAttribute("lang", "en");
-
-  langToggle.textContent = currentLang === "ko" ? "En" : "한";
-  langToggle.setAttribute("lang", "en");
+  floatingContactContent.innerHTML = CONTACT_CONTENT[currentLang].body;
 
   renderProjects();
   renderDetail();
@@ -776,11 +744,6 @@ function bindMediaDragScroll() {
   });
 }
 
-langToggle.addEventListener("click", () => {
-  currentLang = currentLang === "ko" ? "en" : "ko";
-  updateLanguageLabels();
-});
-
 homeButton.addEventListener("click", () => {
   currentMode = "home";
   currentProjectId = null;
@@ -790,20 +753,6 @@ homeButton.addEventListener("click", () => {
 
 imgButton.addEventListener("click", () => {
   currentMode = "image";
-  currentProjectId = null;
-  renderProjects();
-  renderDetail();
-});
-
-contactButton.addEventListener("click", () => {
-  currentMode = "contact";
-  currentProjectId = null;
-  renderProjects();
-  renderDetail();
-});
-
-footerContactButton?.addEventListener("click", () => {
-  currentMode = "contact";
   currentProjectId = null;
   renderProjects();
   renderDetail();
@@ -829,4 +778,3 @@ function playRainbowMotion() {
 
 updateLanguageLabels();
 playRainbowMotion();
-
