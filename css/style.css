@@ -30,7 +30,9 @@
   --page-padding: 1rem;
   --grid-gap: 12px;
   --header-height: 26px;
-  --main-top-gap: 16px;
+
+  --main-top-gap: calc(16px + 1rem);
+
   --footer-height: 18px;
   --image-gap: 0px;
 }
@@ -536,6 +538,10 @@ main.is-image-mode .detail-content {
   top: 0;
 }
 
+.image-archive-item.is-large {
+  grid-column: span 3;
+}
+
 @media (max-width: 1200px) {
   :root {
     --grid-gap: 8px;
@@ -569,10 +575,15 @@ main.is-image-mode .detail-content {
 
 @media (max-width: 900px) {
   :root {
+    /* 모바일은 이전 패딩값 */
+    --page-padding: 0.5rem;
+
     --header-height: 18px;
     --footer-height: 22px;
     --grid-gap: 8px;
     --image-gap: 0px;
+
+    /* 모바일은 기존 간격값 */
     --main-top-gap: 16px;
   }
 

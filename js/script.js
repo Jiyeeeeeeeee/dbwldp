@@ -16,8 +16,8 @@ const projects = [
       ko: "soooooon.",
       en: "soonnnnn."
     },
-    images: [    { src: "images/whoareyou.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-       { src: "images/whoareyou7.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    images: [    { src: "images/whoareyou.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" },    size: "large" },
+       { src: "images/whoareyou7.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }, size: "large" },
     ]
   },
        {
@@ -698,11 +698,11 @@ function renderImageArchive() {
   return `
     <div class="image-archive">
       ${allImages.map((image) => `
-        <img
-          class="image-archive-item"
-          src="${image.src}"
-          alt="${image.alt?.[currentLang] || ""}"
-        />
+<img
+  class="image-archive-item ${image.size === "large" ? "is-large" : ""}"
+  src="${image.src}"
+  alt="${image.alt?.[currentLang] || ""}"
+/>
       `).join("")}
     </div>
   `;
