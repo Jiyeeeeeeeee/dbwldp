@@ -1,6 +1,6 @@
 const projects = [
      {
-    id: "project-14",
+    id: "project-15",
     year: "2026",
     title: { ko: "ReCAPTCHA,", en: "Happy Box Cardog Mix," },
     type: { ko: "음악", en: "Music" },
@@ -13,10 +13,33 @@ const projects = [
       }
     },
     description: {
-      ko: "not yet.",
-      en: "not yet."
+      ko: "soooooon.",
+      en: "soonnnnn."
     },
-    images: [
+    images: [    { src: "images/whoareyou.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+       { src: "images/whoareyou7.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    ]
+  },
+       {
+    id: "project-14",
+    year: "2026",
+    title: { ko: "만화정신,", en: "Happy Box Cardog Mix," },
+    type: { ko: "음악", en: "Music" },
+    meta: {
+      ko: {
+        year: "2026",
+      },
+      en: {
+        year: "2026",
+      }
+    },
+    description: {
+      ko: "soooooon.",
+      en: "soonnnnn."
+    },
+    images: [    { src: "images/comic.png", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+       { src: "images/comic-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+              { src: "images/comic-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
     {
