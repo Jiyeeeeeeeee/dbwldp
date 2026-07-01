@@ -13,7 +13,7 @@ const projects = [
       }
     },
     description: {
-      ko: "soooooon.",
+      ko: "로봇과 인간의 경계가 모호해지는 시대에서 나로 존재하는 방법은 특성없는 사람이 되는 것",
       en: "soonnnnn."
     },
     images: [    { src: "images/whoareyou.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" },    size: "large" },
