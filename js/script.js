@@ -13,11 +13,14 @@ const projects = [
       }
     },
     description: {
-      ko: "인간임을 증명해야 하는 시대에서 특성없는 사람이 되기",
+      ko: "reCAPTCHAAAAAAAA",
       en: "soonnnnn."
     },
-    images: [    { src: "images/whoareyou.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" },    size: "large" },
-       { src: "images/whoareyou7.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }, size: "large" },
+    images: [    { src: "images/re-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }},
+       { src: "images/re-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+       { src: "images/re-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+       { src: "images/re-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }},
+       { src: "images/re-5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
        {
