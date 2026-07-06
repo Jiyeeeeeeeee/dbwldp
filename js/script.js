@@ -402,16 +402,6 @@ const projects = [
     ]
   },
   {
-    id: "project-5",
-    year: "2023",
-    title: { ko: "E-flux: 2086년 이후의 미래,", en: "E-flux: The Future After 2086," },
-    type: { ko: "잔", en: "zine" },
-    description: {
-      ko: "Not yet.",
-      en: "Not yet."
-    }
-  },
-  {
     id: "project-9",
     year: "2026",
     title: { ko: "유지예?", en: "Yoo Jiye?" },
