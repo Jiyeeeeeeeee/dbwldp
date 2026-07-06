@@ -13,8 +13,7 @@ const projects = [
       }
     },
     description: {
-      ko: "reCAPTCHAAAAAAAA",
-      en: "soonnnnn."
+      ko: "I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.",
     },
     images: [    { src: "images/re-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }},
        { src: "images/re-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
@@ -37,13 +36,9 @@ const projects = [
       }
     },
     description: {
-      ko: "soooooon.",
-      en: "soonnnnn."
+      ko: "Not yet.",
+      en: "Not yet."
     },
-    images: [    { src: "images/comic.png", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-       { src: "images/comic-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-              { src: "images/comic-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    ]
   },
     {
     id: "project-13",
