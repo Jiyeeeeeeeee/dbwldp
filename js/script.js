@@ -2,7 +2,7 @@ const projects = [
      {
     id: "project-15",
     year: "2026",
-    title: { ko: "ReCAPTCHA,", en: "Happy Box Cardog Mix," },
+    title: { ko: "reCAPTCHA,", en: "Happy Box Cardog Mix," },
     type: { ko: "음악", en: "Music" },
     meta: {
       ko: {
@@ -40,31 +40,11 @@ const projects = [
       en: "Not yet."
     },
   },
-    {
-    id: "project-13",
-    year: "2026",
-    title: { ko: "해피박스카도그 믹스,", en: "Happy Box Cardog Mix," },
-    type: { ko: "음악", en: "Music" },
-    meta: {
-      ko: {
-        year: "2026",
-      },
-      en: {
-        year: "2026",
-      }
-    },
-    description: {
-      ko: "[해피도그하우스인터뷰](https://www.koreanindie.com/2014/01/27/interview-with-happy-doghouse/)",
-      en: "[Interview with Happy Doghouse](https://www.koreanindie.com/2014/01/27/interview-with-happy-doghouse/)"
-    },
-    images: [
-    ]
-  },
   {
     id: "project-12",
     year: "2026",
-    title: { ko: "kmhservice in neocities,", en: "kmhservice in neocities," },
-    type: { ko: "진", en: "Zine" },
+    title: { ko: "kmhservice", en: "kmhservice," },
+    type: { ko: "서비스", en: "service" },
     meta: {
       ko: {
         year: "2026",
@@ -75,7 +55,7 @@ const projects = [
     },
     description: {
       ko: `
-[kmhservice](https://kmhservice.neocities.org/)
+[kmhservice in neocities](https://kmhservice.neocities.org/)
 
 1st Intro Sound
 
@@ -313,7 +293,7 @@ const projects = [
   {
     id: "project-3",
     year: "2026",
-    title: { ko: "보다 겸손하고 보다 거슬리지 않고 보다 지적인 행위,", en: "Reading," },
+    title: { ko: "읽기의 몸짓,", en: "Reading," },
     type: { ko: "진", en: "Zine" },
     meta: {
       ko: {
