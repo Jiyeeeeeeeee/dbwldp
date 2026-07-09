@@ -7,13 +7,16 @@ const projects = [
     meta: {
       ko: {
         year: "2026",
+        size: "120x170mm",
+        paper: "아트지 120g",
+        printing: "인디고 출력",
       },
       en: {
         year: "2026",
       }
     },
     description: {
-      ko: "I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.\n I'm not a robot.",
+      ko: "로봇이 아닙니다 I’m not a robot 私はロボットではありません 我不是机器人 Je ne suis pas un robot Ich bin kein Roboter No soy un robot Non sono un robot Não sou um robô Я не робот Nie jestem robotem Ik ben geen robot Jag är inte en robot Jeg er ikke en robot En ole robotti Nejsem robot Nie som robot Nem vagyok robot Nu sunt robot Δεν είμαι ρομπότ Ben robot değilim أنا لست برنامج روبوت  मैं रोबोट नहीं हूँ ฉันไม่ใช่โปรแกรมอัตโนมัติ Tôi không phải là người máy Saya bukan robot Hindi ako robot Би робот биш Нисам робот Nisam robot Не съм робот Nisem robot Ma ei ole robot Es neesmu robots Aš ne robotas Ég er ekki vélmenni No sóc un robot Non son un robot Ek is nie ’n robot nie Mimi si roboti.",
     },
     images: [    { src: "images/re-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }},
        { src: "images/re-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
