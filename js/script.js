@@ -167,7 +167,13 @@ const projects = [
       ko: "An archive of 36 non-hierarchical surfaces made from 336 index labels.",
       en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."
     },
-    images: [{ src: "images/binding-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    images: [
+      { src: "images/indexing-spread.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-spread2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+            { src: "images/indexing-spread4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+                        { src: "images/indexing-spread5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+                                    { src: "images/indexing-spread6.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+                                    { src: "images/indexing-0.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     { src: "images/binding-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     { src: "images/indexing-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     { src: "images/indexing-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
