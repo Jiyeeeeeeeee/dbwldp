@@ -116,8 +116,8 @@ const projects = [
       ko: {
         year: "2026",
         size: "165x255, 220x340, 275x385 mm",
-        paper: "엔티랏샤 화이트 151g, NS보드 1100mm 합지",
-        printing: "인디고 출력",
+        paper: "NT 151g, NS Board 1100mm Laminated paper",
+        printing: "Indigo Printing",
       },
       en: {
         year: "2026",
@@ -127,9 +127,10 @@ const projects = [
       }
     },
     description: {
-      ko: `규격의 근사치 조차 따르지 않은, 명함이라 불리지만 주고 받을 수 없는, 네 개의 모서리를 가진 작은 널빤지에 불과한 이것을 내밀었을 때 받는 이들의 반응을 상상한다. 웃거나 당황하거나 가지고 싶다거나 화를 내거나. 
+      ko: "I imagine the reactions of those to whom I hand this object—a business card that does not even approximate the standard, a so-called business card that cannot truly be exchanged, nothing more than a small wooden board with four corners. *You made this as a business card? Where's your phone number? The email address isn't even yours. I can't possibly take this with me.* Well, that's the problem. The business card has grown too large. Instead, perhaps it can serve as a fan to cool you in the coming summer, a shade from the sun, or a small mat to sit on the pavement. It may turn out to be surprisingly useful after all."
+/*`규격의 근사치 조차 따르지 않은, 명함이라 불리지만 주고 받을 수 없는, 네 개의 모서리를 가진 작은 널빤지에 불과한 이것을 내밀었을 때 받는 이들의 반응을 상상한다. 웃거나 당황하거나 가지고 싶다거나 화를 내거나. 
       
-이걸 명함이라고 만드신 건가요? 전화번호는요? 메일 주소는 지예님 게 아니던데요? 제가 가지고 갈 수도 없잖아요. 곤란하게 됐습니다. 명함이 점점 자라서요. 대신 다가오는 여름을 맞아 땀을 식히는 부채로 쓴다거나 햇빛 가리개로 쓴다거나 길바닥에 깔고 앉을 간이 방석으로 사용할 수 있습니다. 꽤 유용하게 쓰일지도 몰라요.`,
+이걸 명함이라고 만드신 건가요? 전화번호는요? 메일 주소는 지예님 게 아니던데요? 제가 가지고 갈 수도 없잖아요. 곤란하게 됐습니다. 명함이 점점 자라서요. 대신 다가오는 여름을 맞아 땀을 식히는 부채로 쓴다거나 햇빛 가리개로 쓴다거나 길바닥에 깔고 앉을 간이 방석으로 사용할 수 있습니다. 꽤 유용하게 쓰일지도 몰라요.`*/,
       en: "."
     },
     images: [
@@ -538,10 +539,8 @@ function getProjectMedia(project) {
 function renderProjects() {
   projectList.innerHTML = "";
 
-  const shouldStair = currentMode === "home" && !isMobileView();
-
-  projectList.classList.toggle("is-stair", shouldStair);
-  projectList.classList.toggle("is-inline", !shouldStair);
+projectList.classList.remove("is-inline");
+projectList.classList.add("is-stair");
 
   projects.forEach((project, index) => {
     const isActive = currentMode === "project" && currentProjectId === project.id;

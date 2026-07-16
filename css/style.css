@@ -6,6 +6,13 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'BookkGothic';
+  src: url('../fonts/BookkGothic_Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --page-padding: 0.5rem;
@@ -31,16 +38,25 @@ body {
 }
 
 body {
-  font-family: 'NeueHaasDisplayRoman', Arial, sans-serif;
+  font-family:
+    'NeueHaasDisplay',
+    'BookkGothic',
+    Arial,
+    sans-serif;
+
+  font-weight: 400;
   background: #fff;
   line-height: 1;
   font-size: 0.8rem;
   word-break: keep-all;
+  letter-spacing: 0.05em;
 }
 
-[lang="ko"],
-[lang="en"] {
-  font-family: 'NeueHaasDisplayRoman', Arial, sans-serif !important;
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
 }
 
 .page-grid {
@@ -104,7 +120,7 @@ body {
 }
 
 .header-home-button {
-  grid-column: span 4;
+  grid-column: span 3;
 }
 
 .footer-img {
@@ -132,7 +148,7 @@ main {
 }
 
 .index-panel {
-  grid-column: span 4;
+  grid-column: span 3;
   min-width: 0;
   height: 100%;
   overflow-y: auto;
@@ -142,7 +158,7 @@ main {
 
 
 .detail-panel {
-  grid-column: span 8;
+  grid-column: span 9;
   min-width: 0;
   height: 100%;
   overflow: hidden;
@@ -239,35 +255,35 @@ main {
 .detail-entry {
   width: 100%;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: var(--grid-gap);
+  align-items: start;
 }
 
 .detail-media {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: var(--image-gap);
-  overflow-x: auto;
-  overflow-y: hidden;
-  cursor: grab;
-  user-select: none;
-  -webkit-overflow-scrolling: touch;
-}
+  grid-column: 4 / span 6;
+  grid-row: 1;
 
-.detail-media.is-dragging {
-  cursor: grabbing;
+  width: 100%;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--image-gap);
+
+  overflow: visible;
+  cursor: default;
+  user-select: auto;
 }
 
 .detail-image {
-  flex: 0 0 auto;
-  width: auto;
-  height: 520px;
-  max-width: none;
-  max-height: 520px;
-  object-fit: contain;
   display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: none;
+  object-fit: contain;
 }
 
 .detail-image:last-child {
@@ -275,29 +291,40 @@ main {
 }
 
 .detail-lower {
-  display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-  gap: var(--grid-gap);
+  grid-column: 1 / span 3;
+  grid-row: 1;
+
   width: 100%;
-  align-items: start;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  position: sticky;
+  top: var(--page-padding);
+  align-self: start;
+
   padding-bottom: 24px;
 }
 
 .detail-text {
-  grid-column: span 5;
+  width: 100%;
   min-width: 0;
   font-size: 0.8rem;
-  line-height: 1.25rem;
+  line-height: 1rem;
 }
 
 .detail-meta {
-  grid-column: span 3;
+  width: 100%;
   min-width: 0;
+
   display: flex;
   flex-direction: column;
   gap: 2px;
-  font-size: 0.85rem;
-  line-height: 1.15rem;
+
+  font-size: 0.8rem;
+  line-height: 1rem;
 }
 
 .detail-meta-item {
@@ -346,7 +373,7 @@ main {
 .detail-quote-source {
   margin-top: 0.4rem;
   font-size: 0.85em;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 /* 일반 문단 / 일반 인용 간격 통일 */
@@ -413,7 +440,7 @@ main {
 }
 
 .floating-contact-content {
-  grid-column: span 4;
+  grid-column: span 3;
   min-width: 0;
   display: block;
   white-space: normal;
@@ -510,7 +537,7 @@ main.is-image-mode .detail-content {
   }
 
   .index-panel {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .detail-image {
@@ -525,12 +552,12 @@ main.is-image-mode .detail-content {
 
   .detail-text {
     font-size: 0.95rem;
-    line-height: 1.6rem;
+    line-height: 1rem;
   }
 
   .detail-meta {
     font-size: 0.8rem;
-    line-height: 1.1rem;
+    line-height: 1rem;
   }
 }
 
@@ -588,8 +615,7 @@ main.is-image-mode .detail-content {
     line-height: 1;
     word-break: keep-all;
     overflow-wrap: anywhere;
-    font-size: 0.95rem;
-    line-height: 1.3;
+    font-size: 0.8rem;
   }
 
   .index-panel .project-list-item {
@@ -825,37 +851,3 @@ body:has(.detail-panel.no-media):not(:has(main.is-image-mode)) .detail-entry {
   color: #111;
 }
 
-.project-list-title.rainbow-motion {
-  background: linear-gradient(
-    180deg,
-    #111 0%,
-    #111 30%,
-    red 38%,
-    orange 43%,
-    yellow 48%,
-    lime 53%,
-    cyan 58%,
-    blue 63%,
-    violet 68%,
-    #111 78%,
-    #111 100%
-  );
-  background-size: 300% 100%;
-  background-position: 100% 0;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-
-  animation: rainbow-sweep 1.2s ease-out 1 forwards;
-}
-
-@keyframes rainbow-sweep {
-  0% {
-    background-position: 100% 0;
-  }
-
-  100% {
-    background-position: 0% 0;
-  }
-}
