@@ -1,5 +1,5 @@
 const projects = [
-     {
+     /*{
     id: "project-15",
     year: "2026",
     title: { ko: "reCAPTCHA,", en: "Happy Box Cardog Mix," },
@@ -106,7 +106,7 @@ const projects = [
     },
     images: [
     ]
-  },
+  },*/
   {
     id: "project-10",
     year: "2026",
@@ -247,7 +247,7 @@ const projects = [
     images: [
     ]
   },*/
-  {
+  /*{
     id: "project-1",
     year: "2026",
     title: { ko: "스코어 티셔츠,", en: "Score T-Shirt," },
@@ -277,12 +277,12 @@ const projects = [
       { src: "images/tshirt-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
       { src: "images/tshirt-3.jpg", alt: { ko: "진 프로젝트 이미지 3", en: "Zine project image 3" } },
       { src: "images/tshirt-4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
-      { src: "images/4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },*/
+      { src: "images/4.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
       { src: "images/5.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
-      /*{ src: "images/9.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },*/
-
+      /*{ src: "images/9.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
     ]
-  },
+  },*/
+
   {
     id: "project-2",
     year: "2026",
@@ -403,6 +403,7 @@ const CONTACT_CONTENT = {
     title: "Contact",
     body: `<span class="contact-line"><a href="mailto:yoojiyekr@gmail.com">yoojiyekr@gmail.com</a> on Gmail</span>
 <span class="contact-line"><a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG</span>
+<span class="contact-line"><a href="https://www.are.na/jiye-yoo/channels">yoojiye</a> on Are.na</span>
 `
   },
 };
