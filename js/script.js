@@ -116,7 +116,7 @@ const projects = [
       ko: {
         year: "2026",
         size: "165x255, 220x340, 275x385 mm",
-        paper: "NT 151g, NS Board 1100mm Laminated paper",
+        paper: "NT 151g, NS Board 1100mm, Laminated paper",
         printing: "Indigo Printing",
       },
       en: {
@@ -150,9 +150,9 @@ const projects = [
         year: "2026",
         size: "210×297 mm",
         pages: "36p",
-        paper: "문켄프린트화이트 115g",
-        printing: "인디고 출력",
-        binding: "실제본"
+        paper: "MunkenPrintWhite 115g",
+        printing: "Indigo Printing",
+        binding: "Saddle Stitch Binding"
       },
       en: {
         year: "2026",
@@ -164,7 +164,7 @@ const projects = [
       }
     },
     description: {
-      ko: "336개의 인덱스 스티커로 만들어진 36개의 비위계적 표면을 모은 책.",
+      ko: "An archive of 36 non-hierarchical surfaces made from 336 index labels.",
       en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."
     },
     images: [{ src: "images/binding-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
@@ -287,7 +287,7 @@ const projects = [
   {
     id: "project-2",
     year: "2026",
-    title: { ko: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand," },
+    title: { ko: "Xpub Project – Make my own Publishing Tools", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand," },
     type: { ko: "프로젝트", en: "Project" },
     description: {
       ko: "Not yet.",
@@ -348,7 +348,7 @@ const projects = [
         pages: "44p"
       }
     },
-    description: {
+    /*description: {
       ko: `우리는 진 사서 및 아키비스트 공동체로서 다음과 같은 이유로 다음의 가치를 믿는다.
 
 > 진은 종종 사회적으로 주변화된 공동체의 구성원들에 의해 제작되며,
@@ -375,7 +375,7 @@ const projects = [
 > 진은 강박이 없는 추상적 개념이며 가능성이다.
 — 알레산드로 루도비코(2017), 「포스트디지털프린트-1894년 이후 출판의 변화」, 임경용 옮김, 미디어버스`,
       en: "To be updated."
-    },
+    },*/
     images: [
       { src: "images/rei-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
       { src: "images/rei-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
@@ -393,8 +393,8 @@ const projects = [
     meta: {
     },
     description: {
-      ko: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너",
-      en: "[YD키즈](https://www.instagram.com/lildead19/)이자 [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너"
+      ko: "[YD KIDS](https://www.instagram.com/lildead19/) [서신교환](https://www.instagram.com/exchange.papers/) [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너",
+      en: "[YD키즈](https://www.instagram.com/lildead19/) [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너"
     },
   },
 ];

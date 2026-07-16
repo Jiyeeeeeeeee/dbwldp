@@ -551,7 +551,7 @@ main.is-image-mode .detail-content {
   }
 
   .detail-text {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1rem;
   }
 
@@ -563,35 +563,22 @@ main.is-image-mode .detail-content {
 
 @media (max-width: 900px) {
   :root {
-    /* 모바일은 이전 패딩값 */
     --page-padding: 0.5rem;
-
     --header-height: 18px;
     --footer-height: 22px;
     --grid-gap: 8px;
     --image-gap: 0px;
-
-    /* 모바일은 기존 간격값 */
     --main-top-gap: 16px;
   }
 
-  .site-footer
-   .site-footer button {
+    .detail-text {
     font-size: 0.8rem;
+    line-height: 1rem;
   }
 
-  .detail-panel {
-    position: relative;
-    top: 0;
-  }
 
-  .detail-content {
-    position: relative;
-    height: 100%;
-    min-height: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding-bottom: 24px;
+  .site-footer button {
+    font-size: 0.8rem;
   }
 
   .page-grid {
@@ -599,10 +586,6 @@ main.is-image-mode .detail-content {
   }
 
   .header-home-button {
-    grid-column: span 3;
-  }
-
-  .footer-img {
     grid-column: 1 / span 3;
   }
 
@@ -611,6 +594,7 @@ main.is-image-mode .detail-content {
     grid-column: 1 / -1;
   }
 
+  /* 모바일 인덱스 */
   .index-panel .project-list {
     line-height: 1;
     word-break: keep-all;
@@ -632,85 +616,118 @@ main.is-image-mode .detail-content {
     margin-right: 0.35em;
   }
 
-  .index-panel .project-list-title {
-    display: inline;
-    width: auto;
-  }
-
   .index-panel.is-hidden {
     display: none;
   }
-  
 
+  /* 모바일 디테일 영역 전체 */
   .detail-panel {
+    position: relative;
+    top: 0;
     height: 100%;
     min-height: 0;
   }
 
   .detail-content {
+    position: relative;
+    width: 100%;
     height: 100%;
     min-height: 0;
+
     overflow-y: auto;
     overflow-x: hidden;
+
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 24px;
-
   }
 
+  /*
+    모바일에서는 데스크톱의 9단 grid를 해제하고
+    설명과 이미지를 위아래로 쌓음
+  */
   .detail-entry {
-    min-height: auto;
-  }
-
-  body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .main-layout {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .detail-media {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    min-height: auto;
+    gap: 0;
   }
 
-  body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode)) .detail-lower {
-    padding-left: var(--page-padding);
-    padding-right: var(--page-padding);
-  }
-
-  .detail-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .detail-image {
-    height: 280px;
-    width: auto;
-    max-height: 280px;
-  }
-
+  /* 설명과 메타가 먼저 */
   .detail-lower {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    column-gap: 16px;
-    row-gap: 20px;
+    order: 1;
+
+    position: static;
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+  padding-top: calc(
+    var(--header-height) +
+    var(--main-top-gap) +
+    var(--page-padding)
+  );
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  padding-bottom: 2rem;
   }
 
-  .detail-content {
-    padding-right: 0;
-  }
-
-  .detail-text {
-    grid-column: 1 / -1;
-  }
-
+  .detail-text,
   .detail-meta {
-    grid-column: 3 / span 2;
-    justify-self: stretch;
+    width: 100%;
+    min-width: 0;
   }
 
   .detail-text .detail-paragraph,
   .detail-text .detail-quote {
-    grid-column: 1 / -1;
+    width: 100%;
   }
 
+  /* 이미지가 설명 아래에 세로로 배치 */
+  .detail-media {
+    order: 2;
+
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--image-gap);
+
+    margin-left: 0;
+    margin-right: 0;
+
+    overflow: visible;
+    cursor: default;
+    user-select: auto;
+  }
+
+  .detail-image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    max-width: 100%;
+    max-height: none;
+
+    object-fit: contain;
+  }
+
+  /*
+    디테일 페이지에서는 바깥 12단 그리드 패딩을 제거하고
+    텍스트 영역에만 별도 패딩 적용
+  */
+  body:has(.detail-panel:not(.is-hidden)):not(:has(main.is-image-mode))
+    .main-layout {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* IMG 아카이브 */
   .image-archive {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -721,16 +738,14 @@ main.is-image-mode .detail-content {
     max-height: 90vh;
   }
 
-  .header-home-button {
-    grid-column: 1 / span 3;
-  }
-
+  /* 모바일 Img 버튼 */
   .footer-img {
     position: fixed;
     top: var(--page-padding);
     left: 50%;
     bottom: auto;
 
+    grid-column: 1 / span 3;
     width: auto;
     z-index: 101;
 
@@ -738,7 +753,6 @@ main.is-image-mode .detail-content {
     mix-blend-mode: exclusion;
   }
 
-  /* footer 자체는 모바일에서 자리 차지하지 않게 */
   .site-footer {
     pointer-events: none;
   }
@@ -747,20 +761,22 @@ main.is-image-mode .detail-content {
     pointer-events: auto;
   }
 
-  /* Contact는 모바일 화면 왼쪽 아래 */
+  /* 모바일 Contact */
   .floating-contact {
     top: auto;
     bottom: var(--page-padding);
     left: 0;
+
     transform: none;
     width: 100%;
   }
 
   .floating-contact-content {
     grid-column: 1 / -1;
+
+    width: auto;
     padding-left: var(--page-padding);
     padding-right: var(--page-padding);
-    width: auto;
   }
 }
 
