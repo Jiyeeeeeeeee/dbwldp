@@ -110,7 +110,7 @@ const projects = [
   {
     id: "project-10",
     year: "2026",
-    title: { ko: "규격 외 명함,", en: "growing business cards," },
+    title: { ko: "growing business cards", en: "growing business cards," },
     type: { ko: "그래픽", en: "graphic" },
     meta: {
       ko: {
@@ -142,7 +142,7 @@ const projects = [
   {
     id: "project-8",
     year: "2026",
-    title: { ko: "인덱싱 336,", en: "Indexing 336," },
+    title: { ko: "Indexing 336", en: "Indexing 336," },
     type: { ko: "책", en: "editorial" },
     meta: {
       ko: {
@@ -286,7 +286,7 @@ const projects = [
   {
     id: "project-2",
     year: "2026",
-    title: { ko: "출판 기계,", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand," },
+    title: { ko: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand", en: "JY Xpub Project – Make my own Publishing Tools - HardwareTakesCommand," },
     type: { ko: "프로젝트", en: "Project" },
     description: {
       ko: "Not yet.",
@@ -296,7 +296,7 @@ const projects = [
   {
     id: "project-3",
     year: "2026",
-    title: { ko: "읽기의 몸짓,", en: "Reading," },
+    title: { ko: "Reading", en: "Reading," },
     type: { ko: "진", en: "Zine" },
     meta: {
       ko: {
@@ -327,7 +327,7 @@ const projects = [
   {
     id: "project-4",
     year: "2025",
-    title: { ko: "다양하고, 기이하며, 일시적이고, 마법같고, 위험하며 감정적인 것을 만들기,", en: "Make a Zine," },
+    title: { ko: "Make a Zine"/*"다양하고, 기이하며, 일시적이고, 마법같고, 위험하며 감정적인 것을 만들기,"*/, en: "Make a Zine," },
     type: { ko: "프로젝트", en: "Project" },
     meta: {
       ko: {
@@ -387,7 +387,7 @@ const projects = [
   {
     id: "project-9",
     year: "2026",
-    title: { ko: "유지예?", en: "Yoo Jiye?" },
+    title: { ko: "Yoo Jiye?", en: "Yoo Jiye?" },
     type: { ko: "음악", en: "music" },
     meta: {
     },

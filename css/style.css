@@ -1,33 +1,14 @@
 @font-face {
-  font-family: 'BookkMyungjo';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'BookkMyungjo';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Eyja';
-  src: url('../fonts/EyjaUnlicencedTrial-Regular.woff2') format('woff2');
+  font-family: 'NeueHaasDisplay';
+  src: url('../fonts/NeueHaasDisplayRoman.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
-  font-family: 'Eyja';
-  src: url('../fonts/EyjaUnlicencedTrial-RegularItalic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-}
 
 :root {
-  --page-padding: 1rem;
+  --page-padding: 0.5rem;
   --grid-gap: 12px;
   --header-height: 26px;
 
@@ -50,24 +31,16 @@ body {
 }
 
 body {
-  font-family: 'Eyja', serif;
-  color: #111;
+  font-family: 'NeueHaasDisplayRoman', Arial, sans-serif;
   background: #fff;
-  line-height: 1.35;
-  font-size: 0.95rem;
+  line-height: 1;
+  font-size: 0.8rem;
   word-break: keep-all;
-  background-image: noen;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50%;
 }
 
-[lang="ko"] {
-  font-family: 'BookkMyungjo', serif !important;
-}
-
+[lang="ko"],
 [lang="en"] {
-  font-family: 'Eyja', serif !important;
+  font-family: 'NeueHaasDisplayRoman', Arial, sans-serif !important;
 }
 
 .page-grid {
@@ -84,7 +57,6 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  font-weight: 400;
 
   top: 0;
   height: auto;
@@ -102,14 +74,12 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  font-weight: 400;
 
   bottom: 0;
   height: var(--footer-height);
   padding-bottom: var(--page-padding);
   display: flex;
   align-items: flex-end;
-  font-size: 0.95rem;
   padding-top: 1.5rem;
 
   background: transparent;
@@ -153,10 +123,6 @@ main {
   align-items: start;
 }
 
-/*.index-panel .project-list {
-  display: none;
-}*/
-
 .index-panel.is-home-full {
   grid-column: 1 / -1;
 }
@@ -172,8 +138,6 @@ main {
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 8px;
-  font-weight: 700;
-  font-size: 0.95rem;
 }
 
 
@@ -187,7 +151,7 @@ main {
 }
 
 .project-list {
-  line-height: 1.2;
+  line-height: 1;
   word-break: break-all;
   overflow-wrap: anywhere;
 }
@@ -322,9 +286,8 @@ main {
 .detail-text {
   grid-column: span 5;
   min-width: 0;
-  font-size: 0.95rem;
-  line-height: 1.75rem;
-  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 1.25rem;
 }
 
 .detail-meta {
@@ -335,7 +298,6 @@ main {
   gap: 2px;
   font-size: 0.85rem;
   line-height: 1.15rem;
-  font-weight: 700;
 }
 
 .detail-meta-item {
@@ -454,7 +416,6 @@ main {
   grid-column: span 4;
   min-width: 0;
   display: block;
-  font-weight: 700;
   white-space: normal;
   pointer-events: auto;
 }
@@ -589,7 +550,7 @@ main.is-image-mode .detail-content {
 
   .site-footer
    .site-footer button {
-    font-weight: 700;
+    font-size: 0.8rem;
   }
 
   .detail-panel {
