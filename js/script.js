@@ -107,6 +107,42 @@ const projects = [
     images: [
     ]
   },*/
+         {
+    id: "project-14",
+    year: "2026",
+    title: { ko: "A door in a Door in a Door", en: "A door in a Door in a Door" },
+    type: { ko: "음악", en: "Music" },
+    meta: {
+      ko: {
+        year: "2026",
+      },
+      en: {
+        year: "2026",
+      }
+    },
+    description: {
+      ko: "Not yet.",
+      en: "Not yet."
+    },
+  },
+           {
+    id: "project-14",
+    year: "2026",
+    title: { ko: "Lines", en: "Lines" },
+    type: { ko: "음악", en: "Music" },
+    meta: {
+      ko: {
+        year: "2026",
+      },
+      en: {
+        year: "2026",
+      }
+    },
+    description: {
+      ko: "Not yet.",
+      en: "Not yet."
+    },
+  },
   {
     id: "project-10",
     year: "2026",
