@@ -107,6 +107,24 @@ const projects = [
     images: [
     ]
   },*/
+  {
+    id: "project-14",
+    year: "2026",
+    title: { ko: "Hinge Typaface", en: "Hinge Typaface" },
+    type: { ko: "typeface", en: "typeface" },
+    meta: {
+      ko: {
+        year: "2026",
+      },
+      en: {
+        year: "2026",
+      }
+    },
+    description: {
+      ko: "Not yet.",
+      en: "Not yet."
+    },
+  },
          {
     id: "project-14",
     year: "2026",
