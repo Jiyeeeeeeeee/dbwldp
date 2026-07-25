@@ -108,7 +108,7 @@ const projects = [
     ]
   },*/
   {
-    id: "project-14",
+    id: "project-16",
     year: "2026",
     title: { ko: "Hinge Typaface", en: "Hinge Typaface" },
     type: { ko: "typeface", en: "typeface" },
@@ -126,7 +126,7 @@ const projects = [
     },
   },
          {
-    id: "project-14",
+    id: "project-15",
     year: "2026",
     title: { ko: "A door in a Door in a Door", en: "A door in a Door in a Door" },
     type: { ko: "음악", en: "Music" },
@@ -146,8 +146,8 @@ const projects = [
            {
     id: "project-14",
     year: "2026",
-    title: { ko: "Lines", en: "Lines" },
-    type: { ko: "음악", en: "Music" },
+    title: { ko: "Imagined between two points", en: "Imagined between two points" },
+    type: { ko: "Editorial", en: "Editorial" },
     meta: {
       ko: {
         year: "2026",
@@ -156,10 +156,13 @@ const projects = [
         year: "2026",
       }
     },
-    description: {
-      ko: "Not yet.",
-      en: "Not yet."
+description: {
+  ko: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003",
+  en: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003"
     },
+    images: [
+      { src: "images/imagined-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    ]
   },
   {
     id: "project-10",
