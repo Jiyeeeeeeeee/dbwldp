@@ -1,112 +1,112 @@
 const projects = [
-     /*{
-    id: "project-15",
-    year: "2026",
-    title: { ko: "reCAPTCHA,", en: "Happy Box Cardog Mix," },
-    type: { ko: "음악", en: "Music" },
-    meta: {
-      ko: {
-        year: "2026",
-        size: "120x170mm",
-        paper: "아트지 120g",
-        printing: "인디고 출력",
-      },
-      en: {
-        year: "2026",
-      }
-    },
-    description: {
-      ko: "로봇이 아닙니다 I’m not a robot 私はロボットではありません 我不是机器人 Je ne suis pas un robot Ich bin kein Roboter No soy un robot Non sono un robot Não sou um robô Я не робот Nie jestem robotem Ik ben geen robot Jag är inte en robot Jeg er ikke en robot En ole robotti Nejsem robot Nie som robot Nem vagyok robot Nu sunt robot Δεν είμαι ρομπότ Ben robot değilim أنا لست برنامج روبوت  मैं रोबोट नहीं हूँ ฉันไม่ใช่โปรแกรมอัตโนมัติ Tôi không phải là người máy Saya bukan robot Hindi ako robot Би робот биш Нисам робот Nisam robot Не съм робот Nisem robot Ma ei ole robot Es neesmu robots Aš ne robotas Ég er ekki vélmenni No sóc un robot Non son un robot Ek is nie ’n robot nie Mimi si roboti.",
-    },
-    images: [    { src: "images/re-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }},
-       { src: "images/re-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-       { src: "images/re-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-       { src: "images/re-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }},
-       { src: "images/re-5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    ]
-  },
-       {
-    id: "project-14",
-    year: "2026",
-    title: { ko: "만화정신,", en: "Happy Box Cardog Mix," },
-    type: { ko: "음악", en: "Music" },
-    meta: {
-      ko: {
-        year: "2026",
-      },
-      en: {
-        year: "2026",
-      }
-    },
-    description: {
-      ko: "Not yet.",
-      en: "Not yet."
-    },
-  },
-  {
-    id: "project-12",
-    year: "2026",
-    title: { ko: "kmhservice", en: "kmhservice," },
-    type: { ko: "서비스", en: "service" },
-    meta: {
-      ko: {
-        year: "2026",
-      },
-      en: {
-        year: "2026",
-      }
-    },
-    description: {
-      ko: `
+  /*{
+ id: "project-15",
+ year: "2026",
+ title: { ko: "reCAPTCHA,", en: "Happy Box Cardog Mix," },
+ type: { ko: "음악", en: "Music" },
+ meta: {
+   ko: {
+     year: "2026",
+     size: "120x170mm",
+     paper: "아트지 120g",
+     printing: "인디고 출력",
+   },
+   en: {
+     year: "2026",
+   }
+ },
+ description: {
+   ko: "로봇이 아닙니다 I’m not a robot 私はロボットではありません 我不是机器人 Je ne suis pas un robot Ich bin kein Roboter No soy un robot Non sono un robot Não sou um robô Я не робот Nie jestem robotem Ik ben geen robot Jag är inte en robot Jeg er ikke en robot En ole robotti Nejsem robot Nie som robot Nem vagyok robot Nu sunt robot Δεν είμαι ρομπότ Ben robot değilim أنا لست برنامج روبوت  मैं रोबोट नहीं हूँ ฉันไม่ใช่โปรแกรมอัตโนมัติ Tôi không phải là người máy Saya bukan robot Hindi ako robot Би робот биш Нисам робот Nisam robot Не съм робот Nisem robot Ma ei ole robot Es neesmu robots Aš ne robotas Ég er ekki vélmenni No sóc un robot Non son un robot Ek is nie ’n robot nie Mimi si roboti.",
+ },
+ images: [    { src: "images/re-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }},
+    { src: "images/re-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    { src: "images/re-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    { src: "images/re-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" }},
+    { src: "images/re-5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+ ]
+},
+    {
+ id: "project-14",
+ year: "2026",
+ title: { ko: "만화정신,", en: "Happy Box Cardog Mix," },
+ type: { ko: "음악", en: "Music" },
+ meta: {
+   ko: {
+     year: "2026",
+   },
+   en: {
+     year: "2026",
+   }
+ },
+ description: {
+   ko: "Not yet.",
+   en: "Not yet."
+ },
+},
+{
+ id: "project-12",
+ year: "2026",
+ title: { ko: "kmhservice", en: "kmhservice," },
+ type: { ko: "서비스", en: "service" },
+ meta: {
+   ko: {
+     year: "2026",
+   },
+   en: {
+     year: "2026",
+   }
+ },
+ description: {
+   ko: `
 [kmhservice in neocities](https://kmhservice.neocities.org/)
 
 1st Intro Sound
 
 <audio
-  src="audio/intro.mp3"
-  controls
-  controlsList="nodownload"
-  preload="none">
+src="audio/intro.mp3"
+controls
+controlsList="nodownload"
+preload="none">
 </audio>
 `,
-      en: `
+   en: `
 [kmhservice](https://kmhservice.neocities.org/)
 
 <audio
-  src="audio/intro.mp3"
-  controls
-  controlsList="nodownload"
-  preload="none">
+src="audio/intro.mp3"
+controls
+controlsList="nodownload"
+preload="none">
 </audio>
 `
-    },
-    images: [
-    ]
-  },
-  {
-    id: "project-11",
-    year: "2026",
-    title: { ko: "허리케인 이르마,", en: "Poor voices: Hurricane Irma," },
-    type: { ko: "진", en: "Zine" },
-    meta: {
-      ko: {
-        year: "2026",
-        size: "297*420 mm",
-        printing: "인디고 1도 인쇄"
-      },
-      en: {
-        year: "2026",
-        size: "297*420 mm",
-        printing: "Indigo 1-color printing"
-      }
-    },
-    description: {
-      ko: "Not yet.",
-      en: "Not yet."
-    },
-    images: [
-    ]
-  },*/
+ },
+ images: [
+ ]
+},
+{
+ id: "project-11",
+ year: "2026",
+ title: { ko: "허리케인 이르마,", en: "Poor voices: Hurricane Irma," },
+ type: { ko: "진", en: "Zine" },
+ meta: {
+   ko: {
+     year: "2026",
+     size: "297*420 mm",
+     printing: "인디고 1도 인쇄"
+   },
+   en: {
+     year: "2026",
+     size: "297*420 mm",
+     printing: "Indigo 1-color printing"
+   }
+ },
+ description: {
+   ko: "Not yet.",
+   en: "Not yet."
+ },
+ images: [
+ ]
+},*/
   {
     id: "project-16",
     year: "2026",
@@ -125,7 +125,7 @@ const projects = [
       en: "Not yet."
     },
   },
-         {
+  {
     id: "project-15",
     year: "2026",
     title: { ko: "A door in a Door in a Door", en: "A door in a Door in a Door" },
@@ -143,7 +143,7 @@ const projects = [
       en: "Not yet."
     },
   },
-           {
+  {
     id: "project-14",
     year: "2026",
     title: { ko: "Imagined between two points", en: "Imagined between two points" },
@@ -156,12 +156,19 @@ const projects = [
         year: "2026",
       }
     },
-description: {
-  ko: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003",
-  en: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003"
+    description: {
+      ko: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003",
+      en: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003"
     },
     images: [
       { src: "images/imagined-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      {
+        type: "video",
+        src: "videos/imagined-2.mp4",
+        autoplay: true,
+        loop: true,
+        muted: true
+      }
     ]
   },
   {
@@ -227,15 +234,15 @@ description: {
     images: [
       { src: "images/indexing-spread.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
       { src: "images/indexing-spread2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-            { src: "images/indexing-spread4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-                        { src: "images/indexing-spread5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-                                    { src: "images/indexing-spread6.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-                                    { src: "images/indexing-0.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    { src: "images/binding-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    { src: "images/indexing-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    { src: "images/indexing-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    { src: "images/indexing-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    { src: "images/indexing-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-spread4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-spread5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-spread6.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-0.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/binding-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
   /*{
@@ -548,7 +555,7 @@ function parseDescription(text = "") {
   return blocks.map((block) => {
     const trimmed = block.trim();
 
-        if (trimmed.startsWith("<audio") && trimmed.endsWith("</audio>")) {
+    if (trimmed.startsWith("<audio") && trimmed.endsWith("</audio>")) {
       return `<div class="detail-audio">${trimmed}</div>`;
     }
 
@@ -602,8 +609,8 @@ function getProjectMedia(project) {
 function renderProjects() {
   projectList.innerHTML = "";
 
-projectList.classList.remove("is-inline");
-projectList.classList.add("is-stair");
+  projectList.classList.remove("is-inline");
+  projectList.classList.add("is-stair");
 
   projects.forEach((project, index) => {
     const isActive = currentMode === "project" && currentProjectId === project.id;
@@ -663,20 +670,38 @@ function renderMedia(media) {
 
   return `
     <div class="detail-media">
-      ${media.map((image) => `
-        <img
-          class="detail-image"
-          src="${image.src}"
-          alt="${image.alt?.[currentLang] || ""}"
-        />
-      `).join("")}
+      ${media.map((item) => {
+    if (item.type === "video") {
+      return `
+<video
+  class="detail-image detail-video"
+  src="${item.src}"
+  autoplay
+  muted
+  loop
+  playsinline
+></video>
+          `;
+    }
+
+    return `
+          <img
+            class="detail-image"
+            src="${item.src}"
+            alt="${item.alt?.[currentLang] || ""}"
+          />
+        `;
+  }).join("")}
     </div>
   `;
 }
 
 function renderProjectMeta(project) {
   const meta = project.meta?.[currentLang];
-  if (!meta) return "";
+
+  if (!meta) {
+    return "";
+  }
 
   const values = [
     meta.year,
@@ -694,7 +719,9 @@ function renderProjectMeta(project) {
     <aside class="detail-meta">
       ${values.map((value) => `
         <div class="detail-meta-item">
-          <div class="detail-meta-value">${wrapByLang(value, currentLang)}</div>
+          <div class="detail-meta-value">
+            ${wrapByLang(value, currentLang)}
+          </div>
         </div>
       `).join("")}
     </aside>
