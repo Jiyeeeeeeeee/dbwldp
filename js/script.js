@@ -162,6 +162,8 @@ preload="none">
     },
     images: [
       { src: "images/imagined-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+            { src: "images/imagined-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+                        { src: "images/imagined-4.png", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
       {
         type: "video",
         src: "videos/imagined-2.mp4",
