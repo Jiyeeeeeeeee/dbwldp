@@ -151,9 +151,13 @@ preload="none">
     meta: {
       ko: {
         year: "2026",
+        size: "130 x 180 mm",
+        printing: "Indigo Printing",
       },
       en: {
         year: "2026",
+        size: "130 x 180 mm",
+        printing: "Indigo Printing",
       }
     },
     description: {
@@ -162,8 +166,8 @@ preload="none">
     },
     images: [
       { src: "images/imagined-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-            { src: "images/imagined-3.JPG", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-                        { src: "images/imagined-4.PNG", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/imagined-3.JPG", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/imagined-4.PNG", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
       {
         type: "video",
         src: "videos/imagined-2.mp4",
