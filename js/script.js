@@ -161,7 +161,7 @@ preload="none">
       }
     },
     description: {
-      ko: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003",
+      ko: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003 가는 획으로 새겨진 표면, 두 점 사이에 상상된 것, 땅을 고르게 하는 것, 덫을 놓는 것, 손바닥과 주름, 능선, 면도날, 사고의 과정, 삽질된 흙, 참호의 깊이",
       en: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003"
     },
     images: [
