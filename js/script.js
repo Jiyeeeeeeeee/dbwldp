@@ -481,6 +481,7 @@ const CONTACT_CONTENT = {
     body: `<span class="contact-line"><a href="mailto:yoojiyekr@gmail.com">yoojiyekr@gmail.com</a> on Gmail</span>
 <span class="contact-line"><a href="https://www.instagram.com/yoojiye/">yoojiye</a> on IG</span>
 <span class="contact-line"><a href="https://www.are.na/jiye-yoo/channels">yoojiye</a> on Are.na</span>
+<span class="contact-line"><a href="https://open.spotify.com/user/31ajw2lfjz5ruwekzxcyrtmswlx4?si=238cb9310e054d81" target="_blank" rel="noopener noreferrer">yoojiye</a> on Spotify</span>
 `
   },
 };
