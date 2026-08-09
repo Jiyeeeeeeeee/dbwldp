@@ -161,7 +161,7 @@ preload="none">
       }
     },
     description: {
-      ko: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003 가는 획으로 새겨진 표면, 두 점 사이에 상상된 것, 땅을 고르게 하는 것, 덫을 놓는 것, 손바닥과 주름, 능선, 면도날, 사고의 과정, 삽질된 흙, 참호의 깊이",
+      ko: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003 가는 획으로 새겨진 표면, 두 점 사이에 상상된 것, 땅을 고르게 하는 것, 덫을 놓는 것, 손바닥과 주름, 능선, 면도날, 사고의 과정, 삽질된 흙, 참호의 깊이... 이면지를 접어 각종 동식물과 사물을 만든다. 그리고 다시 편다. 종이 위에 새겨진 직선 자국을 따라 긋는다. 흔적을 남길 수 있다면 어떤 도구든 상관없다. 나는 연필과 볼펜을 이용했다. 가시화된 선이 만드는 면들은 사물을 이루는 면일 수도, 피부일 수도, 식민화된 공간일 수도 있다. 선은 길을 만들고, 길은 길과 이어진다. 우리는 지나온 길들이 모인 매듭이다. 선을 두 지점 사이를 연결하는 점의 집합 또는 편협함을 상징하는 수단 정도로만 생각한다 해도 살아가는 데 전혀 문제가 없다. 다만 삶을 직조하고 꽤 깊게 일상에 침투해 있는 선의 존재를 알아차리게 된다면, 일상을 좀 더 재밌게 살아갈 수 있다는 점은 확실하다.",
       en: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003"
     },
     images: [
