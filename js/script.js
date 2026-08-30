@@ -125,8 +125,8 @@ preload="none">
       en: "Not yet."
     },
     images: [
-      { src: "Images/T for tee.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "Images/T for tee.png", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/T for tee-01.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/T for tee-02.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
 
