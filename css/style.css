@@ -27,7 +27,8 @@ body {
   align-items: center;
 }
 
-.under-construction img {
+.under-construction img,
+.under-construction video {
   max-width: 70%;
   max-height: 70%;
 
@@ -35,6 +36,15 @@ body {
   height: auto;
 
   object-fit: contain;
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .under-construction img,
+  .under-construction video {
+    max-width: 90%;
+    max-height: 80%;
+  }
 }
 
 /*@font-face {

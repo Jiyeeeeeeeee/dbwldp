@@ -1,15 +1,33 @@
-const images = [
+const underconMedia = [
   "images-2/undercon-1.jpg",
   "images-2/undercon-2.jpg",
-  "images-2/undercon-3.jpg"
+  "images-2/undercon-3.jpg",
+  "images-2/undercon-4.mp4"
 ];
 
-const randomIndex = Math.floor(Math.random() * images.length);
+const randomMedia =
+  underconMedia[Math.floor(Math.random() * underconMedia.length)];
 
-const underconImage = document.getElementById("undercon-image");
+const container = document.getElementById("undercon-container");
 
-underconImage.src = images[randomIndex];
+if (randomMedia.endsWith(".mp4")) {
+  const video = document.createElement("video");
 
+  video.src = randomMedia;
+  video.autoplay = true;
+  video.loop = true;
+  video.muted = true;
+  video.playsInline = true;
+
+  container.appendChild(video);
+} else {
+  const img = document.createElement("img");
+
+  img.src = randomMedia;
+  img.alt = "Under construction";
+
+  container.appendChild(img);
+}
 // const projects = [
 //   {
 //     id: "project-16",
