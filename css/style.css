@@ -1,4 +1,43 @@
-@font-face {
+/* 기존 CSS 임시 주석 처리
+
+기존 CSS 내용 전부 여기
+
+*/
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background-color: black;
+}
+
+.under-construction {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.under-construction img {
+  max-width: 70%;
+  max-height: 70%;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+
+/*@font-face {
   font-family: 'NeueHaasDisplay';
   src: url('../fonts/NeueHaasDisplayRoman.ttf') format('truetype');
   font-weight: 400;
