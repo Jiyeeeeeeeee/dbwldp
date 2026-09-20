@@ -1,4 +1,30 @@
+function createUnderconMedia() {
+  const src = getRandomUnderconMedia();
 
+  const wrapper = document.createElement("div");
+  wrapper.className = "undercon-media";
+
+  let media;
+
+  if (src.endsWith(".mov")) {
+    media = document.createElement("video");
+
+    media.src = src;
+    media.autoplay = true;
+    media.loop = true;
+    media.muted = true;
+    media.playsInline = true;
+  } else {
+    media = document.createElement("img");
+
+    media.src = src;
+    media.alt = "";
+  }
+
+  wrapper.appendChild(media);
+
+  return wrapper;
+}
 // const projects = [
 //   {
 //     id: "project-16",

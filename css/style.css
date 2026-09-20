@@ -23,34 +23,78 @@ body {
   box-sizing: border-box;
 }
 
-.under-construction img,
-.under-construction video {
-  display: block;
 
-  max-width: 70%;
-  max-height: 70vh;
+/* 이미지/영상 하나를 감싸는 박스 */
+.under-construction .media {
+  position: relative;
+  display: inline-block;
+
+  width: fit-content;
+  height: fit-content;
+
+  overflow: hidden;
+}
+
+
+/* 원본 이미지 크기 유지 */
+.under-construction .media img,
+.under-construction .media video {
+  display: block;
 
   width: auto;
   height: auto;
 
-  object-fit: contain;
+  max-width: 50vw;
+  max-height: 100vh;
 }
 
 
+/* 이미지 안쪽 그림자 */
+.under-construction .media::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  box-shadow:
+    inset 0 0 50px 15px rgba(0, 0, 0, 0.7);
+
+  z-index: 2;
+}
+
+.construction-text {
+  position: static;
+
+  color: #ff00ff;
+
+  font-size: 3.5rem;
+  line-height: 0;
+
+  text-align: center;
+
+  margin: 35px 0;
+
+  width: 100%;
+}
+
 /* 모바일 */
 @media (max-width: 768px) {
+
   .under-construction {
     padding: 10vh 0;
   }
 
-  .under-construction img,
-  .under-construction video {
-    max-width: 90%;
+  .under-construction .media img,
+  .under-construction .media video {
+    max-width: 90vw;
     max-height: 80vh;
   }
+
 }
 
-/*@font-face {
+@font-face {
   font-family: 'NeueHaasDisplay';
   src: url('../fonts/NeueHaasDisplayRoman.ttf') format('truetype');
   font-weight: 400;
@@ -66,6 +110,7 @@ body {
   font-display: swap;
 }
 
+/*
 :root {
   --page-padding: 0.5rem;
   --grid-gap: 12px;
