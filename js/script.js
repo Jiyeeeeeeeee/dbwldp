@@ -58,7 +58,9 @@ const projects = [
       }
     },
     description: {
-      ko: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003 가는 획으로 새겨진 표면, 두 점 사이에 상상된 것, 땅을 고르게 하는 것, 덫을 놓는 것, 손바닥과 주름, 능선, 면도날, 사고의 과정, 삽질된 흙, 참호의 깊이... — Matt Donovan, “Line,” 2003",
+      ko: `Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003 
+      
+      가는 획으로 새겨진 표면, 두 점 사이에 상상된 것, 땅을 고르게 하는 것, 덫을 놓는 것, 손바닥과 주름, 능선, 면도날, 사고의 과정, 삽질된 흙, 참호의 깊이... — Matt Donovan, “Line,” 2003`,
       en: "Surface engraved with a narrow stroke, imagined between two points, leveling and snaring, palms and creases, mountain ridge, razor blade, an exacting course of thought, earth shoveled, the depth of a trench. — Matt Donovan, “Line,” 2003"
     },
     images: [
@@ -94,10 +96,7 @@ const projects = [
       }
     },
     description: {
-      ko: "I imagine the reactions of those to whom I hand this object—a business card that does not even approximate the standard, a so-called business card that cannot truly be exchanged, nothing more than a small wooden board with four corners. *You made this as a business card? Where's your phone number? The email address isn't even yours. I can't possibly take this with me.* Well, that's the problem. The business card has grown too large. Instead, perhaps it can serve as a fan to cool you in the coming summer, a shade from the sun, or a small mat to sit on the pavement. It may turn out to be surprisingly useful after all."
-/*`규격의 근사치 조차 따르지 않은, 명함이라 불리지만 주고 받을 수 없는, 네 개의 모서리를 가진 작은 널빤지에 불과한 이것을 내밀었을 때 받는 이들의 반응을 상상한다. 웃거나 당황하거나 가지고 싶다거나 화를 내거나. 
-      
-이걸 명함이라고 만드신 건가요? 전화번호는요? 메일 주소는 지예님 게 아니던데요? 제가 가지고 갈 수도 없잖아요. 곤란하게 됐습니다. 명함이 점점 자라서요. 대신 다가오는 여름을 맞아 땀을 식히는 부채로 쓴다거나 햇빛 가리개로 쓴다거나 길바닥에 깔고 앉을 간이 방석으로 사용할 수 있습니다. 꽤 유용하게 쓰일지도 몰라요.`*/,
+      ko: "I imagine the reactions of those to whom I hand this object—a business card that does not even approximate the standard, a so-called business card that cannot truly be exchanged, nothing more than a small wooden board with four corners. *You made this as a business card? Where's your phone number? The email address isn't even yours. I can't possibly take this with me.* Well, that's the problem. The business card has grown too large. Instead, perhaps it can serve as a fan to cool you in the coming summer, a shade from the sun, or a small mat to sit on the pavement. It may turn out to be surprisingly useful after all.",
       en: "."
     },
     images: [
@@ -171,17 +170,8 @@ const projects = [
         pages: "44p"
       }
     },
-    /*description: {
-      ko: `우리는 진 사서 및 아키비스트 공동체로서 다음과 같은 이유로 다음의 가치를 믿는다.
-
-> 진은 종종 사회적으로 주변화된 공동체의 구성원들에 의해 제작되며,
-> 우리는 그러한 공동체를 존중하며 재현하고자 노력해야 하고,
-> 사서와 아키비스트는 종종 진을 만들고 읽는 공동체의 일원이기도 하며,
-> 진이라는 매체는 매우 다양하고, 기이하며, 일시적이고, 마법 같고, 위험하며, 감정적인 성격을 띠고 있고,
-> 우리는 도서관이나 기록관의 ‘중립성’이라는 신화를 거부하기 때문에,
-> 이용자, 기관, 창작자, 기증자, 그리고 공동체에 대해 책임을 져야 한다고 믿는다.
-
-지난 4월, 더북소사이어티의 웹사이트에는 진을 다루는 사서와 아키비스트로서 지녀야할 태도인 [진 라이브러리언 윤리 강령](https://thebooksociety.org/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170698456&t=board)이 게재되었다. 서문에 나오는 진의 가치는 25년 9월부터 지금까지 이어져 오고 있는 [⌜서신교환⌟](https://www.instagram.com/exchange.papers/)을 지속하고 있는 이유를 설명하기에 충분했다.
+    description: {
+      ko: `지난 4월, 더북소사이어티의 웹사이트에는 진을 다루는 사서와 아키비스트로서 지녀야할 태도인 [진 라이브러리언 윤리 강령](https://thebooksociety.org/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=170698456&t=board)이 게재되었다. 서문에 나오는 진의 가치는 25년 9월부터 지금까지 이어져 오고 있는 [⌜서신교환⌟](https://www.instagram.com/exchange.papers/)을 지속하고 있는 이유를 설명하기에 충분했다.
 
 > 사람들은 동료를 찾기 위해 출판한다!
 — Andre Breton, Les Pas Perdus, 1924
@@ -198,7 +188,7 @@ const projects = [
 > 진은 강박이 없는 추상적 개념이며 가능성이다.
 — 알레산드로 루도비코(2017), 「포스트디지털프린트-1894년 이후 출판의 변화」, 임경용 옮김, 미디어버스`,
       en: "To be updated."
-    },*/
+    },
     images: [
       { src: "images/rei-1.jpg", alt: { ko: "진 프로젝트 이미지 1", en: "Zine project image 1" } },
       { src: "images/rei-2.jpg", alt: { ko: "진 프로젝트 이미지 2", en: "Zine project image 2" } },
@@ -302,48 +292,122 @@ function normalizeText(text = "") {
 
 function parseDescription(text = "") {
   const cleaned = normalizeText(text);
+
   if (!cleaned) return "";
 
   const blocks = cleaned.split(/\n\s*\n/);
 
+  /* 실제 텍스트 기준 언어 판별 */
+  function detectLang(text = "") {
+    return /[가-힣]/.test(text) ? "ko" : "en";
+  }
+
   return blocks.map((block) => {
     const trimmed = block.trim();
 
-    if (trimmed.startsWith("<audio") && trimmed.endsWith("</audio>")) {
+    /* audio */
+    if (
+      trimmed.startsWith("<audio") &&
+      trimmed.endsWith("</audio>")
+    ) {
       return `<div class="detail-audio">${trimmed}</div>`;
     }
 
+    /* 인용문 */
     if (trimmed.startsWith(">")) {
       const quoteLines = trimmed
         .split("\n")
         .map((line) => line.replace(/^>\s?/, "").trim())
         .filter(Boolean);
 
-      const sourceLine = quoteLines.find((line) => line.startsWith("—"));
-      const quoteOnlyLines = quoteLines.filter((line) => !line.startsWith("—"));
-      const sourceText = sourceLine || "";
+      const sourceLine = quoteLines.find((line) =>
+        line.startsWith("—")
+      );
+
+      const quoteOnlyLines = quoteLines.filter(
+        (line) => !line.startsWith("—")
+      );
+
+      /* 출처 앞 원래 — 제거 */
+const sourceText = sourceLine
+  ? sourceLine.replace(/^—\s*/, "")
+  : "";
+
+      const quoteText = quoteOnlyLines.join(" ");
+
+      /* 인용 내용 기준으로 언어 판별 */
+      const quoteLang = detectLang(quoteText);
+
       const isListQuote = quoteOnlyLines.length > 1;
 
+      /* 리스트형 인용문 */
       if (isListQuote) {
         return `
-          <blockquote class="detail-quote detail-quote-list" lang="${currentLang}">
+          <blockquote
+            class="detail-quote detail-quote-list"
+            lang="${quoteLang}"
+          >
             <ul>
-              ${quoteOnlyLines.map((line) => `<li>${replaceLinks(escapeHtml(line))}</li>`).join("")}
+              ${quoteOnlyLines
+                .map((line) => {
+                  const lineLang = detectLang(line);
+
+                  return `
+                    <li lang="${lineLang}">
+                      ${replaceLinks(escapeHtml(line))}
+                    </li>
+                  `;
+                })
+                .join("")}
             </ul>
-            ${sourceText ? `<div class="detail-quote-source">${replaceLinks(escapeHtml(sourceText))}</div>` : ""}
+
+            ${
+              sourceText
+                ? `
+                  <div class="detail-quote-source">
+                    ${replaceLinks(escapeHtml(sourceText))}
+                  </div>
+                `
+                : ""
+            }
           </blockquote>
         `;
       }
 
+      /* 일반 인용문 */
       return `
-        <blockquote class="detail-quote" lang="${currentLang}">
-          ${replaceLinks(escapeHtml(quoteOnlyLines.join("\n")))}
-          ${sourceText ? `<div class="detail-quote-source">${replaceLinks(escapeHtml(sourceText))}</div>` : ""}
+        <blockquote
+          class="detail-quote"
+          lang="${quoteLang}"
+        >
+          ${replaceLinks(
+            escapeHtml(quoteOnlyLines.join("\n"))
+          )}
+
+          ${
+            sourceText
+              ? `
+                <div class="detail-quote-source">
+                  ${replaceLinks(escapeHtml(sourceText))}
+                </div>
+              `
+              : ""
+          }
         </blockquote>
       `;
     }
 
-    return `<p class="detail-paragraph" lang="${currentLang}">${replaceLinks(escapeHtml(trimmed))}</p>`;
+    /* 일반 문단 */
+    const textLang = detectLang(trimmed);
+
+    return `
+      <p
+        class="detail-paragraph"
+        lang="${textLang}"
+      >
+        ${replaceLinks(escapeHtml(trimmed))}
+      </p>
+    `;
   }).join("");
 }
 

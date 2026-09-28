@@ -1,4 +1,3 @@
-
 :root {
   --page-padding: 0.5rem;
   --grid-gap: 12px;
@@ -338,27 +337,45 @@ main {
   vertical-align: 0.08em;
 }
 
-.detail-paragraph,
-.detail-quote {
-  margin: 0;
+/* 한글 일반 본문 */
+.detail-paragraph[lang="ko"] {
+  line-height: 1.65;
 }
 
-.detail-paragraph {
-  white-space: pre-line;
+/* 영문 일반 본문 */
+.detail-paragraph[lang="en"] {
+  line-height: 1.3;
+}
+
+/* 한글 일반 인용 */
+.detail-quote[lang="ko"] {
+  line-height: 1.75;
+}
+
+/* 영문 일반 인용 */
+.detail-quote[lang="en"] {
+  line-height: 1.3;
 }
 
 .detail-quote {
   margin: 0;
   padding-left: 1.5rem;
   padding-bottom: 1rem;
-  white-space: pre-line;
+  white-space: normal;
   text-decoration: none;
+    font-size: 0.8rem;
 }
 
 .detail-quote-source {
-  margin-top: 0.4rem;
-  font-size: 0.85em;
+  margin-top: 0.25rem;
+  font-size: 0.9em;
   line-height: 1;
+}
+
+.detail-quote[lang="ko"] .detail-quote-source {
+  line-height: 1.75;
+    margin-top: 0.25rem;
+      font-size: 0.9em;
 }
 
 /* 일반 문단 / 일반 인용 간격 통일 */
@@ -377,6 +394,11 @@ main {
   white-space: normal;
 }
 
+.detail-quote.detail-quote-list[lang="ko"] li {
+  font-size: 0.85rem;
+  line-height: 1.35rem !important;
+}
+
 .detail-quote.detail-quote-list ul {
   margin: 0 !important;
   padding: 0 1.5rem 0 3rem !important;
@@ -385,7 +407,7 @@ main {
 .detail-quote.detail-quote-list li {
   margin: 0 !important;
   padding: 0 !important;
-  line-height: 1.65rem !important;
+  line-height: 1.25rem !important;
 }
 
 .detail-quote.detail-quote-list li+li {
@@ -515,6 +537,15 @@ main.is-image-mode .detail-content {
   grid-column: span 3;
 }
 
+.detail-quote-source::before {
+  content: "—";
+  display: inline-block;
+  transform: scaleX(0.7) translateY(-0.08em);
+  transform-origin: left center;
+  width: 0.45em;
+  margin-right: 0.6em;
+}
+
 @media (max-width: 1200px) {
   :root {
     --grid-gap: 8px;
@@ -536,7 +567,7 @@ main.is-image-mode .detail-content {
   }
 
   .detail-text {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1rem;
   }
 
