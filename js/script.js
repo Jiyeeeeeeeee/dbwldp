@@ -136,7 +136,7 @@ const projects = [
     images: [
       { src: "images/indexing-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
       { src: "images/indexing-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/Indexing-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
   {
