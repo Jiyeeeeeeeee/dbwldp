@@ -109,7 +109,7 @@ const projects = [
   {
     id: "project-8",
     year: "2026",
-    title: { ko: "Indexing 336", en: "Indexing 336," },
+    title: { ko: "Indexing Assemblage", en: "Indexing Assemblage" },
     type: { ko: "책", en: "editorial" },
     meta: {
       ko: {
@@ -122,7 +122,7 @@ const projects = [
       },
       en: {
         year: "2026",
-        size: "210×297 mm",
+        size: "148×210 mm",
         pages: "36p",
         paper: "MunkenPrintWhite 115g",
         printing: "Indigo Printing",
@@ -134,17 +134,8 @@ const projects = [
       en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."
     },
     images: [
-      { src: "images/indexing-spread.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-spread2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-spread4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-spread5.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-spread6.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-0.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/binding-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
       { src: "images/indexing-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/indexing-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/indexing-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
   {
