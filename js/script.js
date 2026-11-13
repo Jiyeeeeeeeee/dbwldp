@@ -1,4 +1,19 @@
 const projects = [
+    {
+    id: "project-6",
+    year: "2026",
+    title: { ko: "No shot like screenshot", en: "Indexing Assemblage" },
+    type: { ko: "책", en: "editorial" },
+    meta: {
+      ko: {
+        year: "2026",
+      },
+    },
+    images: [
+      { src: "images/Inc-ns.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    ]
+
+  },
   {
     id: "project-5",
     year: "2026",
