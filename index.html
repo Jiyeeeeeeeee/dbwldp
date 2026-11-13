@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title lang="en">yoojiye web</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,38 +12,25 @@
 <body>
   <header class="site-header">
     <div class="header-inner page-grid">
-      <button class="header-home-button" id="home-button" type="button" data-ko="Yoo Jiye" data-en="Yoo Jiye" lang="en">
+      <button class="header-home-button" id="home-button" type="button" lang="en">
         Yoo Jiye
       </button>
-
     </div>
   </header>
 
   <main>
-    <section class="main-layout page-grid">
-      <aside class="index-panel">
-        <div class="project-list" id="project-list"></div>
-      </aside>
+    <section class="slideshow" aria-label="Portfolio images">
+      <div class="slide-media" id="slide-media"></div>
 
-      <section class="detail-panel">
-        <div id="detail-content" class="detail-content">
-        </div>
-      </section>
+      <div class="slide-caption page-grid">
+        <div class="slide-title" id="slide-title"></div>
+      </div>
+    </section>
   </main>
 
   <aside class="floating-contact page-grid" aria-label="Contact">
     <div class="floating-contact-content" id="floating-contact-content" lang="en"></div>
   </aside>
-
-  <footer class="site-footer">
-    <div class="footer-inner page-grid">
-      <div class="footer-img">
-        <button class="footer-img-button" id="img-button" type="button" data-ko="Img" data-en="Img" lang="en">
-          Img
-        </button>
-      </div>
-    </div>
-  </footer>
 
   <script src="js/script.js"></script>
 </body>
