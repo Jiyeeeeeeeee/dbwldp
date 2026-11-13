@@ -1,43 +1,80 @@
 const projects = [
   {
-    id: "project-16",
+    id: "project-5",
     year: "2026",
-    title: { ko: "T for tee", en: "T for tee" },
-    type: { ko: "typeface", en: "typeface" },
+    title: { ko: "Indexing Assemblage", en: "Indexing Assemblage" },
+    type: { ko: "책", en: "editorial" },
     meta: {
       ko: {
         year: "2026",
+        size: "148×210 mm",
+        pages: "36p",
+        paper: "문켄 프린트 화이트 115g",
+        printing: "디지털 출력",
+        binding: "실제본"
       },
       en: {
         year: "2026",
+        size: "148×210 mm",
+        pages: "36p",
+        paper: "MunkenPrintWhite 115g",
+        printing: "Indigo Printing",
+        binding: "Saddle Stitch Binding"
       }
     },
     description: {
-      ko: "T for tee.",
-      en: "Not yet."
+      ko: "An archive of 36 non-hierarchical surfaces made from 336 index labels.",
+      en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."
     },
+    images: [
+      { src: "images/indexing-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/Indexing-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/Indexing-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/Indexing-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+    ]
+
   },
 
-  {
-    id: "project-15",
-    year: "2026",
-    title: { ko: "ff...", en: "ff..." },
-    type: { ko: "음악", en: "Music" },
-    meta: {
-      ko: {
-        year: "2026",
-      },
-      en: {
-        year: "2026",
-      }
-    },
-    description: {
-      ko: "Not yet.",
-      en: "Not yet."
-    },
+
+{
+  id: "project-4",
+  year: "2026",
+  title: {
+    ko: "Indexing Pattern",
+    en: "Indexing Pattern"
   },
+  type: {
+    ko: "그래픽",
+    en: "graphic"
+  },
+
+  meta: {
+    ko: {
+      year: "2026",
+      paper: "고지서",
+      printing: "디지털 출력"
+    }
+  },
+
+  images: [
+    { src: "images/Indexing-6.jpeg", alt: { ko: "프로젝트 이미지 1" } },
+    { src: "images/Indexing-7.jpeg", alt: { ko: "프로젝트 이미지 2" } },
+    { src: "images/Indexing-8.jpeg", alt: { ko: "프로젝트 이미지 3" } },
+    { src: "images/Indexing-9.jpeg", alt: { ko: "프로젝트 이미지 4" } },
+    { src: "images/Indexing-10.jpeg", alt: { ko: "프로젝트 이미지 5" } },
+    { src: "images/Indexing-11.jpeg", alt: { ko: "프로젝트 이미지 6" } },
+    { src: "images/Indexing-12.jpeg", alt: { ko: "프로젝트 이미지 7" } },
+    { src: "images/Indexing-13.jpeg", alt: { ko: "프로젝트 이미지 8" } },
+    { src: "images/Indexing-14.jpeg", alt: { ko: "프로젝트 이미지 9" } },
+    { src: "images/Indexing-15.jpeg", alt: { ko: "프로젝트 이미지 10" } },
+    { src: "images/Indexing-16.jpeg", alt: { ko: "프로젝트 이미지 11" } },
+    { src: "images/Indexing-17.jpeg", alt: { ko: "프로젝트 이미지 12" } }
+  ]
+},
+
+
   {
-    id: "project-14",
+    id: "project-3",
     year: "2026",
     title: { ko: "Imagined between two points", en: "Imagined between two points" },
     type: { ko: "Editorial", en: "Editorial" },
@@ -68,7 +105,7 @@ const projects = [
     ]
   },
   {
-    id: "project-10",
+    id: "project-2",
     year: "2026",
     title: { ko: "growing business cards", en: "growing business cards," },
     type: { ko: "그래픽", en: "graphic" },
@@ -94,39 +131,7 @@ const projects = [
     ]
   },
   {
-    id: "project-8",
-    year: "2026",
-    title: { ko: "Indexing Assemblage", en: "Indexing Assemblage" },
-    type: { ko: "책", en: "editorial" },
-    meta: {
-      ko: {
-        year: "2026",
-        size: "210×297 mm",
-        pages: "36p",
-        paper: "MunkenPrintWhite 115g",
-        printing: "Indigo Printing",
-        binding: "Saddle Stitch Binding"
-      },
-      en: {
-        year: "2026",
-        size: "148×210 mm",
-        pages: "36p",
-        paper: "MunkenPrintWhite 115g",
-        printing: "Indigo Printing",
-        binding: "Saddle Stitch Binding"
-      }
-    },
-    description: {
-      ko: "An archive of 36 non-hierarchical surfaces made from 336 index labels.",
-      en: "An archive of 36 non-hierarchical surfaces made from 336 index labels."
-    },
-    images: [
-      { src: "images/indexing-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/Indexing-4.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-    ]
-  },
-  {
-    id: "project-4",
+    id: "project-1",
     year: "2025",
     title: { ko: "다양하고, 기이하며, 일시적이고, 마법같고, 위험하며 감정적인 것을 만들기", en: "Make a Zine," },
     type: { ko: "프로젝트", en: "Project" },
@@ -155,7 +160,7 @@ const projects = [
     ]
   },
   {
-    id: "project-9",
+    id: "project-0",
     year: "2026",
     title: { ko: "Yoo Jiye?", en: "Yoo Jiye?" },
     meta: {
@@ -471,3 +476,113 @@ floatingContactContent.innerHTML = CONTACT_CONTENT.ko.body;
 
 createBlueCaption();
 renderSlide();
+
+
+/* Random letter hover */
+
+
+/* Wrap visible letters only */
+
+function wrapLetters(element) {
+  if (!element || element.dataset.lettersWrapped === "true") {
+    return;
+  }
+
+  const walker = document.createTreeWalker(
+    element,
+    NodeFilter.SHOW_TEXT
+  );
+
+  const textNodes = [];
+
+  while (walker.nextNode()) {
+    textNodes.push(walker.currentNode);
+  }
+
+  textNodes.forEach((node) => {
+    const text = node.textContent;
+
+    // Ignore indentation-only text nodes
+    if (!text.trim()) {
+      return;
+    }
+
+    const fragment = document.createDocumentFragment();
+
+    Array.from(text).forEach((character) => {
+
+      // Keep spaces as normal text
+      if (/\s/.test(character)) {
+        fragment.appendChild(
+          document.createTextNode(character)
+        );
+        return;
+      }
+
+      // Wrap only visible characters
+      const span = document.createElement("span");
+      span.className = "random-letter";
+      span.textContent = character;
+
+      fragment.appendChild(span);
+    });
+
+    node.replaceWith(fragment);
+  });
+
+  element.dataset.lettersWrapped = "true";
+}
+
+
+function randomizeLetters(element) {
+  const letters = element.querySelectorAll(".random-letter");
+
+  letters.forEach((letter) => {
+    const rotation = (Math.random() * 20 - 10).toFixed(2);
+    const offsetY = (Math.random() * 12 - 6).toFixed(2);
+
+    letter.style.setProperty(
+      "--random-rotation",
+      `${rotation}deg`
+    );
+
+    letter.style.setProperty(
+      "--random-y",
+      `${offsetY}px`
+    );
+
+    letter.classList.add("is-active");
+  });
+}
+
+function resetLetters(element) {
+  element.querySelectorAll(".random-letter").forEach((letter) => {
+    letter.classList.remove("is-active");
+  });
+}
+
+function setupRandomHover(element) {
+  if (!element) return;
+
+  wrapLetters(element);
+
+  element.addEventListener("mouseenter", () => {
+    randomizeLetters(element);
+  });
+
+  element.addEventListener("mouseleave", () => {
+    resetLetters(element);
+  });
+}
+
+/* Apply to header and contact links */
+
+setupRandomHover(
+  document.querySelector(".header-home-button")
+);
+
+document.querySelectorAll(
+  ".floating-contact-content a"
+).forEach((link) => {
+  setupRandomHover(link);
+});

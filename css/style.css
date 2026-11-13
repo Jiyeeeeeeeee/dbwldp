@@ -229,13 +229,6 @@ main {
   text-decoration: none;
 }
 
-.floating-contact-content a::before {
-  content: "↗";
-  display: inline-block;
-  margin-right: 0.3em;
-  font-size: 0.75em;
-  vertical-align: 0.08em;
-}
 
 .floating-contact-content a:hover {
   text-decoration-line: line-through;
@@ -243,7 +236,28 @@ main {
 }
 
 
-/* Mobile */
+
+/* Random letter hover */
+
+.random-letter {
+  display: inline-block;
+
+  letter-spacing: inherit;
+  white-space: pre;
+
+  transform-origin: center center;
+  transition: transform 0.25s ease;
+}
+
+.random-letter.is-active {
+  transform:
+    translateY(var(--random-y, 0px))
+    rotate(var(--random-rotation, 0deg));
+}
+
+
+
+
 
 
 /* Mobile */
@@ -268,20 +282,40 @@ main {
 
   /* Image */
 
-  .slide-media {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-  }
+/* Mobile image */
 
-  .slide-image,
-  .slide-video {
-    width: auto;
-    height: 100%;
-    max-width: none;
-    max-height: none;
-    object-fit: contain;
-  }
+.slide-media {
+  position: absolute;
+
+  top: 110px;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  overflow: hidden;
+}
+
+.slide-image,
+.slide-video {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+}
 
   /* Caption */
 
