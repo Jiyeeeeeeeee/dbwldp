@@ -5,8 +5,8 @@
   --caption-height: 38px;
 
   --background-color: #ffffff;
-  --caption-orange: #9e9e9e;
-  --caption-blue: #faffc6;
+  --caption-orange: #0883ff;
+  --caption-blue: #f9ffc3;
 }
 
 * {
@@ -66,8 +66,8 @@ button {
   padding-bottom: 0.35rem;
 
   background: transparent;
-  color: #fff;
-  mix-blend-mode: exclusion;
+  color: #111;
+  mix-blend-mode: normal;
 }
 
 .header-inner {
@@ -201,8 +201,8 @@ main {
   transform: translateY(-50%);
 
   z-index: 90;
-  color: #fff;
-  mix-blend-mode: exclusion;
+  color: #111;
+  mix-blend-mode: normal;
   pointer-events: none;
 }
 
@@ -239,20 +239,25 @@ main {
 
 /* Random letter hover */
 
+/* Random letter hover */
+
 .random-letter {
   display: inline-block;
-
-  letter-spacing: inherit;
   white-space: pre;
 
   transform-origin: center center;
-  transition: transform 0.25s ease;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 
 .random-letter.is-active {
   transform:
     translateY(var(--random-y, 0px))
     rotate(var(--random-rotation, 0deg));
+
+  color: var(--random-color);
 }
 
 

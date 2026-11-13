@@ -528,12 +528,24 @@ function wrapLetters(element) {
 }
 
 
+
+/* Random rotation, position and color */
+
 function randomizeLetters(element) {
   const letters = element.querySelectorAll(".random-letter");
 
   letters.forEach((letter) => {
+
+    // Random rotation: -10 to +10 degrees
     const rotation = (Math.random() * 20 - 10).toFixed(2);
+
+    // Random vertical position: -6 to +6 pixels
     const offsetY = (Math.random() * 12 - 6).toFixed(2);
+
+    // Randomly choose one of the caption colors
+    const randomColor = Math.random() < 0.5
+      ? "var(--caption-orange)"
+      : "var(--caption-blue)";
 
     letter.style.setProperty(
       "--random-rotation",
@@ -545,9 +557,15 @@ function randomizeLetters(element) {
       `${offsetY}px`
     );
 
+    letter.style.setProperty(
+      "--random-color",
+      randomColor
+    );
+
     letter.classList.add("is-active");
   });
 }
+
 
 function resetLetters(element) {
   element.querySelectorAll(".random-letter").forEach((letter) => {
