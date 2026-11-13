@@ -36,41 +36,41 @@ const projects = [
   },
 
 
-{
-  id: "project-4",
-  year: "2026",
-  title: {
-    ko: "Indexing Pattern",
-    en: "Indexing Pattern"
-  },
-  type: {
-    ko: "그래픽",
-    en: "graphic"
-  },
+  {
+    id: "project-4",
+    year: "2026",
+    title: {
+      ko: "Indexing Pattern",
+      en: "Indexing Pattern"
+    },
+    type: {
+      ko: "그래픽",
+      en: "graphic"
+    },
 
-  meta: {
-    ko: {
-      year: "2026",
-      paper: "고지서",
-      printing: "디지털 출력"
-    }
-  },
+    meta: {
+      ko: {
+        year: "2026",
+        paper: "고지서",
+        printing: "디지털 출력"
+      }
+    },
 
-  images: [
-    { src: "images/Indexing-6.jpeg", alt: { ko: "프로젝트 이미지 1" } },
-    { src: "images/Indexing-7.jpeg", alt: { ko: "프로젝트 이미지 2" } },
-    { src: "images/Indexing-8.jpeg", alt: { ko: "프로젝트 이미지 3" } },
-    { src: "images/Indexing-9.jpeg", alt: { ko: "프로젝트 이미지 4" } },
-    { src: "images/Indexing-10.jpeg", alt: { ko: "프로젝트 이미지 5" } },
-    { src: "images/Indexing-11.jpeg", alt: { ko: "프로젝트 이미지 6" } },
-    { src: "images/Indexing-12.jpeg", alt: { ko: "프로젝트 이미지 7" } },
-    { src: "images/Indexing-13.jpeg", alt: { ko: "프로젝트 이미지 8" } },
-    { src: "images/Indexing-14.jpeg", alt: { ko: "프로젝트 이미지 9" } },
-    { src: "images/Indexing-15.jpeg", alt: { ko: "프로젝트 이미지 10" } },
-    { src: "images/Indexing-16.jpeg", alt: { ko: "프로젝트 이미지 11" } },
-    { src: "images/Indexing-17.jpeg", alt: { ko: "프로젝트 이미지 12" } }
-  ]
-},
+    images: [
+      { src: "images/Indexing-6.jpeg", alt: { ko: "프로젝트 이미지 1" } },
+      { src: "images/Indexing-7.jpeg", alt: { ko: "프로젝트 이미지 2" } },
+      { src: "images/Indexing-8.jpeg", alt: { ko: "프로젝트 이미지 3" } },
+      { src: "images/Indexing-9.jpeg", alt: { ko: "프로젝트 이미지 4" } },
+      { src: "images/Indexing-10.jpeg", alt: { ko: "프로젝트 이미지 5" } },
+      { src: "images/Indexing-11.jpeg", alt: { ko: "프로젝트 이미지 6" } },
+      { src: "images/Indexing-12.jpeg", alt: { ko: "프로젝트 이미지 7" } },
+      { src: "images/Indexing-13.jpeg", alt: { ko: "프로젝트 이미지 8" } },
+      { src: "images/Indexing-14.jpeg", alt: { ko: "프로젝트 이미지 9" } },
+      { src: "images/Indexing-15.jpeg", alt: { ko: "프로젝트 이미지 10" } },
+      { src: "images/Indexing-16.jpeg", alt: { ko: "프로젝트 이미지 11" } },
+      { src: "images/Indexing-17.jpeg", alt: { ko: "프로젝트 이미지 12" } }
+    ]
+  },
 
 
   {
@@ -94,14 +94,8 @@ const projects = [
     },
     images: [
       { src: "images/twopoints-1.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      { src: "images/twopoints-2.JPG", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-      {
-        type: "video",
-        src: "videos/imagined-2.mp4",
-        autoplay: true,
-        loop: true,
-        muted: true
-      }
+      { src: "images/twopoints-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+      { src: "images/twopoints-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
   },
   {
@@ -159,7 +153,7 @@ const projects = [
       { src: "images/rei-10.jpg", alt: { ko: "진 프로젝트 이미지 10", en: "Zine project image 10" } },
     ]
   },
-  {
+  /*{
     id: "project-0",
     year: "2026",
     title: { ko: "Yoo Jiye?", en: "Yoo Jiye?" },
@@ -168,8 +162,8 @@ const projects = [
     description: {
       ko: "[YD KIDS](https://www.instagram.com/lildead19/) [서신교환](https://www.instagram.com/exchange.papers/) [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너",
       en: "[YD키즈](https://www.instagram.com/lildead19/) [서신교환](https://www.instagram.com/exchange.papers/)의 멤버이자 [AG](https://www.instagram.com/ag.co.kr/) 전 디자이너"
-    },
-  },
+
+  },*/
 ];
 
 /* Contact */
