@@ -10,9 +10,8 @@ const projects = [
       },
     },
     images: [
-      { src: "images/inc-ns.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
-            { src: "images/inc-ns-2.jpg", alt: { ko: "프로젝트 이미지 2", en: "project image 2" } },
-                  { src: "images/inc-ns-3.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
+            { src: "images/inc-1.jpg", alt: { ko: "프로젝트 이미지 2", en: "project image 2" } },
+                  { src: "images/inc-2.jpg", alt: { ko: "프로젝트 이미지 1", en: "project image 1" } },
     ]
 
   },
